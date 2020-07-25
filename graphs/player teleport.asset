@@ -1,0 +1,174 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f11136daadff0b44ac2278a314682ab, type: 3}
+  m_Name: player teleport
+  m_EditorClassIdentifier: 
+  serializedUdonProgramAsset: {fileID: 11400000, guid: 78942ecf0d4f30543b184301d3c50d4d,
+    type: 2}
+  udonAssembly: ".data_start\r\n\r\n    .export teleportTo\r\n    \r\n    Boolean_0:
+    %SystemBoolean, null\r\n    instance_0: %SystemString, null\r\n    value_0: %SystemString,
+    null\r\n    instance_1: %SystemObject, null\r\n    onTriggerEnterOther: %UnityEngineCollider,
+    null\r\n    instance_2: %VRCSDKBaseVRCPlayerApi, null\r\n    teleportPos_0: %UnityEngineVector3,
+    null\r\n    teleportRot_0: %UnityEngineQuaternion, null\r\n    teleportOrientation_0:
+    %VRCSDKBaseVRC_SceneDescriptorSpawnOrientation, null\r\n    lerpOnRemote_0: %SystemBoolean,
+    null\r\n    instance_3: %UnityEngineTransform, this\r\n    instance_4: %UnityEngineTransform,
+    this\r\n    teleportTo: %UnityEngineTransform, this\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n
+    \   .export _onTriggerEnter\r\n    \r\n    _onTriggerEnter:\r\n    \r\n        PUSH,
+    onTriggerEnterOther\r\n        PUSH, instance_1\r\n        COPY\r\n        PUSH,
+    instance_1\r\n        PUSH, instance_0\r\n        EXTERN, \"SystemObject.__ToString__SystemString\"\r\n
+    \       PUSH, instance_0\r\n        PUSH, value_0\r\n        PUSH, Boolean_0\r\n
+    \       EXTERN, \"SystemString.__Contains__SystemString__SystemBoolean\"\r\n        PUSH,
+    Boolean_0\r\n        JUMP_IF_FALSE, 0x0000FC\r\n        PUSH, instance_2\r\n        EXTERN,
+    \"VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi\"\r\n        PUSH,
+    teleportTo\r\n        PUSH, instance_3\r\n        COPY\r\n        PUSH, instance_3\r\n
+    \       PUSH, teleportPos_0\r\n        EXTERN, \"UnityEngineTransform.__get_position__UnityEngineVector3\"\r\n
+    \       PUSH, teleportTo\r\n        PUSH, instance_4\r\n        COPY\r\n        PUSH,
+    instance_4\r\n        PUSH, teleportRot_0\r\n        EXTERN, \"UnityEngineTransform.__get_rotation__UnityEngineQuaternion\"\r\n
+    \       PUSH, instance_2\r\n        PUSH, teleportPos_0\r\n        PUSH, teleportRot_0\r\n
+    \       PUSH, teleportOrientation_0\r\n        PUSH, lerpOnRemote_0\r\n        EXTERN,
+    \"VRCSDKBaseVRCPlayerApi.__TeleportTo__UnityEngineVector3_UnityEngineQuaternion_VRCSDKBaseVRC_SceneDescriptorSpawnOrientation_SystemBoolean__SystemVoid\"\r\n
+    \       JUMP, 0x0000FC\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
+  assemblyError: 
+  graphData:
+    name: 
+    description: 
+    nodes:
+    - fullName: Variable_UnityEngineTransform
+      uid: a3c7f375-7b94-4f65-8954-67f291ee659d
+      position: {x: -4333.082, y: -943.5033}
+      nodeUIDs:
+      - 
+      - 
+      - 
+      - 
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|teleportTo
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|True
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
+    - fullName: SystemObject.__ToString__SystemString
+      uid: 4a4c8b66-3ca3-4f25-b629-cb239e06bbfe
+      position: {x: -254.72733, y: -96.24223}
+      nodeUIDs:
+      - 2ce41a6a-8ca9-4758-a768-67174f9d3b44
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: SystemString.__Contains__SystemString__SystemBoolean
+      uid: f4f3df7e-0397-4839-a138-ab8f88390ba0
+      position: {x: -4.654086, y: -97.28316}
+      nodeUIDs:
+      - 4a4c8b66-3ca3-4f25-b629-cb239e06bbfe
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|VRCPlayer[Local]
+    - fullName: Branch
+      uid: e027369e-b569-4923-a9cb-6a7794853ab5
+      position: {x: 313.85568, y: -185.3032}
+      nodeUIDs:
+      - f4f3df7e-0397-4839-a138-ab8f88390ba0
+      flowUIDs:
+      - 0f3fde73-64cd-47b3-ad4a-f7f289b4018f
+      - 
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
+    - fullName: Event_OnTriggerEnter
+      uid: 2ce41a6a-8ca9-4758-a768-67174f9d3b44
+      position: {x: -501.36868, y: -186.28172}
+      nodeUIDs: []
+      flowUIDs:
+      - e027369e-b569-4923-a9cb-6a7794853ab5
+      nodeValues: []
+    - fullName: UnityEngineTransform.__get_rotation__UnityEngineQuaternion
+      uid: 746b9497-2abc-4163-ad09-c4b56c1b10ef
+      position: {x: 121.26364, y: 185.56319}
+      nodeUIDs:
+      - 0fcb10f2-bd42-462a-b3d6-bbdae31508d4
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: Get_Variable
+      uid: 0fcb10f2-bd42-462a-b3d6-bbdae31508d4
+      position: {x: -169.14407, y: 146.02058}
+      nodeUIDs:
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|a3c7f375-7b94-4f65-8954-67f291ee659d
+    - fullName: UnityEngineTransform.__get_position__UnityEngineVector3
+      uid: 25ac59dd-6403-4f60-9a09-bc9ed1ea2f5c
+      position: {x: 124.30539, y: 106.47768}
+      nodeUIDs:
+      - 0fcb10f2-bd42-462a-b3d6-bbdae31508d4
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi
+      uid: 765c8f58-8848-4140-b15b-bec494016e53
+      position: {x: 11.370572, y: 29.475477}
+      nodeUIDs: []
+      flowUIDs: []
+      nodeValues: []
+    - fullName: VRCSDKBaseVRCPlayerApi.__TeleportTo__UnityEngineVector3_UnityEngineQuaternion_VRCSDKBaseVRC_SceneDescriptorSpawnOrientation_SystemBoolean__SystemVoid
+      uid: 0f3fde73-64cd-47b3-ad4a-f7f289b4018f
+      position: {x: 501.46872, y: -85.6512}
+      nodeUIDs:
+      - 765c8f58-8848-4140-b15b-bec494016e53
+      - 25ac59dd-6403-4f60-9a09-bc9ed1ea2f5c
+      - 746b9497-2abc-4163-ad09-c4b56c1b10ef
+      - 
+      - 
+      flowUIDs:
+      - 
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null|{"x":0.0,"y":0.0,"z":0.0}
+      - unityObjectValue: {fileID: 0}
+        stringValue: UnityEngine.Quaternion, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null|{"x":0.0,"y":0.0,"z":0.0,"w":0.0}
+      - unityObjectValue: {fileID: 0}
+        stringValue: VRC.SDKBase.VRC_SceneDescriptor+SpawnOrientation, VRCSDKBase,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|AlignPlayerWithSpawnPoint
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+  graphElementData:
+  - type: 5
+    uid: 142b9e37-585f-4b40-9d39-fef57780c545
+    jsonData: '{"visible":true,"layout":{"serializedVersion":"2","x":0.0,"y":361.0,"width":207.0,"height":214.0}}'
+  - type: 4
+    uid: f05cddde-6ca1-4707-ae42-aec6ee2b6865
+    jsonData: '{"visible":true,"layout":{"serializedVersion":"2","x":10.0,"y":20.0,"width":0.0,"height":0.0}}'
+  viewTransform:
+    position: {x: 493.8716, y: 301.7893}
+    scale: 0.65751624
+  version: 1.0.0
+  showAssembly: 0
