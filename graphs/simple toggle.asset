@@ -53,7 +53,7 @@ MonoBehaviour:
     nodes:
     - fullName: Event_Interact
       uid: 9fb06af8-a7ac-44c3-80ae-fe500a243780
-      position: {x: -108.31777, y: 69.55155}
+      position: {x: -110.32917, y: 67.54024}
       nodeUIDs: []
       flowUIDs:
       - 9eeac2d4-70b6-4e7a-bccf-8e875ab0ea99
@@ -81,7 +81,7 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: For
       uid: c06a7b19-2933-420c-9036-6c3f543c8eae
-      position: {x: 850, y: 192}
+      position: {x: 1171.8625, y: 199.98006}
       nodeUIDs:
       - 
       - 6a33596d-e807-40da-a53d-fe0dddbde5d8|0
@@ -97,7 +97,7 @@ MonoBehaviour:
         stringValue: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|1
     - fullName: UnityEngineGameObjectArray.__get_Length__SystemInt32
       uid: 6a33596d-e807-40da-a53d-fe0dddbde5d8
-      position: {x: 504.10532, y: 245.05962}
+      position: {x: 844.06995, y: 257.0624}
       nodeUIDs:
       - 500bbd1b-4662-425b-964c-5ddaae93a40b|0
       flowUIDs: []
@@ -106,7 +106,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Get_Variable
       uid: 500bbd1b-4662-425b-964c-5ddaae93a40b
-      position: {x: 520.2922, y: 343.3221}
+      position: {x: 605.51416, y: 335.9108}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -115,7 +115,7 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|b8486fb6-7686-4717-b9f6-90a8a8d0dfa7
     - fullName: UnityEngineGameObjectArray.__Get__SystemInt32__UnityEngineGameObject
       uid: fc3c6fbc-cb57-477b-bca5-4d3597711046
-      position: {x: 1060.346, y: 336.21548}
+      position: {x: 1382.2084, y: 344.1956}
       nodeUIDs:
       - 500bbd1b-4662-425b-964c-5ddaae93a40b|0
       - c06a7b19-2933-420c-9036-6c3f543c8eae|0
@@ -127,7 +127,7 @@ MonoBehaviour:
         stringValue: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0
     - fullName: UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid
       uid: dc5cdac7-1bcd-41fa-a554-a91758a4f748
-      position: {x: 1861.9352, y: 254.84175}
+      position: {x: 2183.7979, y: 262.8218}
       nodeUIDs:
       - fc3c6fbc-cb57-477b-bca5-4d3597711046|0
       - a38e581e-9c6f-4bcc-8370-edcf6f31f4ce|0
@@ -139,7 +139,7 @@ MonoBehaviour:
         stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
     - fullName: UnityEngineGameObject.__get_activeSelf__SystemBoolean
       uid: 9f060e41-1647-4846-9023-e6a42d5aa41b
-      position: {x: 1309.8489, y: 426.19772}
+      position: {x: 1631.7114, y: 434.1778}
       nodeUIDs:
       - fc3c6fbc-cb57-477b-bca5-4d3597711046|0
       flowUIDs: []
@@ -148,7 +148,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean
       uid: a38e581e-9c6f-4bcc-8370-edcf6f31f4ce
-      position: {x: 1608.1014, y: 424.0382}
+      position: {x: 1929.9639, y: 432.0183}
       nodeUIDs:
       - 9f060e41-1647-4846-9023-e6a42d5aa41b|0
       flowUIDs: []
@@ -157,7 +157,7 @@ MonoBehaviour:
         stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
     - fullName: Event_Custom
       uid: c0ce4e8e-5645-4f62-b7a1-7617dc57fea2
-      position: {x: 543.0682, y: -4.6935472}
+      position: {x: 913.2032, y: 166.2064}
       nodeUIDs:
       - 
       flowUIDs:
@@ -167,7 +167,7 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|toggle
     - fullName: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
       uid: 9eeac2d4-70b6-4e7a-bccf-8e875ab0ea99
-      position: {x: 106.60306, y: 73.24731}
+      position: {x: 54.30769, y: 69.224625}
       nodeUIDs:
       - 
       - 
@@ -178,14 +178,37 @@ MonoBehaviour:
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|toggle
   graphElementData:
+  - type: 2
+    uid: 26352c7a-3844-4b7e-838f-03283fdd88c0
+    jsonData: '{"uid":"26352c7a-3844-4b7e-838f-03283fdd88c0","layout":{"serializedVersion":"2","x":-135.32913208007813,"y":0.5402450561523438,"width":540.0,"height":221.0},"containedElements":["9fb06af8-a7ac-44c3-80ae-fe500a243780","9eeac2d4-70b6-4e7a-bccf-8e875ab0ea99","c459dc1e-074b-48cd-8b64-3a649f11f269"],"title":"interact
+      event","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
+  - type: 2
+    uid: 861dd819-4c73-4389-950b-390d14a4c702
+    jsonData: '{"uid":"861dd819-4c73-4389-950b-390d14a4c702","layout":{"serializedVersion":"2","x":2302.0390625,"y":345.4875183105469,"width":128.0,"height":128.0},"containedElements":["c06a7b19-2933-420c-9036-6c3f543c8eae","c0ce4e8e-5645-4f62-b7a1-7617dc57fea2","6a33596d-e807-40da-a53d-fe0dddbde5d8","500bbd1b-4662-425b-964c-5ddaae93a40b","6d00f334-6735-4ad7-9f0c-3045435ee9dc"],"title":"toggle
+      event","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
+  - type: 2
+    uid: b14e2996-ca27-4a69-bf28-a7a12eb3c457
+    jsonData: '{"uid":"b14e2996-ca27-4a69-bf28-a7a12eb3c457","layout":{"serializedVersion":"2","x":1516.048095703125,"y":395.40203857421877,"width":128.0,"height":128.0},"containedElements":["a38e581e-9c6f-4bcc-8370-edcf6f31f4ce","9f060e41-1647-4846-9023-e6a42d5aa41b","dc5cdac7-1bcd-41fa-a554-a91758a4f748","fc3c6fbc-cb57-477b-bca5-4d3597711046","f0bbca6e-270d-46a4-a71f-90885d052303"],"title":"loop","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
+  - type: 3
+    uid: f0bbca6e-270d-46a4-a71f-90885d052303
+    jsonData: '{"uid":"f0bbca6e-270d-46a4-a71f-90885d052303","layout":{"serializedVersion":"2","x":1852.539794921875,"y":185.82737731933595,"width":280.86297607421877,"height":92.29525756835938},"title":"in
+      loop it switches the gameobjects current state.","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
+  - type: 3
+    uid: c459dc1e-074b-48cd-8b64-3a649f11f269
+    jsonData: '{"uid":"c459dc1e-074b-48cd-8b64-3a649f11f269","layout":{"serializedVersion":"2","x":79.32748413085938,"y":-31.270410537719728,"width":276.66552734375,"height":88.97216796875},"title":"when
+      click it sends a event to toggle objects.","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
+  - type: 3
+    uid: 6d00f334-6735-4ad7-9f0c-3045435ee9dc
+    jsonData: '{"uid":"6d00f334-6735-4ad7-9f0c-3045435ee9dc","layout":{"serializedVersion":"2","x":608.328125,"y":143.61428833007813,"width":281.9125061035156,"height":97.71720886230469},"title":"event
+      starts a for loop going through the gameobject array","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
   - type: 5
-    uid: 1a2c6b68-6de7-4181-8480-cd46bfc6d33f
-    jsonData: '{"visible":true,"layout":{"serializedVersion":"2","x":0.0,"y":321.0,"width":236.0,"height":278.0}}'
+    uid: 6949fb3a-e0ef-4786-bd7e-81e1eef614a4
+    jsonData: '{"visible":true,"layout":{"serializedVersion":"2","x":2.0,"y":333.0,"width":230.0,"height":132.0}}'
   - type: 4
-    uid: 5804ec4c-051a-4e2d-a980-be9b51752c03
+    uid: 16da8081-c237-4d6e-8901-ac8460736774
     jsonData: '{"visible":true,"layout":{"serializedVersion":"2","x":10.0,"y":20.0,"width":0.0,"height":0.0}}'
   viewTransform:
-    position: {x: 303.18198, y: 167.50978}
-    scale: 0.49717674
+    position: {x: -161.45407, y: 138.61203}
+    scale: 0.375937
   version: 1.0.0
   showAssembly: 0

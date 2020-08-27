@@ -1,3 +1,25 @@
+V1.1.0
+*added groups and comments to some graphs
+*join sound prefab
+*fly stick update (now can dissable gravity while flying)
+*datetime ui text updated
+*instance master identifier prefab
+*fixed key lock prefab
+*layer switch prefab/example
+*local axis movement prefab/example
+*navagent follow prefab
+*player teleport button prefab
+*random int prefab/example
+*set bool ui prefab
+*set material prefab/example
+*specific user join prefab/example
+*station button prefab
+*vrcworld settings edit prefab
+*player mods edit variant prefab
+*postprocessing zone prefab/example
+*grip pickups examples
+
+
 V1.0.0
 new prefabs:
 *2d background audio

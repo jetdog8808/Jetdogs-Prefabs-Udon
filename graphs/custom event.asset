@@ -204,7 +204,7 @@ MonoBehaviour:
     uid: 48750dac-de7a-47c5-ae55-3c4ad387a441
     jsonData: '{"visible":true,"layout":{"serializedVersion":"2","x":10.0,"y":20.0,"width":0.0,"height":0.0}}'
   viewTransform:
-    position: {x: 323.58905, y: 168.94475}
-    scale: 0.65751624
+    position: {x: -60.42987, y: 7.266571}
+    scale: 0.7561437
   version: 1.0.0
   showAssembly: 0

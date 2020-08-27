@@ -104,7 +104,7 @@ MonoBehaviour:
       nodeValues: []
     - fullName: UnityEngineTransform.__get_rotation__UnityEngineQuaternion
       uid: 746b9497-2abc-4163-ad09-c4b56c1b10ef
-      position: {x: 121.26364, y: 185.56319}
+      position: {x: 502.31152, y: 156.43596}
       nodeUIDs:
       - 0fcb10f2-bd42-462a-b3d6-bbdae31508d4
       flowUIDs: []
@@ -113,7 +113,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Get_Variable
       uid: 0fcb10f2-bd42-462a-b3d6-bbdae31508d4
-      position: {x: -169.14407, y: 146.02058}
+      position: {x: 211.90382, y: 116.893326}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -122,7 +122,7 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|a3c7f375-7b94-4f65-8954-67f291ee659d
     - fullName: UnityEngineTransform.__get_position__UnityEngineVector3
       uid: 25ac59dd-6403-4f60-9a09-bc9ed1ea2f5c
-      position: {x: 124.30539, y: 106.47768}
+      position: {x: 505.35324, y: 77.35045}
       nodeUIDs:
       - 0fcb10f2-bd42-462a-b3d6-bbdae31508d4
       flowUIDs: []
@@ -131,13 +131,13 @@ MonoBehaviour:
         stringValue: 
     - fullName: VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi
       uid: 765c8f58-8848-4140-b15b-bec494016e53
-      position: {x: 11.370572, y: 29.475477}
+      position: {x: 490.83923, y: -12.951826}
       nodeUIDs: []
       flowUIDs: []
       nodeValues: []
     - fullName: VRCSDKBaseVRCPlayerApi.__TeleportTo__UnityEngineVector3_UnityEngineQuaternion_VRCSDKBaseVRC_SceneDescriptorSpawnOrientation_SystemBoolean__SystemVoid
       uid: 0f3fde73-64cd-47b3-ad4a-f7f289b4018f
-      position: {x: 501.46872, y: -85.6512}
+      position: {x: 877.1964, y: -185.42853}
       nodeUIDs:
       - 765c8f58-8848-4140-b15b-bec494016e53
       - 25ac59dd-6403-4f60-9a09-bc9ed1ea2f5c
@@ -161,14 +161,18 @@ MonoBehaviour:
       - unityObjectValue: {fileID: 0}
         stringValue: 
   graphElementData:
+  - type: 2
+    uid: 
+    jsonData: '{"uid":"fa007908-4116-450a-832b-d30435be9863","layout":{"serializedVersion":"2","x":814.4752807617188,"y":66.88739013671875,"width":128.0,"height":128.0},"containedElements":["0f3fde73-64cd-47b3-ad4a-f7f289b4018f","765c8f58-8848-4140-b15b-bec494016e53","25ac59dd-6403-4f60-9a09-bc9ed1ea2f5c","0fcb10f2-bd42-462a-b3d6-bbdae31508d4","746b9497-2abc-4163-ad09-c4b56c1b10ef","2ce41a6a-8ca9-4758-a768-67174f9d3b44","e027369e-b569-4923-a9cb-6a7794853ab5","f4f3df7e-0397-4839-a138-ab8f88390ba0","4a4c8b66-3ca3-4f25-b629-cb239e06bbfe","dd6908c3-d8d8-477f-bfbb-f8dc53a38669","83249311-3800-4a1f-999f-ea02e83a3a5e","c8314b62-be0d-4a80-bfac-d4e1bd88f8e2","89cee4f2-60f1-4490-b8f2-db80f820aef5","dbc943a3-bcc5-4f9b-bbd6-34f11e9faa14","dcdded04-e01a-4761-9f10-4f00b15df7ac"],"title":"teleport
+      player trigger","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
   - type: 5
-    uid: 142b9e37-585f-4b40-9d39-fef57780c545
+    uid: 23708ff3-6466-49bf-8cac-193452acc0c0
     jsonData: '{"visible":true,"layout":{"serializedVersion":"2","x":0.0,"y":361.0,"width":207.0,"height":214.0}}'
   - type: 4
-    uid: f05cddde-6ca1-4707-ae42-aec6ee2b6865
+    uid: 19604816-be4a-420c-9ede-4215e28fcf47
     jsonData: '{"visible":true,"layout":{"serializedVersion":"2","x":10.0,"y":20.0,"width":0.0,"height":0.0}}'
   viewTransform:
-    position: {x: 493.8716, y: 301.7893}
-    scale: 0.65751624
+    position: {x: 225.60431, y: 176.12553}
+    scale: 0.49717674
   version: 1.0.0
   showAssembly: 0

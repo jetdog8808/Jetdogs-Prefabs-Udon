@@ -58,6 +58,8 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+Patreon-prefabs/
+
 # VRC stuff
 /Assets/[Uu]don/
 /Assets/VRCSDK/
