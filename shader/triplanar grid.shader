@@ -186,7 +186,7 @@ Shader "triplanar grid"
 }
 /*ASEBEGIN
 Version=16400
-98;191;1243;810;2249.829;758.1776;1.9;True;False
+688.6667;412;1646;788;2632.679;737.2776;1.9;True;False
 Node;AmplifyShaderEditor.RangedFloatNode;6;-1316.487,-228.4804;Float;False;Property;_Falloff;Falloff;3;0;Create;True;0;0;False;0;1;1;0;0;0;1;FLOAT;0
 Node;AmplifyShaderEditor.RangedFloatNode;5;-1312.487,-301.4804;Float;False;Property;_Tiling;Tiling;2;0;Create;True;0;0;False;0;1;1;0;0;0;1;FLOAT;0
 Node;AmplifyShaderEditor.TexturePropertyNode;3;-1363.416,-482.9977;Float;True;Property;_MainTex;MainTex;1;0;Create;True;0;0;False;0;None;b2c2c1a52cdb75943958a408093dee04;False;white;Auto;Texture2D;0;1;SAMPLER2D;0
@@ -222,4 +222,4 @@ WireConnection;0;1;8;0
 WireConnection;0;3;22;0
 WireConnection;0;4;23;0
 ASEEND*/
-//CHKSM=3667F5EA06862E1E2B166016047CA91479F92482
+//CHKSM=8A220D2FA89EE82CBBA8C9220B18415F3BFD0314

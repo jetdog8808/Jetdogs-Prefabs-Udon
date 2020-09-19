@@ -115,10 +115,6 @@ MonoBehaviour:
   stationEnterPlayerLocation: {fileID: 5971945557652921770}
   stationExitPlayerLocation: {fileID: 5971945557550301517}
   controlsObject: {fileID: 0}
-  OnRemotePlayerEnterStation: LightOn
-  OnLocalPlayerEnterStation: LightOn
-  OnRemotePlayerExitStation: LightOff
-  OnLocalPlayerExitStation: LightOff
 --- !u!114 &5971945558029809676
 MonoBehaviour:
   m_ObjectHideFlags: 0

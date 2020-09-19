@@ -1,7 +1,13 @@
+V1.1.1
+*updated prefabs with player triggers to new proper events
+*updated prefabs that had ui events not working.
+*upgraded projector decal shader
+*clocks now have am/pm included in display
+
 V1.1.0
 *added groups and comments to some graphs
 *join sound prefab
-*fly stick update (now can dissable gravity while flying)
+*fly stick update (now can disable gravity while flying)
 *datetime ui text updated
 *instance master identifier prefab
 *fixed key lock prefab
@@ -18,7 +24,7 @@ V1.1.0
 *player mods edit variant prefab
 *postprocessing zone prefab/example
 *grip pickups examples
-
+*station rotation fix
 
 V1.0.0
 new prefabs:

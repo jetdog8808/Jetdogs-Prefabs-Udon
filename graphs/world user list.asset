@@ -66,7 +66,7 @@ MonoBehaviour:
     \       PUSH, start_0\r\n        PUSH, index_0\r\n        COPY\r\n        PUSH,
     index_0\r\n        PUSH, end_0\r\n        PUSH, condition_0\r\n        EXTERN,
     \"SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n        PUSH,
-    condition_0\r\n        JUMP_IF_FALSE, 0x0001DC\r\n        PUSH, onPlayerLeftPlayer\r\n
+    condition_0\r\n        JUMP_IF_FALSE, 0x000001DC\r\n        PUSH, onPlayerLeftPlayer\r\n
     \       PUSH, instance_1\r\n        COPY\r\n        PUSH, playerarray\r\n        PUSH,
     instance_2\r\n        COPY\r\n        PUSH, playerarray\r\n        PUSH, instance_0\r\n
     \       COPY\r\n        PUSH, index_0\r\n        PUSH, Int32_0\r\n        COPY\r\n
@@ -74,14 +74,14 @@ MonoBehaviour:
     \"VRCSDKBaseVRCPlayerApiArray.__Get__SystemInt32__VRCSDKBaseVRCPlayerApi\"\r\n
     \       PUSH, instance_1\r\n        PUSH, obj_0\r\n        PUSH, Boolean_0\r\n
     \       EXTERN, \"VRCSDKBaseVRCPlayerApi.__Equals__SystemObject__SystemBoolean\"\r\n
-    \       PUSH, Boolean_0\r\n        JUMP_IF_FALSE, 0x0001B4\r\n        PUSH, playerarray\r\n
-    \       PUSH, instance_3\r\n        COPY\r\n        PUSH, playerarray\r\n        PUSH,
-    instance_0\r\n        COPY\r\n        PUSH, index_0\r\n        PUSH, Int32_1\r\n
-    \       COPY\r\n        PUSH, var_0\r\n        PUSH, VRCPlayerApi_0\r\n        COPY\r\n
-    \       PUSH, instance_3\r\n        PUSH, Int32_1\r\n        PUSH, VRCPlayerApi_0\r\n
-    \       EXTERN, \"VRCSDKBaseVRCPlayerApiArray.__Set__SystemInt32_VRCSDKBaseVRCPlayerApi__SystemVoid\"\r\n
-    \       JUMP, 0x0001B4\r\n        PUSH, index_0\r\n        PUSH, step_0\r\n        PUSH,
-    index_0\r\n        EXTERN, \"SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32\"\r\n
+    \       PUSH, Boolean_0\r\n        JUMP_IF_FALSE, 0x000001B4\r\n        PUSH,
+    playerarray\r\n        PUSH, instance_3\r\n        COPY\r\n        PUSH, playerarray\r\n
+    \       PUSH, instance_0\r\n        COPY\r\n        PUSH, index_0\r\n        PUSH,
+    Int32_1\r\n        COPY\r\n        PUSH, var_0\r\n        PUSH, VRCPlayerApi_0\r\n
+    \       COPY\r\n        PUSH, instance_3\r\n        PUSH, Int32_1\r\n        PUSH,
+    VRCPlayerApi_0\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApiArray.__Set__SystemInt32_VRCSDKBaseVRCPlayerApi__SystemVoid\"\r\n
+    \       JUMP, 0x000001B4\r\n        PUSH, index_0\r\n        PUSH, step_0\r\n
+    \       PUSH, index_0\r\n        EXTERN, \"SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32\"\r\n
     \       JUMP, 0x0000006C\r\n        PUSH, instance_4\r\n        PUSH, eventName_0\r\n
     \       EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n
     \       JUMP, 0xFFFFFFFC\r\n    \r\n    .export _onPlayerJoined\r\n    \r\n    _onPlayerJoined:\r\n
@@ -90,12 +90,13 @@ MonoBehaviour:
     \       PUSH, instance_5\r\n        PUSH, eventName_1\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n
     \       JUMP, 0xFFFFFFFC\r\n    \r\n    .export setusers\r\n    \r\n    setusers:\r\n
     \   \r\n        PUSH, Int32_2\r\n        PUSH, usercount\r\n        COPY\r\n        PUSH,
-    playerarray\r\n        PUSH, instance_6\r\n        COPY\r\n        PUSH, instance_6\r\n
-    \       PUSH, end_1\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApiArray.__get_Length__SystemInt32\"\r\n
+    usercount\r\n        PUSH, usercount\r\n        COPY\r\n        PUSH, playerarray\r\n
+    \       PUSH, instance_6\r\n        COPY\r\n        PUSH, instance_6\r\n        PUSH,
+    end_1\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApiArray.__get_Length__SystemInt32\"\r\n
     \       PUSH, start_1\r\n        PUSH, index_1\r\n        COPY\r\n        PUSH,
     index_1\r\n        PUSH, end_1\r\n        PUSH, condition_1\r\n        EXTERN,
     \"SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n        PUSH,
-    condition_1\r\n        JUMP_IF_FALSE, 0x0007FC\r\n        PUSH, playerarray\r\n
+    condition_1\r\n        JUMP_IF_FALSE, 0x00000824\r\n        PUSH, playerarray\r\n
     \       PUSH, instance_7\r\n        COPY\r\n        PUSH, playerarray\r\n        PUSH,
     instance_6\r\n        COPY\r\n        PUSH, index_1\r\n        PUSH, Int32_3\r\n
     \       COPY\r\n        PUSH, instance_7\r\n        PUSH, Int32_3\r\n        PUSH,
@@ -103,61 +104,63 @@ MonoBehaviour:
     \       PUSH, var_1\r\n        PUSH, Object_1\r\n        COPY\r\n        PUSH,
     Object_0\r\n        PUSH, Object_1\r\n        PUSH, Boolean_1\r\n        EXTERN,
     \"SystemObject.__op_Inequality__SystemObject_SystemObject__SystemBoolean\"\r\n
-    \       PUSH, Boolean_1\r\n        JUMP_IF_FALSE, 0x0007D4\r\n        PUSH, usercount\r\n
-    \       PUSH, Int32_5\r\n        PUSH, usercount\r\n        EXTERN, \"SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32\"\r\n
-    \       PUSH, displaytext\r\n        PUSH, Object_2\r\n        COPY\r\n        PUSH,
-    var_2\r\n        PUSH, Object_3\r\n        COPY\r\n        PUSH, Object_2\r\n
-    \       PUSH, Object_3\r\n        PUSH, Boolean_2\r\n        EXTERN, \"SystemObject.__op_Inequality__SystemObject_SystemObject__SystemBoolean\"\r\n
-    \       PUSH, Boolean_2\r\n        JUMP_IF_FALSE, 0x0007CC\r\n        PUSH, tempstring\r\n
-    \       PUSH, str0_0\r\n        COPY\r\n        PUSH, playerarray\r\n        PUSH,
-    instance_7\r\n        COPY\r\n        PUSH, playerarray\r\n        PUSH, instance_6\r\n
-    \       COPY\r\n        PUSH, index_1\r\n        PUSH, Int32_3\r\n        COPY\r\n
-    \       PUSH, Object_0\r\n        PUSH, VRCPlayerApi_1\r\n        COPY\r\n        PUSH,
-    Object_0\r\n        PUSH, str1_0\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__get_displayName__SystemString\"\r\n
+    \       PUSH, Boolean_1\r\n        JUMP_IF_FALSE, 0x000007FC\r\n        PUSH,
+    usercount\r\n        PUSH, Int32_5\r\n        PUSH, usercount\r\n        EXTERN,
+    \"SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32\"\r\n        PUSH,
+    usercount\r\n        PUSH, usercount\r\n        COPY\r\n        PUSH, displaytext\r\n
+    \       PUSH, Object_2\r\n        COPY\r\n        PUSH, var_2\r\n        PUSH,
+    Object_3\r\n        COPY\r\n        PUSH, Object_2\r\n        PUSH, Object_3\r\n
+    \       PUSH, Boolean_2\r\n        EXTERN, \"SystemObject.__op_Inequality__SystemObject_SystemObject__SystemBoolean\"\r\n
+    \       PUSH, Boolean_2\r\n        JUMP_IF_FALSE, 0x000007F4\r\n        PUSH,
+    tempstring\r\n        PUSH, str0_0\r\n        COPY\r\n        PUSH, playerarray\r\n
+    \       PUSH, instance_7\r\n        COPY\r\n        PUSH, playerarray\r\n        PUSH,
+    instance_6\r\n        COPY\r\n        PUSH, index_1\r\n        PUSH, Int32_3\r\n
+    \       COPY\r\n        PUSH, Object_0\r\n        PUSH, VRCPlayerApi_1\r\n        COPY\r\n
+    \       PUSH, Object_0\r\n        PUSH, str1_0\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__get_displayName__SystemString\"\r\n
     \       PUSH, str0_0\r\n        PUSH, str1_0\r\n        PUSH, tempstring\r\n        EXTERN,
     \"SystemString.__Concat__SystemString_SystemString__SystemString\"\r\n        PUSH,
-    displayID\r\n        JUMP_IF_FALSE, 0x000568\r\n        PUSH, tempstring\r\n        PUSH,
-    str0_1\r\n        COPY\r\n        PUSH, idString\r\n        PUSH, str1_1\r\n        COPY\r\n
-    \       PUSH, playerarray\r\n        PUSH, instance_7\r\n        COPY\r\n        PUSH,
-    playerarray\r\n        PUSH, instance_6\r\n        COPY\r\n        PUSH, index_1\r\n
-    \       PUSH, Int32_3\r\n        COPY\r\n        PUSH, Object_0\r\n        PUSH,
-    instance_9\r\n        COPY\r\n        PUSH, Object_0\r\n        PUSH, instance_8\r\n
-    \       EXTERN, \"VRCSDKBaseVRCPlayerApi.__get_playerId__SystemInt32\"\r\n        PUSH,
-    instance_8\r\n        PUSH, str2_0\r\n        EXTERN, \"SystemInt32.__ToString__SystemString\"\r\n
+    displayID\r\n        JUMP_IF_FALSE, 0x00000590\r\n        PUSH, tempstring\r\n
+    \       PUSH, str0_1\r\n        COPY\r\n        PUSH, idString\r\n        PUSH,
+    str1_1\r\n        COPY\r\n        PUSH, playerarray\r\n        PUSH, instance_7\r\n
+    \       COPY\r\n        PUSH, playerarray\r\n        PUSH, instance_6\r\n        COPY\r\n
+    \       PUSH, index_1\r\n        PUSH, Int32_3\r\n        COPY\r\n        PUSH,
+    Object_0\r\n        PUSH, instance_9\r\n        COPY\r\n        PUSH, Object_0\r\n
+    \       PUSH, instance_8\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__get_playerId__SystemInt32\"\r\n
+    \       PUSH, instance_8\r\n        PUSH, str2_0\r\n        EXTERN, \"SystemInt32.__ToString__SystemString\"\r\n
     \       PUSH, str0_1\r\n        PUSH, str1_1\r\n        PUSH, str2_0\r\n        PUSH,
     tempstring\r\n        EXTERN, \"SystemString.__Concat__SystemString_SystemString_SystemString__SystemString\"\r\n
-    \       JUMP, 0x000568\r\n        PUSH, vrORdesktop\r\n        JUMP_IF_FALSE,
-    0x000690\r\n        PUSH, playerarray\r\n        PUSH, instance_7\r\n        COPY\r\n
+    \       JUMP, 0x00000590\r\n        PUSH, vrORdesktop\r\n        JUMP_IF_FALSE,
+    0x000006B8\r\n        PUSH, playerarray\r\n        PUSH, instance_7\r\n        COPY\r\n
     \       PUSH, playerarray\r\n        PUSH, instance_6\r\n        COPY\r\n        PUSH,
     index_1\r\n        PUSH, Int32_3\r\n        COPY\r\n        PUSH, Object_0\r\n
     \       PUSH, instance_A\r\n        COPY\r\n        PUSH, Object_0\r\n        PUSH,
     Boolean_5\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__IsUserInVR__SystemBoolean\"\r\n
-    \       PUSH, Boolean_5\r\n        JUMP_IF_FALSE, 0x000640\r\n        PUSH, tempstring\r\n
-    \       PUSH, str0_2\r\n        COPY\r\n        PUSH, vrString\r\n        PUSH,
-    str1_2\r\n        COPY\r\n        PUSH, str0_2\r\n        PUSH, str1_2\r\n        PUSH,
-    tempstring\r\n        EXTERN, \"SystemString.__Concat__SystemString_SystemString__SystemString\"\r\n
-    \       JUMP, 0x000688\r\n        PUSH, tempstring\r\n        PUSH, str0_3\r\n
+    \       PUSH, Boolean_5\r\n        JUMP_IF_FALSE, 0x00000668\r\n        PUSH,
+    tempstring\r\n        PUSH, str0_2\r\n        COPY\r\n        PUSH, vrString\r\n
+    \       PUSH, str1_2\r\n        COPY\r\n        PUSH, str0_2\r\n        PUSH,
+    str1_2\r\n        PUSH, tempstring\r\n        EXTERN, \"SystemString.__Concat__SystemString_SystemString__SystemString\"\r\n
+    \       JUMP, 0x000006B0\r\n        PUSH, tempstring\r\n        PUSH, str0_3\r\n
     \       COPY\r\n        PUSH, desktopString\r\n        PUSH, str1_3\r\n        COPY\r\n
     \       PUSH, str0_3\r\n        PUSH, str1_3\r\n        PUSH, tempstring\r\n        EXTERN,
     \"SystemString.__Concat__SystemString_SystemString__SystemString\"\r\n        JUMP,
-    0x000690\r\n        PUSH, playerarray\r\n        PUSH, instance_7\r\n        COPY\r\n
+    0x000006B8\r\n        PUSH, playerarray\r\n        PUSH, instance_7\r\n        COPY\r\n
     \       PUSH, playerarray\r\n        PUSH, instance_6\r\n        COPY\r\n        PUSH,
     index_1\r\n        PUSH, Int32_3\r\n        COPY\r\n        PUSH, Object_0\r\n
     \       PUSH, instance_B\r\n        COPY\r\n        PUSH, Object_0\r\n        PUSH,
     Boolean_8\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__get_isMaster__SystemBoolean\"\r\n
     \       PUSH, showMaster\r\n        PUSH, Boolean_8\r\n        PUSH, Boolean_6\r\n
     \       EXTERN, \"SystemBoolean.__op_ConditionalAnd__SystemBoolean_SystemBoolean__SystemBoolean\"\r\n
-    \       PUSH, Boolean_6\r\n        JUMP_IF_FALSE, 0x000778\r\n        PUSH, tempstring\r\n
-    \       PUSH, str0_4\r\n        COPY\r\n        PUSH, masterString\r\n        PUSH,
-    str1_4\r\n        COPY\r\n        PUSH, str0_4\r\n        PUSH, str1_4\r\n        PUSH,
-    tempstring\r\n        EXTERN, \"SystemString.__Concat__SystemString_SystemString__SystemString\"\r\n
-    \       JUMP, 0x000778\r\n        PUSH, tempstring\r\n        PUSH, str0_5\r\n
+    \       PUSH, Boolean_6\r\n        JUMP_IF_FALSE, 0x000007A0\r\n        PUSH,
+    tempstring\r\n        PUSH, str0_4\r\n        COPY\r\n        PUSH, masterString\r\n
+    \       PUSH, str1_4\r\n        COPY\r\n        PUSH, str0_4\r\n        PUSH,
+    str1_4\r\n        PUSH, tempstring\r\n        EXTERN, \"SystemString.__Concat__SystemString_SystemString__SystemString\"\r\n
+    \       JUMP, 0x000007A0\r\n        PUSH, tempstring\r\n        PUSH, str0_5\r\n
     \       COPY\r\n        PUSH, c_0\r\n        PUSH, str1_5\r\n        EXTERN, \"SystemChar.__ToString__SystemChar__SystemString\"\r\n
     \       PUSH, str0_5\r\n        PUSH, str1_5\r\n        PUSH, tempstring\r\n        EXTERN,
     \"SystemString.__Concat__SystemString_SystemString__SystemString\"\r\n        JUMP,
-    0x0007CC\r\n        JUMP, 0x0007D4\r\n        PUSH, index_1\r\n        PUSH, step_1\r\n
-    \       PUSH, index_1\r\n        EXTERN, \"SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32\"\r\n
-    \       JUMP, 0x0000029C\r\n        PUSH, displaytext\r\n        PUSH, instance_C\r\n
+    0x000007F4\r\n        JUMP, 0x000007FC\r\n        PUSH, index_1\r\n        PUSH,
+    step_1\r\n        PUSH, index_1\r\n        EXTERN, \"SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32\"\r\n
+    \       JUMP, 0x000002B0\r\n        PUSH, displaytext\r\n        PUSH, instance_C\r\n
     \       COPY\r\n        PUSH, tempstring\r\n        PUSH, value_0\r\n        COPY\r\n
     \       PUSH, instance_C\r\n        PUSH, value_0\r\n        EXTERN, \"UnityEngineUIText.__set_text__SystemString__SystemVoid\"\r\n
     \       PUSH, tempValue_0\r\n        PUSH, tempstring\r\n        COPY\r\n        PUSH,
@@ -1390,7 +1393,7 @@ MonoBehaviour:
     uid: c434c050-c609-4887-9e57-b5f1d9eda9ab
     jsonData: '{"visible":true,"layout":{"serializedVersion":"2","x":10.0,"y":20.0,"width":0.0,"height":0.0}}'
   viewTransform:
-    position: {x: 1131.7875, y: 652.2217}
-    scale: 0.49717674
+    position: {x: 645.6621, y: 589.50604}
+    scale: 0.2
   version: 1.0.0
   showAssembly: 0
