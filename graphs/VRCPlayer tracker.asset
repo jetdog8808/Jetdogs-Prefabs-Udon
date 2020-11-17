@@ -19,14 +19,14 @@ MonoBehaviour:
     null\r\n    rotation_0: %UnityEngineQuaternion, null\r\n    instance_1: %VRCSDKBaseVRCPlayerApi,
     null\r\n    instance_2: %VRCSDKBaseVRCPlayerApi, null\r\n    track: %SystemBoolean,
     null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n    .export _update\r\n    \r\n
-    \   _update:\r\n    \r\n        PUSH, track\r\n        JUMP_IF_FALSE, 0x00008C\r\n
+    \   _update:\r\n    \r\n        PUSH, track\r\n        JUMP_IF_FALSE, 0x0000008C\r\n
     \       PUSH, instance_1\r\n        EXTERN, \"VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi\"\r\n
     \       PUSH, instance_1\r\n        PUSH, position_0\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__GetPosition__UnityEngineVector3\"\r\n
     \       PUSH, instance_1\r\n        PUSH, instance_2\r\n        COPY\r\n        PUSH,
     instance_1\r\n        PUSH, rotation_0\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__GetRotation__UnityEngineQuaternion\"\r\n
     \       PUSH, instance_0\r\n        PUSH, position_0\r\n        PUSH, rotation_0\r\n
     \       EXTERN, \"UnityEngineTransform.__SetPositionAndRotation__UnityEngineVector3_UnityEngineQuaternion__SystemVoid\"\r\n
-    \       JUMP, 0x00008C\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
+    \       JUMP, 0x0000008C\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
   assemblyError: 
   graphData:
     name: 
@@ -128,7 +128,7 @@ MonoBehaviour:
     uid: 9bffb45d-945c-4484-9df6-97dde84ea9e9
     jsonData: '{"visible":true,"layout":{"serializedVersion":"2","x":10.0,"y":20.0,"width":0.0,"height":0.0}}'
   viewTransform:
-    position: {x: 372.43845, y: 70.35714}
-    scale: 0.65751624
+    position: {x: 402.9751, y: 176.9282}
+    scale: 0.8695652
   version: 1.0.0
   showAssembly: 0

@@ -1,3 +1,12 @@
+V1.2.0
+*fly stick should reset your gravity if you turn gravity dissable off during flight.
+*added set portal id prefab.
+*added strafe speed to vrcworld settings prefab.
+*vrcworld voice settings added + zones.
+*world user list automatically sets size of needed array.
+*changed round portal world id.
+
+
 V1.1.1
 *updated prefabs with player triggers to new proper events
 *updated prefabs that had ui events not working.

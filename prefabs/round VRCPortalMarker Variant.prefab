@@ -34,7 +34,7 @@ PrefabInstance:
     - target: {fileID: 3057416176344761514, guid: 77a89e097657af54c85573a268691d5f,
         type: 3}
       propertyPath: roomId
-      value: wrld_4d2993b2-9c91-4e10-bea1-31a424e43659
+      value: wrld_d6ff887c-c206-49a4-a9f9-4bc778bc5c6c
       objectReference: {fileID: 0}
     - target: {fileID: 5120048637162416425, guid: 77a89e097657af54c85573a268691d5f,
         type: 3}
