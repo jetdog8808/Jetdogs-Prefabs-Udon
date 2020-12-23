@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f11136daadff0b44ac2278a314682ab, type: 3}
   m_Name: startdissabled
   m_EditorClassIdentifier: 
-  serializedUdonProgramAsset: {fileID: 11400000, guid: 3ea62f8e9c2c28f44bbc02e22c132bde,
+  serializedUdonProgramAsset: {fileID: 11400000, guid: c238539736f8610418b036ab4c33a018,
     type: 2}
   udonAssembly: ".data_start\r\n\r\n    .export Gameobjects\r\n    \r\n    index_0:
     %SystemInt32, null\r\n    condition_0: %SystemBoolean, null\r\n    Boolean_0:
@@ -28,19 +28,20 @@ MonoBehaviour:
     \       PUSH, start_0\r\n        PUSH, index_0\r\n        COPY\r\n        PUSH,
     index_0\r\n        PUSH, end_0\r\n        PUSH, condition_0\r\n        EXTERN,
     \"SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n        PUSH,
-    condition_0\r\n        JUMP_IF_FALSE, 0x00018C\r\n        PUSH, Gameobjects\r\n
+    condition_0\r\n        JUMP_IF_FALSE, 0x0000018C\r\n        PUSH, Gameobjects\r\n
     \       PUSH, instance_2\r\n        COPY\r\n        PUSH, Gameobjects\r\n        PUSH,
     instance_0\r\n        COPY\r\n        PUSH, index_0\r\n        PUSH, Int32_0\r\n
     \       COPY\r\n        PUSH, instance_2\r\n        PUSH, Int32_0\r\n        PUSH,
     instance_1\r\n        EXTERN, \"UnityEngineGameObjectArray.__Get__SystemInt32__UnityEngineGameObject\"\r\n
     \       PUSH, instance_1\r\n        PUSH, Boolean_0\r\n        EXTERN, \"UnityEngineGameObject.__get_activeSelf__SystemBoolean\"\r\n
-    \       PUSH, Boolean_0\r\n        JUMP_IF_FALSE, 0x000164\r\n        PUSH, Gameobjects\r\n
-    \       PUSH, instance_2\r\n        COPY\r\n        PUSH, Gameobjects\r\n        PUSH,
-    instance_0\r\n        COPY\r\n        PUSH, index_0\r\n        PUSH, Int32_0\r\n
-    \       COPY\r\n        PUSH, instance_1\r\n        PUSH, instance_3\r\n        COPY\r\n
-    \       PUSH, instance_1\r\n        PUSH, value_0\r\n        EXTERN, \"UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid\"\r\n
-    \       JUMP, 0x000164\r\n        PUSH, index_0\r\n        PUSH, step_0\r\n        PUSH,
-    index_0\r\n        EXTERN, \"SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32\"\r\n
+    \       PUSH, Boolean_0\r\n        JUMP_IF_FALSE, 0x00000164\r\n        PUSH,
+    Gameobjects\r\n        PUSH, instance_2\r\n        COPY\r\n        PUSH, Gameobjects\r\n
+    \       PUSH, instance_0\r\n        COPY\r\n        PUSH, index_0\r\n        PUSH,
+    Int32_0\r\n        COPY\r\n        PUSH, instance_1\r\n        PUSH, instance_3\r\n
+    \       COPY\r\n        PUSH, instance_1\r\n        PUSH, value_0\r\n        EXTERN,
+    \"UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid\"\r\n        JUMP,
+    0x00000164\r\n        PUSH, index_0\r\n        PUSH, step_0\r\n        PUSH, index_0\r\n
+    \       EXTERN, \"SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32\"\r\n
     \       JUMP, 0x00000040\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
   assemblyError: 
   graphData:

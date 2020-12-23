@@ -21,10 +21,10 @@ MonoBehaviour:
     null\r\n    tempValue_1: %SystemBoolean, null\r\n    station: %VRCSDK3ComponentsVRCStation,
     null\r\n    inuse: %SystemBoolean, null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n
     \   .export use\r\n    \r\n    use:\r\n    \r\n        PUSH, inuse\r\n        JUMP_IF_FALSE,
-    0x000054\r\n        PUSH, station\r\n        PUSH, instance_0\r\n        COPY\r\n
+    0x00000054\r\n        PUSH, station\r\n        PUSH, instance_0\r\n        COPY\r\n
     \       PUSH, player_0\r\n        EXTERN, \"VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi\"\r\n
     \       PUSH, instance_0\r\n        PUSH, player_0\r\n        EXTERN, \"VRCSDK3ComponentsVRCStation.__UseStation__VRCSDKBaseVRCPlayerApi__SystemVoid\"\r\n
-    \       JUMP, 0x000094\r\n        PUSH, station\r\n        PUSH, instance_1\r\n
+    \       JUMP, 0x00000094\r\n        PUSH, station\r\n        PUSH, instance_1\r\n
     \       COPY\r\n        PUSH, player_0\r\n        PUSH, player_1\r\n        COPY\r\n
     \       PUSH, instance_1\r\n        PUSH, player_0\r\n        EXTERN, \"VRCSDK3ComponentsVRCStation.__ExitStation__VRCSDKBaseVRCPlayerApi__SystemVoid\"\r\n
     \       JUMP, 0xFFFFFFFC\r\n    \r\n    .export _onStationEntered\r\n    \r\n
@@ -194,7 +194,7 @@ MonoBehaviour:
     uid: 19604816-be4a-420c-9ede-4215e28fcf47
     jsonData: '{"visible":true,"layout":{"serializedVersion":"2","x":10.0,"y":20.0,"width":0.0,"height":0.0}}'
   viewTransform:
-    position: {x: 800.6476, y: 425.89047}
+    position: {x: 749.4975, y: 345.7905}
     scale: 0.7561437
   version: 1.0.0
   showAssembly: 0

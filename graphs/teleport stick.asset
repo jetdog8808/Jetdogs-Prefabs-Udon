@@ -67,19 +67,20 @@ MonoBehaviour:
     \       PUSH, start_0\r\n        PUSH, index_0\r\n        COPY\r\n        PUSH,
     index_0\r\n        PUSH, end_0\r\n        PUSH, condition_0\r\n        EXTERN,
     \"SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n        PUSH,
-    condition_0\r\n        JUMP_IF_FALSE, 0x00018C\r\n        PUSH, visuals\r\n        PUSH,
-    instance_2\r\n        COPY\r\n        PUSH, visuals\r\n        PUSH, instance_0\r\n
-    \       COPY\r\n        PUSH, index_0\r\n        PUSH, Int32_0\r\n        COPY\r\n
-    \       PUSH, instance_2\r\n        PUSH, Int32_0\r\n        PUSH, instance_1\r\n
-    \       EXTERN, \"UnityEngineRendererArray.__Get__SystemInt32__UnityEngineRenderer\"\r\n
-    \       PUSH, instance_1\r\n        PUSH, Boolean_0\r\n        EXTERN, \"UnityEngineRenderer.__get_enabled__SystemBoolean\"\r\n
-    \       PUSH, Boolean_0\r\n        JUMP_IF_FALSE, 0x000164\r\n        PUSH, visuals\r\n
+    condition_0\r\n        JUMP_IF_FALSE, 0x0000018C\r\n        PUSH, visuals\r\n
     \       PUSH, instance_2\r\n        COPY\r\n        PUSH, visuals\r\n        PUSH,
     instance_0\r\n        COPY\r\n        PUSH, index_0\r\n        PUSH, Int32_0\r\n
-    \       COPY\r\n        PUSH, instance_1\r\n        PUSH, instance_3\r\n        COPY\r\n
-    \       PUSH, instance_1\r\n        PUSH, value_0\r\n        EXTERN, \"UnityEngineRenderer.__set_enabled__SystemBoolean__SystemVoid\"\r\n
-    \       JUMP, 0x000164\r\n        PUSH, index_0\r\n        PUSH, step_0\r\n        PUSH,
-    index_0\r\n        EXTERN, \"SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32\"\r\n
+    \       COPY\r\n        PUSH, instance_2\r\n        PUSH, Int32_0\r\n        PUSH,
+    instance_1\r\n        EXTERN, \"UnityEngineRendererArray.__Get__SystemInt32__UnityEngineRenderer\"\r\n
+    \       PUSH, instance_1\r\n        PUSH, Boolean_0\r\n        EXTERN, \"UnityEngineRenderer.__get_enabled__SystemBoolean\"\r\n
+    \       PUSH, Boolean_0\r\n        JUMP_IF_FALSE, 0x00000164\r\n        PUSH,
+    visuals\r\n        PUSH, instance_2\r\n        COPY\r\n        PUSH, visuals\r\n
+    \       PUSH, instance_0\r\n        COPY\r\n        PUSH, index_0\r\n        PUSH,
+    Int32_0\r\n        COPY\r\n        PUSH, instance_1\r\n        PUSH, instance_3\r\n
+    \       COPY\r\n        PUSH, instance_1\r\n        PUSH, value_0\r\n        EXTERN,
+    \"UnityEngineRenderer.__set_enabled__SystemBoolean__SystemVoid\"\r\n        JUMP,
+    0x00000164\r\n        PUSH, index_0\r\n        PUSH, step_0\r\n        PUSH, index_0\r\n
+    \       EXTERN, \"SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32\"\r\n
     \       JUMP, 0x00000040\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n    .export _onPickupUseDown\r\n
     \   \r\n    _onPickupUseDown:\r\n    \r\n        PUSH, aimPoint\r\n        PUSH,
     instance_4\r\n        COPY\r\n        PUSH, instance_4\r\n        PUSH, origin_0\r\n
@@ -95,22 +96,22 @@ MonoBehaviour:
     \       PUSH, aimPoint\r\n        PUSH, instance_4\r\n        COPY\r\n        PUSH,
     aimPoint\r\n        PUSH, instance_5\r\n        COPY\r\n        PUSH, Boolean_1\r\n
     \       PUSH, Boolean_2\r\n        COPY\r\n        PUSH, Boolean_1\r\n        JUMP_IF_FALSE,
-    0x000334\r\n        PUSH, instance_7\r\n        EXTERN, \"VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi\"\r\n
+    0x00000334\r\n        PUSH, instance_7\r\n        EXTERN, \"VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi\"\r\n
     \       PUSH, hitinfo\r\n        PUSH, teleportPos_0\r\n        EXTERN, \"UnityEngineRaycastHit.__get_point__UnityEngineVector3\"\r\n
     \       PUSH, instance_7\r\n        PUSH, instance_9\r\n        COPY\r\n        PUSH,
     instance_7\r\n        PUSH, teleportRot_0\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__GetRotation__UnityEngineQuaternion\"\r\n
     \       PUSH, instance_7\r\n        PUSH, teleportPos_0\r\n        PUSH, teleportRot_0\r\n
     \       PUSH, teleportOrientation_0\r\n        PUSH, lerpOnRemote_0\r\n        EXTERN,
     \"VRCSDKBaseVRCPlayerApi.__TeleportTo__UnityEngineVector3_UnityEngineQuaternion_VRCSDKBaseVRC_SceneDescriptorSpawnOrientation_SystemBoolean__SystemVoid\"\r\n
-    \       JUMP, 0x000334\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n    .export _update\r\n
+    \       JUMP, 0x00000334\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n    .export _update\r\n
     \   \r\n    _update:\r\n    \r\n        PUSH, Int32_3\r\n        EXTERN, \"UnityEngineTime.__get_frameCount__SystemInt32\"\r\n
     \       PUSH, Int32_3\r\n        PUSH, updaterate\r\n        PUSH, Int32_1\r\n
     \       EXTERN, \"SystemInt32.__op_Remainder__SystemInt32_SystemInt32__SystemInt32\"\r\n
     \       PUSH, Int32_1\r\n        PUSH, Int32_2\r\n        PUSH, Boolean_3\r\n
     \       EXTERN, \"SystemInt32.__op_Equality__SystemInt32_SystemInt32__SystemBoolean\"\r\n
-    \       PUSH, Boolean_3\r\n        JUMP_IF_FALSE, 0x000798\r\n        PUSH, aimPoint\r\n
-    \       PUSH, instance_A\r\n        COPY\r\n        PUSH, instance_A\r\n        PUSH,
-    origin_1\r\n        EXTERN, \"UnityEngineTransform.__get_position__UnityEngineVector3\"\r\n
+    \       PUSH, Boolean_3\r\n        JUMP_IF_FALSE, 0x00000798\r\n        PUSH,
+    aimPoint\r\n        PUSH, instance_A\r\n        COPY\r\n        PUSH, instance_A\r\n
+    \       PUSH, origin_1\r\n        EXTERN, \"UnityEngineTransform.__get_position__UnityEngineVector3\"\r\n
     \       PUSH, aimPoint\r\n        PUSH, instance_B\r\n        COPY\r\n        PUSH,
     instance_B\r\n        PUSH, Quaternion_1\r\n        EXTERN, \"UnityEngineTransform.__get_rotation__UnityEngineQuaternion\"\r\n
     \       PUSH, Quaternion_1\r\n        PUSH, Vector3_1\r\n        PUSH, direction_1\r\n
@@ -122,25 +123,26 @@ MonoBehaviour:
     \       PUSH, aimPoint\r\n        PUSH, instance_A\r\n        COPY\r\n        PUSH,
     aimPoint\r\n        PUSH, instance_B\r\n        COPY\r\n        PUSH, Boolean_4\r\n
     \       PUSH, Boolean_5\r\n        COPY\r\n        PUSH, Boolean_4\r\n        JUMP_IF_FALSE,
-    0x000778\r\n        PUSH, visuals\r\n        PUSH, instance_D\r\n        COPY\r\n
+    0x00000778\r\n        PUSH, visuals\r\n        PUSH, instance_D\r\n        COPY\r\n
     \       PUSH, instance_D\r\n        PUSH, end_1\r\n        EXTERN, \"UnityEngineRendererArray.__get_Length__SystemInt32\"\r\n
     \       PUSH, start_1\r\n        PUSH, index_1\r\n        COPY\r\n        PUSH,
     index_1\r\n        PUSH, end_1\r\n        PUSH, condition_1\r\n        EXTERN,
     \"SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n        PUSH,
-    condition_1\r\n        JUMP_IF_FALSE, 0x000654\r\n        PUSH, visuals\r\n        PUSH,
-    instance_F\r\n        COPY\r\n        PUSH, visuals\r\n        PUSH, instance_D\r\n
-    \       COPY\r\n        PUSH, index_1\r\n        PUSH, Int32_5\r\n        COPY\r\n
-    \       PUSH, instance_F\r\n        PUSH, Int32_5\r\n        PUSH, instance_E\r\n
-    \       EXTERN, \"UnityEngineRendererArray.__Get__SystemInt32__UnityEngineRenderer\"\r\n
-    \       PUSH, instance_E\r\n        PUSH, Boolean_7\r\n        EXTERN, \"UnityEngineRenderer.__get_enabled__SystemBoolean\"\r\n
-    \       PUSH, Boolean_7\r\n        PUSH, Boolean_6\r\n        EXTERN, \"SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean\"\r\n
-    \       PUSH, Boolean_6\r\n        JUMP_IF_FALSE, 0x00062C\r\n        PUSH, visuals\r\n
+    condition_1\r\n        JUMP_IF_FALSE, 0x00000654\r\n        PUSH, visuals\r\n
     \       PUSH, instance_F\r\n        COPY\r\n        PUSH, visuals\r\n        PUSH,
     instance_D\r\n        COPY\r\n        PUSH, index_1\r\n        PUSH, Int32_5\r\n
-    \       COPY\r\n        PUSH, instance_E\r\n        PUSH, instance_10\r\n        COPY\r\n
-    \       PUSH, instance_E\r\n        PUSH, value_1\r\n        EXTERN, \"UnityEngineRenderer.__set_enabled__SystemBoolean__SystemVoid\"\r\n
-    \       JUMP, 0x00062C\r\n        PUSH, index_1\r\n        PUSH, step_1\r\n        PUSH,
-    index_1\r\n        EXTERN, \"SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32\"\r\n
+    \       COPY\r\n        PUSH, instance_F\r\n        PUSH, Int32_5\r\n        PUSH,
+    instance_E\r\n        EXTERN, \"UnityEngineRendererArray.__Get__SystemInt32__UnityEngineRenderer\"\r\n
+    \       PUSH, instance_E\r\n        PUSH, Boolean_7\r\n        EXTERN, \"UnityEngineRenderer.__get_enabled__SystemBoolean\"\r\n
+    \       PUSH, Boolean_7\r\n        PUSH, Boolean_6\r\n        EXTERN, \"SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean\"\r\n
+    \       PUSH, Boolean_6\r\n        JUMP_IF_FALSE, 0x0000062C\r\n        PUSH,
+    visuals\r\n        PUSH, instance_F\r\n        COPY\r\n        PUSH, visuals\r\n
+    \       PUSH, instance_D\r\n        COPY\r\n        PUSH, index_1\r\n        PUSH,
+    Int32_5\r\n        COPY\r\n        PUSH, instance_E\r\n        PUSH, instance_10\r\n
+    \       COPY\r\n        PUSH, instance_E\r\n        PUSH, value_1\r\n        EXTERN,
+    \"UnityEngineRenderer.__set_enabled__SystemBoolean__SystemVoid\"\r\n        JUMP,
+    0x0000062C\r\n        PUSH, index_1\r\n        PUSH, step_1\r\n        PUSH, index_1\r\n
+    \       EXTERN, \"SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32\"\r\n
     \       JUMP, 0x000004F0\r\n        PUSH, destination\r\n        PUSH, instance_11\r\n
     \       COPY\r\n        PUSH, hitinfo\r\n        PUSH, toDirection_0\r\n        EXTERN,
     \"UnityEngineRaycastHit.__get_normal__UnityEngineVector3\"\r\n        PUSH, updiration\r\n
@@ -156,9 +158,9 @@ MonoBehaviour:
     \       PUSH, Vector3_2\r\n        PUSH, Vector3_3\r\n        PUSH, value_3\r\n
     \       EXTERN, \"UnityEngineVector3.__op_Addition__UnityEngineVector3_UnityEngineVector3__UnityEngineVector3\"\r\n
     \       PUSH, instance_13\r\n        PUSH, value_3\r\n        EXTERN, \"UnityEngineTransform.__set_position__UnityEngineVector3__SystemVoid\"\r\n
-    \       JUMP, 0x000790\r\n        PUSH, instance_15\r\n        PUSH, eventName_0\r\n
+    \       JUMP, 0x00000790\r\n        PUSH, instance_15\r\n        PUSH, eventName_0\r\n
     \       EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n
-    \       JUMP, 0x000798\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
+    \       JUMP, 0x00000798\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
   assemblyError: 
   graphData:
     name: 
@@ -1066,45 +1068,41 @@ MonoBehaviour:
         stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
   graphElementData:
   - type: 2
-    uid: 
+    uid: b32ce0a7-98bd-4875-9139-107927c9814e
     jsonData: '{"uid":"b32ce0a7-98bd-4875-9139-107927c9814e","layout":{"serializedVersion":"2","x":-1821.245849609375,"y":-1526.356689453125,"width":911.0,"height":376.0},"containedElements":["c1c7dc6f-d652-42fe-8387-a1d90fe24529","ef548547-4343-4419-93f1-7f69d34d24f1","f78c6b66-ad20-43e9-b39d-71d4aff882c6","65f477ac-2365-4033-a993-8bc3e91a280f","a0b3cf24-60ae-417b-b441-81c7d4d5b74a","a1b6078c-01c5-4f6a-a2e4-fa8c543f3621"],"title":"limits
       how often to raycast for visuals","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
   - type: 2
-    uid: 
+    uid: 1c0dea39-889d-4b00-b8a7-b79a960bc1bb
     jsonData: '{"uid":"1c0dea39-889d-4b00-b8a7-b79a960bc1bb","layout":{"serializedVersion":"2","x":-1619.505126953125,"y":-965.2236328125,"width":1449.0,"height":555.0},"containedElements":["b1df3e83-3d0a-4ea6-bc1d-b38274110a23","81bc2538-46f2-45b1-b3c2-0da3a774609d","d2073609-0923-4e2c-9a93-50b1a64ceef8","07cc416e-5d9b-49db-a1b4-878657ac1411","7a82b7b6-d755-438b-8ab5-0c83fb61eb72","4159b7c5-65ba-4f8e-a3f6-1aeab4e2a3cf","2898a87d-f3e4-485a-bc9b-920d6db16348","c2edbb26-1a81-4a5e-a22c-e4770ed667d6","a128ef93-0e6a-455f-a68e-a5851b9322c4"],"title":"send
       raycast","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
   - type: 2
-    uid: 
+    uid: 3cdcde85-466c-469b-a212-0318a7cee9e7
     jsonData: '{"uid":"3cdcde85-466c-469b-a212-0318a7cee9e7","layout":{"serializedVersion":"2","x":1307.420654296875,"y":224.572265625,"width":128.0,"height":128.0},"containedElements":["b0cc47dc-ff36-4e4d-852a-25c31bef6c8f","de10430a-0572-4b31-bac6-0f8704fdbbed","f690c8e6-5fcf-4a93-9411-2af867f36be6","188432fc-01a6-46ea-a37f-05b5244c7015","23963e4c-2101-4137-b028-a46a0eb762ae","d4463c21-85f0-48d9-9eb7-fa12bde21812","89b88d62-e99a-4302-b253-464b21438ae5","b17d4cd3-3551-4059-9aaa-46e427971156","5c1df4e9-5831-4df8-98cc-b9a3538beebc","4d07e940-42e7-4ad5-8d29-65cdf8332beb","668e5b26-948a-4b44-8073-93cae80a691c","04880c80-09f0-4540-b7f1-f74b9d390e07"],"title":"visdissable
       event","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
   - type: 2
-    uid: 
+    uid: f0b9e3ca-1205-47d1-9da1-505dd6ff8ab1
     jsonData: '{"uid":"f0b9e3ca-1205-47d1-9da1-505dd6ff8ab1","layout":{"serializedVersion":"2","x":617.1408081054688,"y":-635.7194213867188,"width":128.0,"height":128.0},"containedElements":["e3aef0c4-3d42-4680-aa88-4d0bf67cf1a6","ca0b5911-3627-410f-831a-66c1ae0895a5","3d7ee0a9-8120-4a25-9589-ee53437a4199"],"title":"what
       to do if raycast hits or doesnt","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
   - type: 2
-    uid: 
+    uid: 4fd1fc76-6291-4573-b832-335a3927b83a
     jsonData: '{"uid":"4fd1fc76-6291-4573-b832-335a3927b83a","layout":{"serializedVersion":"2","x":685.9581298828125,"y":-1247.79248046875,"width":1764.0,"height":387.0},"containedElements":["499d1001-0e03-45f2-9fdf-b4f30a75dd24","9df17121-d63c-468b-a9f8-6d292e81d4a8","1b7825ba-6e68-4ab9-8ffa-9719650467cb","a0cba418-5e7a-463c-bba1-8ac5e94fb480","6bb729bf-653b-4ca6-ad04-aaa5b6b747f3","0d3c56d0-7915-4d37-9d3e-4dcb0588c8b3","7c74402c-8ff0-441c-a3db-22ce1c4b385b","4d6020a9-4417-4e99-b774-b8269e29fd44"],"title":"enable
       visuals if dissabled","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
   - type: 2
-    uid: 
+    uid: acb03664-a3f3-4569-be53-25a6a8e113e3
     jsonData: '{"uid":"acb03664-a3f3-4569-be53-25a6a8e113e3","layout":{"serializedVersion":"2","x":1567.373779296875,"y":-415.5135498046875,"width":128.0,"height":128.0},"containedElements":["1c541beb-c4db-45f9-ba0f-2ac2f6bcad8f","a60656a1-ba94-425e-9243-2ab223cb6581","36401138-30f6-4ae3-9c8e-44669ccf5eac","fc3938b2-fd92-40c9-aad1-c54875c00e05","f3cf8ebd-dd6b-4619-9cbd-8ca7028c7b97","3fcc8d75-0636-4541-ad37-4d944f8835a6","45ab0ef3-6d98-4deb-86e7-ff3c53d6e051","4759e4ba-2d97-42a8-aa8d-9d74e0712740","ece043b7-9b92-4a35-978a-1d2adaee6d75","8abfc4e1-6d53-4038-9186-bea10e3d6c2f","ed5440b2-8c13-467e-8494-6c2088529828","943fb8ae-646f-430d-abe0-4468ee4f2a30","d060f62f-46a9-4953-b4ae-9645c9d06579"],"title":"set
       visual target to surface normal & offset a little","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
   - type: 2
-    uid: 
+    uid: 02719448-d3ae-4c23-9be4-b7d15440196f
     jsonData: '{"uid":"02719448-d3ae-4c23-9be4-b7d15440196f","layout":{"serializedVersion":"2","x":-1945.316162109375,"y":-76.02449798583985,"width":2314.0,"height":663.0},"containedElements":["80084e34-21cb-4849-b060-5eb70b0c6fc9","a5102d65-89e8-4dd5-9179-e883596b85d3","243fc984-bd63-48aa-858d-8a0948d94e63","d5474127-2fe1-4cd2-8729-9a7d323e74bb","6f043a34-d22c-4523-beea-2c1ea8e25ed3","ebce4866-4721-4c66-a5ce-39325d106121","156b7184-1ddb-4337-906b-06d4ac9f70ad","2fdd4458-bd73-4100-9485-4715445bd2e3","907f46e7-0c20-4b64-9a28-5eb7740ef737","b08f1e0e-4fb5-4e4a-b69a-81a604e92f3a","73927bb7-08b9-4c7d-9907-71b72df5ae47","1329b854-6677-4eba-8d8d-9051a9f89349","dbeb7fee-6a2b-4abc-ad2e-caba8986da64","56c03142-693e-4606-a777-008abc92acee","59026873-5aff-4770-9ec1-ea52f5f1d6bc","0ebb90fd-981a-41ba-88fa-ba3183dfc89d","e79b320e-6d00-4d1a-a37c-406158760023","de64d8dd-92ea-471c-a7e4-c1d38b4277a7"],"title":"trigger
       pull event","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
-  - type: 3
-    uid: e79b320e-6d00-4d1a-a37c-406158760023
-    jsonData: '{"uid":"e79b320e-6d00-4d1a-a37c-406158760023","layout":{"serializedVersion":"2","x":-818.4154663085938,"y":-23.728986740112306,"width":257.4265441894531,"height":59.23905563354492},"title":"send
-      raycast out","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
   - type: 5
-    uid: 3fb64153-145c-4c75-aed6-c4001f933db9
-    jsonData: '{"visible":true,"layout":{"serializedVersion":"2","x":1.0,"y":124.0,"width":236.0,"height":278.0}}'
+    uid: 7a312509-3ff7-4b96-aa09-6d41c0561f7a
+    jsonData: '{"visible":true,"layout":{"serializedVersion":"2","x":10.0,"y":130.0,"width":218.0,"height":381.0}}'
   - type: 4
-    uid: 92470e05-eef5-4b9e-aaf8-38b456fe6cb1
+    uid: 0cbbc008-cf68-4657-a43f-940fb42d02e4
     jsonData: '{"visible":true,"layout":{"serializedVersion":"2","x":10.0,"y":20.0,"width":0.0,"height":0.0}}'
   viewTransform:
-    position: {x: 436.82898, y: 297.70306}
-    scale: 0.2
+    position: {x: -586.6918, y: 600.02277}
+    scale: 0.7561437
   version: 1.0.0
   showAssembly: 0

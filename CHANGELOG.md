@@ -1,3 +1,9 @@
+V1.3.0
+*UdonSharp expansion update. (I have moved around some files and added folders. If you already have my prefabs in your project i suggest deleting them and importing this new package for updated locations.)
+*seperated prefabs into 3 folders(prefabs, graph prefabs, udonsharp prefabs).
+*look in "Jetdogs-Prefabs-Udon > Udonsharp prefabs" folder for all the new prefabs.
+*due to christmas timing I have not updated the example scene. I will try and get it done as soon as possible for people to look through.
+
 V1.2.0
 *fly stick should reset your gravity if you turn gravity dissable off during flight.
 *added set portal id prefab.

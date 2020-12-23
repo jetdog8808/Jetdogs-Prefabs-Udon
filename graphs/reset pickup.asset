@@ -35,10 +35,10 @@ MonoBehaviour:
     \       COPY\r\n        PUSH, instance_0\r\n        PUSH, pickuptransform\r\n
     \       EXTERN, \"VRCSDK3ComponentsVRCPickup.__get_transform__UnityEngineTransform\"\r\n
     \       JUMP, 0xFFFFFFFC\r\n    \r\n    .export _interact\r\n    \r\n    _interact:\r\n
-    \   \r\n        PUSH, synced\r\n        JUMP_IF_FALSE, 0x00006C\r\n        PUSH,
+    \   \r\n        PUSH, synced\r\n        JUMP_IF_FALSE, 0x0000006C\r\n        PUSH,
     instance_1\r\n        PUSH, target_0\r\n        PUSH, eventName_0\r\n        EXTERN,
     \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomNetworkEvent__VRCUdonCommonInterfacesNetworkEventTarget_SystemString__SystemVoid\"\r\n
-    \       JUMP, 0x000084\r\n        PUSH, instance_2\r\n        PUSH, eventName_1\r\n
+    \       JUMP, 0x00000084\r\n        PUSH, instance_2\r\n        PUSH, eventName_1\r\n
     \       EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n
     \       JUMP, 0xFFFFFFFC\r\n    \r\n    .export syncdrop\r\n    \r\n    syncdrop:\r\n
     \   \r\n        PUSH, pickuptransform\r\n        PUSH, instance_3\r\n        COPY\r\n
@@ -51,9 +51,9 @@ MonoBehaviour:
     \       EXTERN, \"SystemBoolean.__op_ConditionalOr__SystemBoolean_SystemBoolean__SystemBoolean\"\r\n
     \       PUSH, Boolean_2\r\n        PUSH, Boolean_3\r\n        PUSH, Boolean_1\r\n
     \       EXTERN, \"SystemBoolean.__op_ConditionalAnd__SystemBoolean_SystemBoolean__SystemBoolean\"\r\n
-    \       PUSH, Boolean_1\r\n        JUMP_IF_FALSE, 0x000184\r\n        PUSH, instance_5\r\n
-    \       PUSH, eventName_2\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n
-    \       JUMP, 0x000184\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n    .export resetpickup\r\n
+    \       PUSH, Boolean_1\r\n        JUMP_IF_FALSE, 0x00000184\r\n        PUSH,
+    instance_5\r\n        PUSH, eventName_2\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n
+    \       JUMP, 0x00000184\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n    .export resetpickup\r\n
     \   \r\n    resetpickup:\r\n    \r\n        PUSH, pickupobj\r\n        PUSH, instance_6\r\n
     \       COPY\r\n        PUSH, instance_6\r\n        EXTERN, \"VRCSDK3ComponentsVRCPickup.__Drop__SystemVoid\"\r\n
     \       PUSH, pickuptransform\r\n        PUSH, instance_7\r\n        COPY\r\n
@@ -469,44 +469,28 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|resetpickup
   graphElementData:
   - type: 2
-    uid: d220cdbe-22e9-4143-af0f-23c30acfc831
+    uid: 
     jsonData: '{"uid":"d220cdbe-22e9-4143-af0f-23c30acfc831","layout":{"serializedVersion":"2","x":-183.17591857910157,"y":-344.44146728515627,"width":848.0,"height":290.0},"containedElements":["d2ba110b-4706-4212-a430-1e5ea13a85a0","c0c00cd6-5e42-46c3-a6e9-10efd61e3060","7941ca31-381d-475e-902a-d398f87b7843","118ffec5-166f-4f0a-87b0-c964332affa4","a112bacb-8447-4a77-a119-c8b5150c5a03"],"title":"start","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
   - type: 2
-    uid: f1e8c5dd-45ab-4d90-b9f3-980f29d7f425
+    uid: 
     jsonData: '{"uid":"f1e8c5dd-45ab-4d90-b9f3-980f29d7f425","layout":{"serializedVersion":"2","x":689.172119140625,"y":-357.97265625,"width":844.0,"height":437.0},"containedElements":["d20c4cc5-ac6e-48d9-9308-7e52c4aceb5e","3838f61d-b09a-4eaf-a864-0300ec06e1f9","af02aaff-3a4c-4db0-95d0-a0bd05118084","00083496-8e47-40f3-88bc-82fdb6f8fdfc","08de5e7f-775d-4f38-b289-fea1d859792b","9d07823f-4a56-4c8e-be86-f69e330aa08e"],"title":"interact
       event","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
   - type: 2
-    uid: b73ed4e5-4e7a-488c-9ce3-48c8bd075cb5
+    uid: 
     jsonData: '{"uid":"b73ed4e5-4e7a-488c-9ce3-48c8bd075cb5","layout":{"serializedVersion":"2","x":781.8516235351563,"y":93.53905487060547,"width":984.0,"height":478.0},"containedElements":["fb7ad72f-cc5e-4697-a96a-66a96d6dcac0","fe226bcc-2276-4e4c-ae4c-8d18eec38120","7b8e120f-7b47-4873-b62b-55a97f494494","8912ed45-1f90-4a2b-b1a0-a2335f55607c","b3712a0d-5210-42a9-88e2-7bad0597ad38","b5643b1b-dac1-471a-aa2c-6d4b10bfaabe","a2a9e175-8c78-4429-ab3f-142660aae986","8bb9d0bc-2755-4be2-8796-3b373773091a","46e8cd60-20b3-4b1a-b039-ff4650f0f721"],"title":"reset
       event","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
   - type: 2
-    uid: 93522ec9-82bc-42c9-aaf4-3985e8c7717f
+    uid: 
     jsonData: '{"uid":"93522ec9-82bc-42c9-aaf4-3985e8c7717f","layout":{"serializedVersion":"2","x":-1174.1571044921875,"y":99.08893585205078,"width":1830.0,"height":402.0},"containedElements":["314b4116-9f08-4644-8c5d-37ba4d16fe24","6a35b6a9-b9ff-486a-ae2f-18df58494471","f6b08dd0-5f63-4af8-9cc5-f22a69b39a46","06765711-cb64-4f84-8cac-409637f8150e","d28348df-b374-49f6-bff0-8ae8efb74dc7","442b73df-0f91-4828-9d26-af4df4c72254","05ed788d-2d12-499d-aa85-36d6452c2249","5b582469-be83-44eb-8965-04f09fca60e9","c5f12c83-a040-4a15-b023-455549c162a2","871c4e0a-8599-44d3-9430-4e80c382c487","598acaec-d691-4be1-956a-d87fd1675012","cca4894e-88ad-44f6-a347-c058d4c9165c","d994e9d2-9968-47bb-9f34-34920a19b747","89ed5c04-92ae-4a89-8dfc-0be62f7b5cd2","ad8f76a1-bc5a-4922-ab9a-e9712f1af9b1","9a8b6a94-498b-4a87-8612-f739dc2ef7b5"],"title":"sync
       drop","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
-  - type: 3
-    uid: a112bacb-8447-4a77-a119-c8b5150c5a03
-    jsonData: '{"uid":"a112bacb-8447-4a77-a119-c8b5150c5a03","layout":{"serializedVersion":"2","x":-158.1759490966797,"y":-280.44146728515627,"width":240.635986328125,"height":80.22712707519531},"title":"saves
-      a reference to the pickups transform.","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
-  - type: 3
-    uid: 9d07823f-4a56-4c8e-be86-f69e330aa08e
-    jsonData: '{"uid":"9d07823f-4a56-4c8e-be86-f69e330aa08e","layout":{"serializedVersion":"2","x":793.6787109375,"y":-74.76261901855469,"width":248.68142700195313,"height":129.19931030273438},"title":"when
-      clicked should this send a network event or only be local","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
-  - type: 3
-    uid: 46e8cd60-20b3-4b1a-b039-ff4650f0f721
-    jsonData: '{"uid":"46e8cd60-20b3-4b1a-b039-ff4650f0f721","layout":{"serializedVersion":"2","x":1378.8739013671875,"y":403.3736572265625,"width":323.888671875,"height":106.46224212646485},"title":"the
-      event to reset the pickups position to the resetpoint","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
-  - type: 3
-    uid: 9a8b6a94-498b-4a87-8612-f739dc2ef7b5
-    jsonData: '{"uid":"9a8b6a94-498b-4a87-8612-f739dc2ef7b5","layout":{"serializedVersion":"2","x":100.19491577148438,"y":341.9296569824219,"width":319.6302490234375,"height":108.91407775878906},"title":"if
-      pickup is synced and you want the user to have it force dropped.","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
   - type: 5
-    uid: ce7db9dd-9cce-4dca-b653-998667d91827
-    jsonData: '{"visible":true,"layout":{"serializedVersion":"2","x":1.0,"y":150.0,"width":229.0,"height":316.0}}'
+    uid: c4cb5fa2-1b05-4665-b711-a60ecf52ecd8
+    jsonData: '{"visible":true,"layout":{"serializedVersion":"2","x":10.0,"y":130.0,"width":200.0,"height":150.0}}'
   - type: 4
-    uid: 58a2d0de-723c-4db2-a16e-127c36614ea5
+    uid: 52761699-b28b-4fc9-aa2c-3c3eafeeb3cd
     jsonData: '{"visible":true,"layout":{"serializedVersion":"2","x":10.0,"y":20.0,"width":0.0,"height":0.0}}'
   viewTransform:
-    position: {x: -1.2493472, y: 361.51385}
-    scale: 0.49717674
+    position: {x: 417.7611, y: 372.3686}
+    scale: 0.2471847
   version: 1.0.0
   showAssembly: 0

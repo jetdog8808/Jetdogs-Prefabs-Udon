@@ -31,7 +31,7 @@ MonoBehaviour:
     \       PUSH, start_0\r\n        PUSH, index_0\r\n        COPY\r\n        PUSH,
     index_0\r\n        PUSH, end_0\r\n        PUSH, condition_0\r\n        EXTERN,
     \"SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n        PUSH,
-    condition_0\r\n        JUMP_IF_FALSE, 0x0001AC\r\n        PUSH, Gameobjects\r\n
+    condition_0\r\n        JUMP_IF_FALSE, 0x000001AC\r\n        PUSH, Gameobjects\r\n
     \       PUSH, instance_3\r\n        COPY\r\n        PUSH, Gameobjects\r\n        PUSH,
     instance_1\r\n        COPY\r\n        PUSH, index_0\r\n        PUSH, Int32_0\r\n
     \       COPY\r\n        PUSH, instance_3\r\n        PUSH, Int32_0\r\n        PUSH,
@@ -179,36 +179,24 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|toggle
   graphElementData:
   - type: 2
-    uid: 26352c7a-3844-4b7e-838f-03283fdd88c0
+    uid: 
     jsonData: '{"uid":"26352c7a-3844-4b7e-838f-03283fdd88c0","layout":{"serializedVersion":"2","x":-135.32913208007813,"y":0.5402450561523438,"width":540.0,"height":221.0},"containedElements":["9fb06af8-a7ac-44c3-80ae-fe500a243780","9eeac2d4-70b6-4e7a-bccf-8e875ab0ea99","c459dc1e-074b-48cd-8b64-3a649f11f269"],"title":"interact
       event","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
   - type: 2
-    uid: 861dd819-4c73-4389-950b-390d14a4c702
+    uid: 
     jsonData: '{"uid":"861dd819-4c73-4389-950b-390d14a4c702","layout":{"serializedVersion":"2","x":2302.0390625,"y":345.4875183105469,"width":128.0,"height":128.0},"containedElements":["c06a7b19-2933-420c-9036-6c3f543c8eae","c0ce4e8e-5645-4f62-b7a1-7617dc57fea2","6a33596d-e807-40da-a53d-fe0dddbde5d8","500bbd1b-4662-425b-964c-5ddaae93a40b","6d00f334-6735-4ad7-9f0c-3045435ee9dc"],"title":"toggle
       event","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
   - type: 2
-    uid: b14e2996-ca27-4a69-bf28-a7a12eb3c457
+    uid: 
     jsonData: '{"uid":"b14e2996-ca27-4a69-bf28-a7a12eb3c457","layout":{"serializedVersion":"2","x":1516.048095703125,"y":395.40203857421877,"width":128.0,"height":128.0},"containedElements":["a38e581e-9c6f-4bcc-8370-edcf6f31f4ce","9f060e41-1647-4846-9023-e6a42d5aa41b","dc5cdac7-1bcd-41fa-a554-a91758a4f748","fc3c6fbc-cb57-477b-bca5-4d3597711046","f0bbca6e-270d-46a4-a71f-90885d052303"],"title":"loop","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
-  - type: 3
-    uid: f0bbca6e-270d-46a4-a71f-90885d052303
-    jsonData: '{"uid":"f0bbca6e-270d-46a4-a71f-90885d052303","layout":{"serializedVersion":"2","x":1852.539794921875,"y":185.82737731933595,"width":280.86297607421877,"height":92.29525756835938},"title":"in
-      loop it switches the gameobjects current state.","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
-  - type: 3
-    uid: c459dc1e-074b-48cd-8b64-3a649f11f269
-    jsonData: '{"uid":"c459dc1e-074b-48cd-8b64-3a649f11f269","layout":{"serializedVersion":"2","x":79.32748413085938,"y":-31.270410537719728,"width":276.66552734375,"height":88.97216796875},"title":"when
-      click it sends a event to toggle objects.","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
-  - type: 3
-    uid: 6d00f334-6735-4ad7-9f0c-3045435ee9dc
-    jsonData: '{"uid":"6d00f334-6735-4ad7-9f0c-3045435ee9dc","layout":{"serializedVersion":"2","x":608.328125,"y":143.61428833007813,"width":281.9125061035156,"height":97.71720886230469},"title":"event
-      starts a for loop going through the gameobject array","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
   - type: 5
-    uid: 6949fb3a-e0ef-4786-bd7e-81e1eef614a4
-    jsonData: '{"visible":true,"layout":{"serializedVersion":"2","x":2.0,"y":333.0,"width":230.0,"height":132.0}}'
+    uid: d3750433-b7c0-4549-b516-6532bb58aec5
+    jsonData: '{"visible":true,"layout":{"serializedVersion":"2","x":10.0,"y":130.0,"width":200.0,"height":150.0}}'
   - type: 4
-    uid: 16da8081-c237-4d6e-8901-ac8460736774
+    uid: 1d9e969e-a521-432c-9ede-f09c48a6cf0b
     jsonData: '{"visible":true,"layout":{"serializedVersion":"2","x":10.0,"y":20.0,"width":0.0,"height":0.0}}'
   viewTransform:
-    position: {x: -161.45407, y: 138.61203}
-    scale: 0.375937
+    position: {x: 91.47782, y: 166.85385}
+    scale: 0.43232757
   version: 1.0.0
   showAssembly: 0

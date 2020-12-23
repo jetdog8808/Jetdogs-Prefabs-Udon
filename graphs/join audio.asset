@@ -18,19 +18,23 @@ MonoBehaviour:
     \   \r\n    instance_0: %VRCUdonUdonBehaviour, this\r\n    target_0: %VRCUdonCommonInterfacesNetworkEventTarget,
     null\r\n    eventName_0: %SystemString, null\r\n    Boolean_0: %SystemBoolean,
     null\r\n    instance_1: %UnityEngineAudioSource, null\r\n    clip_0: %UnityEngineAudioClip,
-    null\r\n    instance_2: %UnityEngineAudioSource, null\r\n    instance_3: %UnityEngineAudioSource,
+    null\r\n    volumeScale_0: %SystemSingle, null\r\n    instance_2: %UnityEngineAudioSource,
+    null\r\n    instance_3: %UnityEngineAudioSource, null\r\n    instance_4: %UnityEngineAudioSource,
     null\r\n    joinaudio: %UnityEngineAudioSource, null\r\n    oneshot: %SystemBoolean,
     null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n    .export _start\r\n    \r\n
     \   _start:\r\n    \r\n        PUSH, instance_0\r\n        PUSH, target_0\r\n
     \       PUSH, eventName_0\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomNetworkEvent__VRCUdonCommonInterfacesNetworkEventTarget_SystemString__SystemVoid\"\r\n
     \       JUMP, 0xFFFFFFFC\r\n    \r\n    .export joined\r\n    \r\n    joined:\r\n
-    \   \r\n        PUSH, oneshot\r\n        JUMP_IF_FALSE, 0x000098\r\n        PUSH,
+    \   \r\n        PUSH, oneshot\r\n        JUMP_IF_FALSE, 0x000000CC\r\n        PUSH,
     joinaudio\r\n        PUSH, instance_1\r\n        COPY\r\n        PUSH, joinaudio\r\n
     \       PUSH, instance_2\r\n        COPY\r\n        PUSH, instance_2\r\n        PUSH,
     clip_0\r\n        EXTERN, \"UnityEngineAudioSource.__get_clip__UnityEngineAudioClip\"\r\n
-    \       PUSH, instance_1\r\n        PUSH, clip_0\r\n        EXTERN, \"UnityEngineAudioSource.__PlayOneShot__UnityEngineAudioClip__SystemVoid\"\r\n
-    \       JUMP, 0x0000BC\r\n        PUSH, joinaudio\r\n        PUSH, instance_3\r\n
-    \       COPY\r\n        PUSH, instance_3\r\n        EXTERN, \"UnityEngineAudioSource.__Play__SystemVoid\"\r\n
+    \       PUSH, joinaudio\r\n        PUSH, instance_3\r\n        COPY\r\n        PUSH,
+    instance_3\r\n        PUSH, volumeScale_0\r\n        EXTERN, \"UnityEngineAudioSource.__get_volume__SystemSingle\"\r\n
+    \       PUSH, instance_1\r\n        PUSH, clip_0\r\n        PUSH, volumeScale_0\r\n
+    \       EXTERN, \"UnityEngineAudioSource.__PlayOneShot__UnityEngineAudioClip_SystemSingle__SystemVoid\"\r\n
+    \       JUMP, 0x000000F0\r\n        PUSH, joinaudio\r\n        PUSH, instance_4\r\n
+    \       COPY\r\n        PUSH, instance_4\r\n        EXTERN, \"UnityEngineAudioSource.__Play__SystemVoid\"\r\n
     \       JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
   assemblyError: 
   graphData:
@@ -93,25 +97,28 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|joined
     - fullName: Get_Variable
       uid: ab69578b-9e90-4a81-8536-4fa41db438e5
-      position: {x: 415, y: 533}
+      position: {x: 396.7391, y: 624.3043}
       nodeUIDs:
       - 
       flowUIDs: []
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|44d7cf94-102d-4c0d-8596-3243bba10d5f
-    - fullName: UnityEngineAudioSource.__PlayOneShot__UnityEngineAudioClip__SystemVoid
+    - fullName: UnityEngineAudioSource.__PlayOneShot__UnityEngineAudioClip_SystemSingle__SystemVoid
       uid: 53832e31-2134-4d85-9089-36f3d0ff0586
       position: {x: 923, y: 384}
       nodeUIDs:
       - ab69578b-9e90-4a81-8536-4fa41db438e5|0
       - 7ef89900-e676-4d72-ae86-90868af18997|0
+      - e2f22b74-db5d-41d1-8b5a-d784ae30ca74|0
       flowUIDs: []
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: 
       - unityObjectValue: {fileID: 0}
         stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0
     - fullName: Variable_SystemBoolean
       uid: b988420f-1b0c-4ebd-bab4-37a4e0efe0fe
       position: {x: 0, y: 0}
@@ -144,7 +151,7 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|b988420f-1b0c-4ebd-bab4-37a4e0efe0fe
     - fullName: UnityEngineAudioSource.__Play__SystemVoid
       uid: b915360a-c816-4faa-8a35-e3a92ac68946
-      position: {x: 928, y: 543}
+      position: {x: 954.9566, y: 662.13055}
       nodeUIDs:
       - ab69578b-9e90-4a81-8536-4fa41db438e5|0
       flowUIDs: []
@@ -164,7 +171,7 @@ MonoBehaviour:
         stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
     - fullName: Get_Variable
       uid: df337cb6-b22b-4e7e-a579-fe02ffe5009c
-      position: {x: 341.67728, y: 663.023}
+      position: {x: 211.24252, y: 527.37085}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -173,22 +180,31 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|44d7cf94-102d-4c0d-8596-3243bba10d5f
     - fullName: UnityEngineAudioSource.__get_clip__UnityEngineAudioClip
       uid: 7ef89900-e676-4d72-ae86-90868af18997
-      position: {x: 560.2501, y: 658.92975}
+      position: {x: 425.46753, y: 527.6254}
       nodeUIDs:
       - df337cb6-b22b-4e7e-a579-fe02ffe5009c|0
       flowUIDs: []
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: 
+    - fullName: UnityEngineAudioSource.__get_volume__SystemSingle
+      uid: e2f22b74-db5d-41d1-8b5a-d784ae30ca74
+      position: {x: 730.78357, y: 622.9339}
+      nodeUIDs:
+      - ab69578b-9e90-4a81-8536-4fa41db438e5|0
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
   graphElementData:
   - type: 5
-    uid: 23708ff3-6466-49bf-8cac-193452acc0c0
+    uid: c65dff22-cd35-4e0b-9541-8c402eb5e493
     jsonData: '{"visible":true,"layout":{"serializedVersion":"2","x":0.0,"y":128.0,"width":216.0,"height":303.0}}'
   - type: 4
-    uid: 19604816-be4a-420c-9ede-4215e28fcf47
+    uid: c534e3d2-ba4c-4f2e-b03d-1fd526ed853a
     jsonData: '{"visible":true,"layout":{"serializedVersion":"2","x":10.0,"y":20.0,"width":0.0,"height":0.0}}'
   viewTransform:
-    position: {x: 274.55182, y: 91.85463}
-    scale: 0.32690176
+    position: {x: 287.31134, y: 39.24385}
+    scale: 0.65751624
   version: 1.0.0
-  showAssembly: 0
+  showAssembly: 1

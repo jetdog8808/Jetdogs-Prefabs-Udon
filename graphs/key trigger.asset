@@ -25,11 +25,11 @@ MonoBehaviour:
     \       PUSH, Object_0\r\n        COPY\r\n        PUSH, key\r\n        PUSH, Object_1\r\n
     \       COPY\r\n        PUSH, Object_0\r\n        PUSH, Object_1\r\n        PUSH,
     Boolean_0\r\n        EXTERN, \"SystemObject.__op_Equality__SystemObject_SystemObject__SystemBoolean\"\r\n
-    \       PUSH, Boolean_0\r\n        JUMP_IF_FALSE, 0x0000A0\r\n        PUSH, udonbehaviour\r\n
-    \       PUSH, instance_0\r\n        COPY\r\n        PUSH, eventname\r\n        PUSH,
-    eventName_0\r\n        COPY\r\n        PUSH, instance_0\r\n        PUSH, eventName_0\r\n
-    \       EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n
-    \       JUMP, 0x0000A0\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
+    \       PUSH, Boolean_0\r\n        JUMP_IF_FALSE, 0x000000A0\r\n        PUSH,
+    udonbehaviour\r\n        PUSH, instance_0\r\n        COPY\r\n        PUSH, eventname\r\n
+    \       PUSH, eventName_0\r\n        COPY\r\n        PUSH, instance_0\r\n        PUSH,
+    eventName_0\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n
+    \       JUMP, 0x000000A0\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
   assemblyError: 
   graphData:
     name: 

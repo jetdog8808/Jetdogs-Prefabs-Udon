@@ -358,13 +358,13 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|5a1647e2-31cd-419b-a126-6cae25b66017
   graphElementData:
   - type: 5
-    uid: 66f63866-828a-4698-a536-ffbb1462c186
-    jsonData: '{"visible":true,"layout":{"serializedVersion":"2","x":10.0,"y":130.0,"width":205.0,"height":271.0}}'
+    uid: c76ed0d5-f1ca-4a1c-a502-14f09f6372a4
+    jsonData: '{"visible":true,"layout":{"serializedVersion":"2","x":10.0,"y":130.0,"width":260.0,"height":656.0}}'
   - type: 4
-    uid: 718761d4-262b-44ed-a18e-501269f20dff
+    uid: d9929d6c-24aa-49d5-9073-8114361ca7ab
     jsonData: '{"visible":true,"layout":{"serializedVersion":"2","x":10.0,"y":20.0,"width":0.0,"height":0.0}}'
   viewTransform:
-    position: {x: 1171.7552, y: 131.625}
-    scale: 0.7561437
+    position: {x: 1049.4459, y: 216.75854}
+    scale: 0.43232757
   version: 1.0.0
   showAssembly: 0
