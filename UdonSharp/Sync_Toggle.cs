@@ -17,6 +17,11 @@ public class Sync_Toggle : UdonSharpBehaviour
         }        
     }
 
+    public virtual void Interact() 
+    {
+        Toggle();
+    }
+
     public void Toggle()
     {
         state = !state;

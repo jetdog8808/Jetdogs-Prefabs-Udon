@@ -11,7 +11,7 @@ public class Local_Transform : UdonSharpBehaviour
 
     void Start()
     {
-        if (transform)
+        if (!transform)
         {
             transform = GetComponent<Transform>();
         }

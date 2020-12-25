@@ -1,3 +1,11 @@
+V1.3.1
+*fixed graph and U# keypads.
+*moved ui panel example to prefabs folder.
+*changed ui to navigation none.
+*U# local transform start event fixed.
+*added interact event to synced toggle U#
+*Fixed twoway teleport U#.
+
 V1.3.0
 *UdonSharp expansion update. (I have moved around some files and added folders. If you already have my prefabs in your project i suggest deleting them and importing this new package for updated locations.)
 *seperated prefabs into 3 folders(prefabs, graph prefabs, udonsharp prefabs).

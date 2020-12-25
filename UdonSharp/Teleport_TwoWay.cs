@@ -35,7 +35,7 @@ public class Teleport_TwoWay : UdonSharpBehaviour
     {
         if (player.isLocal && !clear)
         {
-            sendTo.clear = true;
+            clear = true;
         }
     }
 }

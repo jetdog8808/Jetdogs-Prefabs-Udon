@@ -653,7 +653,7 @@ MonoBehaviour:
     uid: 6c370f5a-daac-443f-8def-1aef90434439
     jsonData: '{"visible":true,"layout":{"serializedVersion":"2","x":10.0,"y":20.0,"width":0.0,"height":0.0}}'
   viewTransform:
-    position: {x: -955.6516, y: 313.75577}
-    scale: 0.49717674
+    position: {x: -1242.8739, y: 1137.1494}
+    scale: 0.7561437
   version: 1.0.0
   showAssembly: 0

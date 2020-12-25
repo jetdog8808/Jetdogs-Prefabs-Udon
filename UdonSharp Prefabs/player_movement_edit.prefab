@@ -1740,7 +1740,7 @@ PrefabInstance:
     - target: {fileID: 2127179577207074650, guid: 7b3341eaebd4c764cad8680b684ae187,
         type: 3}
       propertyPath: m_Name
-      value: player_movement_edit Variant
+      value: player_movement_edit
       objectReference: {fileID: 0}
     - target: {fileID: 4093426769744542726, guid: 7b3341eaebd4c764cad8680b684ae187,
         type: 3}
