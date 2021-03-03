@@ -1,4 +1,18 @@
-﻿
+﻿/*
+*===========================================================*
+*       _      _   ____              _          _           *
+*      | | ___| |_|  _ \  ___   __ _| |    __ _| |__  ___   *
+*   _  | |/ _ \ __| | | |/ _ \ / _` | |   / _` | '_ \/ __|  *
+*  | |_| |  __/ |_| |_| | (_) | (_| | |__| (_| | |_) \__ \  *
+*   \___/ \___|\__|____/ \___/ \__, |_____\__,_|_.__/|___/  *
+*                              |___/                        *
+*===========================================================*
+*                                                           *
+*                  Auther: Jetdog8808                       *
+*                                                           *
+*===========================================================*
+*/
+
 using UdonSharp;
 using UnityEngine;
 using VRC.SDKBase;
@@ -11,14 +25,15 @@ public class Owner_Tag : UdonSharpBehaviour
     public float offset = 1;
     public bool follow = false;
     public Transform resetpoint;
+    private VRCPlayerApi owner;
 
     void Start()
     {
-        if(ownerOf == null)
+        if(!ownerOf)
         {
             ownerOf = gameObject;
         }
-        if(sign == null)
+        if(!sign)
         {
             sign = transform; 
         }
@@ -28,8 +43,13 @@ public class Owner_Tag : UdonSharpBehaviour
     {
         if (follow)
         {
-            VRCPlayerApi owner = Networking.GetOwner(ownerOf);
+            if(!Utilities.IsValid(owner) || !owner.IsOwner(gameObject))
+            {
+                owner = Networking.GetOwner(gameObject);
+            }
+            
             sign.SetPositionAndRotation(owner.GetTrackingData(VRCPlayerApi.TrackingDataType.Head).position + new Vector3(0, offset, 0), owner.GetRotation());
+
         }
     }
 

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8819828086116061001}
   - component: {fileID: 7289851842223906535}
   m_Layer: 0
-  m_Name: postprocessing Camera
+  m_Name: postprocessing reference Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -55,7 +55,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.01
+  near clip plane: 0.05
   far clip plane: 1000
   field of view: 60
   orthographic: 0

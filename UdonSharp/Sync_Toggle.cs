@@ -1,4 +1,18 @@
-﻿
+﻿/*
+*===========================================================*
+*       _      _   ____              _          _           *
+*      | | ___| |_|  _ \  ___   __ _| |    __ _| |__  ___   *
+*   _  | |/ _ \ __| | | |/ _ \ / _` | |   / _` | '_ \/ __|  *
+*  | |_| |  __/ |_| |_| | (_) | (_| | |__| (_| | |_) \__ \  *
+*   \___/ \___|\__|____/ \___/ \__, |_____\__,_|_.__/|___/  *
+*                              |___/                        *
+*===========================================================*
+*                                                           *
+*                  Auther: Jetdog8808                       *
+*                                                           *
+*===========================================================*
+*/
+
 using UdonSharp;
 using UnityEngine;
 using VRC.SDKBase;
@@ -19,7 +33,14 @@ public class Sync_Toggle : UdonSharpBehaviour
 
     public virtual void Interact() 
     {
-        Toggle();
+        if (!state)
+        {
+            SendCustomNetworkEvent(VRC.Udon.Common.Interfaces.NetworkEventTarget.All, "OnToggle");
+        }
+        else
+        {
+            SendCustomNetworkEvent(VRC.Udon.Common.Interfaces.NetworkEventTarget.All, "OffToggle");
+        }
     }
 
     public void Toggle()

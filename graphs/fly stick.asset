@@ -546,6 +546,7 @@ MonoBehaviour:
         stringValue: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0
       - unityObjectValue: {fileID: 0}
         stringValue: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0
+    updateOrder: 0
   graphElementData:
   - type: 2
     uid: a6478b81-f459-4db0-be1c-c0d599e5f706
@@ -575,13 +576,13 @@ MonoBehaviour:
     uid: c4180a82-0614-456e-9562-deec32d64205
     jsonData: '{"uid":"c4180a82-0614-456e-9562-deec32d64205","layout":{"serializedVersion":"2","x":232.78208923339845,"y":-5.011081695556641,"width":1326.0,"height":393.0},"containedElements":["207dff3a-aac1-4f4d-81d7-e0a7256a53a4","d8aabd78-fe8f-49ee-bc6e-346c2110828d","76208c43-7284-4bf0-8055-6f28ff86e333","7d0fc2a7-bc49-4dae-83bb-ee2d32d5252e","d10afb06-0cb6-40fd-a93f-99b3256c1218","2b7401e7-af33-4461-846c-9fd56f514ba8","985f8dfb-c5f1-405a-a50d-8c29ae097595"],"title":"Group","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
   - type: 5
-    uid: 66f63866-828a-4698-a536-ffbb1462c186
+    uid: 77584781-920f-4b44-b8e2-8cff87356b48
     jsonData: '{"visible":true,"layout":{"serializedVersion":"2","x":0.0,"y":125.0,"width":236.0,"height":278.0}}'
   - type: 4
-    uid: 718761d4-262b-44ed-a18e-501269f20dff
+    uid: 46b19eb7-0412-46d9-9a66-129169c5e5bf
     jsonData: '{"visible":true,"layout":{"serializedVersion":"2","x":10.0,"y":20.0,"width":0.0,"height":0.0}}'
   viewTransform:
-    position: {x: 105.25641, y: 522.60034}
-    scale: 0.7561437
+    position: {x: 362.5646, y: 373.95654}
+    scale: 0.49717674
   version: 1.0.0
   showAssembly: 0

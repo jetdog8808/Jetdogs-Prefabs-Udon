@@ -1,3 +1,16 @@
+V1.3.2
+*fixed up a few graphs to be closer to the udonsharp equivalent.
+	*daytime ui text
+	*reset pickup
+	*synced switch
+	*world user list
+*join audio now has networked or non networked option
+*fixed up some small udonsharp code
+*fixed udonsharp set_state set false code
+*fixed networking for udonsharp sync toggle
+*added fake skybox shader
+*added header to udonsharp scripts
+
 V1.3.1
 *fixed graph and U# keypads.
 *moved ui panel example to prefabs folder.

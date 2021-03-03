@@ -1,4 +1,18 @@
-﻿
+﻿/*
+*===========================================================*
+*       _      _   ____              _          _           *
+*      | | ___| |_|  _ \  ___   __ _| |    __ _| |__  ___   *
+*   _  | |/ _ \ __| | | |/ _ \ / _` | |   / _` | '_ \/ __|  *
+*  | |_| |  __/ |_| |_| | (_) | (_| | |__| (_| | |_) \__ \  *
+*   \___/ \___|\__|____/ \___/ \__, |_____\__,_|_.__/|___/  *
+*                              |___/                        *
+*===========================================================*
+*                                                           *
+*                  Auther: Jetdog8808                       *
+*                                                           *
+*===========================================================*
+*/
+
 using UdonSharp;
 using UnityEngine;
 using UnityEngine.UI;
@@ -25,6 +39,7 @@ public class World_User_List : UdonSharpBehaviour
     }
     public virtual void OnPlayerLeft(VRC.SDKBase.VRCPlayerApi player) //getting the player array on player leave still has the leaving player so you must remove it manually.
     {
+        
         for (int i = 0; i < userList.Length; i++)
         {
             if(userList[i] == player)
@@ -37,6 +52,7 @@ public class World_User_List : UdonSharpBehaviour
 
         if (numberDisplay)
         {
+            /*
             int usernumber = 0;
             foreach (VRCPlayerApi user in userList)
             {
@@ -47,6 +63,8 @@ public class World_User_List : UdonSharpBehaviour
             }
 
             numberDisplay.text = usernumber.ToString();
+            */
+            numberDisplay.text = VRCPlayerApi.GetPlayerCount().ToString();
         }
     }
 
@@ -63,7 +81,7 @@ public class World_User_List : UdonSharpBehaviour
 
             for (int i = 0; i < userList.Length; i++)
             {
-                if (userList[i] != null)
+                if (Utilities.IsValid(userList[i]))
                 {
                     string tempstring = playerformat.Replace("{Name}", userList[i].displayName);
                     tempstring = tempstring.Replace("{ID}", userList[i].playerId.ToString());

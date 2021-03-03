@@ -15,68 +15,42 @@ MonoBehaviour:
   serializedUdonProgramAsset: {fileID: 11400000, guid: 9dee35bb226b3484d924801641e3d2df,
     type: 2}
   udonAssembly: ".data_start\r\n\r\n    .export visuals\r\n    .export timezoneID\r\n
-    \   .export format\r\n    \r\n    Boolean_0: %SystemBoolean, null\r\n    String_0:
-    %SystemString, null\r\n    String_1: %SystemString, null\r\n    String_2: %SystemString,
-    null\r\n    id_0: %SystemString, null\r\n    Boolean_1: %SystemBoolean, null\r\n
-    \   String_3: %SystemString, null\r\n    String_4: %SystemString, null\r\n    instance_0:
-    %SystemDateTime, null\r\n    format_0: %SystemString, null\r\n    provider_0:
-    %SystemIFormatProvider, null\r\n    dateTime_0: %SystemDateTime, null\r\n    destinationTimeZone_0:
-    %SystemTimeZoneInfo, null\r\n    Boolean_2: %SystemBoolean, null\r\n    String_5:
-    %SystemString, null\r\n    String_6: %SystemString, null\r\n    String_7: %SystemString,
-    null\r\n    instance_1: %UnityEngineUIText, null\r\n    value_0: %SystemString,
-    null\r\n    instance_2: %SystemDateTime, null\r\n    format_1: %SystemString,
-    null\r\n    provider_1: %SystemIFormatProvider, null\r\n    instance_3: %UnityEngineUIText,
-    null\r\n    value_1: %SystemString, null\r\n    String_8: %SystemString, null\r\n
-    \   String_9: %SystemString, null\r\n    String_A: %SystemString, null\r\n    String_B:
-    %SystemString, null\r\n    c_0: %SystemChar, null\r\n    instance_4: %SystemDateTime,
-    null\r\n    format_2: %SystemString, null\r\n    provider_2: %SystemIFormatProvider,
+    \   .export format\r\n    \r\n    Boolean_0: %SystemBoolean, null\r\n    value_0:
+    %SystemString, null\r\n    id_0: %SystemString, null\r\n    Boolean_1: %SystemBoolean,
+    null\r\n    String_0: %SystemString, null\r\n    String_1: %SystemString, null\r\n
+    \   instance_1: %UnityEngineUIText, null\r\n    instance_2: %UnityEngineUIText,
+    null\r\n    value_1: %SystemString, null\r\n    instance_0: %SystemDateTime, null\r\n
+    \   format_0: %SystemString, null\r\n    provider_0: %SystemIFormatProvider, null\r\n
+    \   dateTime_0: %SystemDateTime, null\r\n    destinationTimeZone_0: %SystemTimeZoneInfo,
     null\r\n    visuals: %UnityEngineUIText, null\r\n    timezoneID: %SystemString,
-    null\r\n    zone: %SystemTimeZoneInfo, null\r\n    lastupdate: %SystemString,
-    null\r\n    time: %SystemDateTime, null\r\n    format: %SystemString, null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n
-    \   .export _start\r\n    \r\n    _start:\r\n    \r\n        PUSH, timezoneID\r\n
-    \       PUSH, String_0\r\n        COPY\r\n        PUSH, String_2\r\n        PUSH,
-    String_1\r\n        COPY\r\n        PUSH, String_0\r\n        PUSH, String_1\r\n
-    \       PUSH, Boolean_0\r\n        EXTERN, \"SystemString.__op_Equality__SystemString_SystemString__SystemBoolean\"\r\n
-    \       PUSH, Boolean_0\r\n        JUMP_IF_FALSE, 0x00000070\r\n        PUSH,
+    null\r\n    zone: %SystemTimeZoneInfo, null\r\n    time: %SystemDateTime, null\r\n
+    \   format: %SystemString, null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n    .export
+    _start\r\n    \r\n    _start:\r\n    \r\n        PUSH, timezoneID\r\n        PUSH,
+    value_0\r\n        COPY\r\n        PUSH, value_0\r\n        PUSH, Boolean_0\r\n
+    \       EXTERN, \"SystemString.__IsNullOrEmpty__SystemString__SystemBoolean\"\r\n
+    \       PUSH, Boolean_0\r\n        JUMP_IF_FALSE, 0x00000054\r\n        PUSH,
     zone\r\n        EXTERN, \"SystemTimeZoneInfo.__get_Local__SystemTimeZoneInfo\"\r\n
-    \       JUMP, 0x0000009C\r\n        PUSH, timezoneID\r\n        PUSH, id_0\r\n
+    \       JUMP, 0x00000080\r\n        PUSH, timezoneID\r\n        PUSH, id_0\r\n
     \       COPY\r\n        PUSH, id_0\r\n        PUSH, zone\r\n        EXTERN, \"SystemTimeZoneInfo.__FindSystemTimeZoneById__SystemString__SystemTimeZoneInfo\"\r\n
     \       JUMP, 0xFFFFFFFC\r\n    \r\n    .export _update\r\n    \r\n    _update:\r\n
-    \   \r\n        PUSH, instance_0\r\n        EXTERN, \"SystemDateTime.__get_UtcNow__SystemDateTime\"\r\n
+    \   \r\n        PUSH, dateTime_0\r\n        EXTERN, \"SystemDateTime.__get_UtcNow__SystemDateTime\"\r\n
+    \       PUSH, zone\r\n        PUSH, destinationTimeZone_0\r\n        COPY\r\n
+    \       PUSH, dateTime_0\r\n        PUSH, destinationTimeZone_0\r\n        PUSH,
+    instance_0\r\n        EXTERN, \"SystemTimeZoneInfo.__ConvertTimeFromUtc__SystemDateTime_SystemTimeZoneInfo__SystemDateTime\"\r\n
     \       PUSH, format\r\n        PUSH, format_0\r\n        COPY\r\n        PUSH,
     instance_0\r\n        PUSH, format_0\r\n        PUSH, provider_0\r\n        PUSH,
-    String_3\r\n        EXTERN, \"SystemDateTime.__ToString__SystemString_SystemIFormatProvider__SystemString\"\r\n
-    \       PUSH, lastupdate\r\n        PUSH, String_4\r\n        COPY\r\n        PUSH,
-    String_3\r\n        PUSH, String_4\r\n        PUSH, Boolean_1\r\n        EXTERN,
-    \"SystemString.__op_Inequality__SystemString_SystemString__SystemBoolean\"\r\n
-    \       PUSH, Boolean_1\r\n        JUMP_IF_FALSE, 0x0000035C\r\n        PUSH,
-    format\r\n        PUSH, format_0\r\n        COPY\r\n        PUSH, String_3\r\n
-    \       PUSH, lastupdate\r\n        COPY\r\n        PUSH, instance_0\r\n        PUSH,
-    dateTime_0\r\n        COPY\r\n        PUSH, zone\r\n        PUSH, destinationTimeZone_0\r\n
-    \       COPY\r\n        PUSH, instance_0\r\n        PUSH, destinationTimeZone_0\r\n
-    \       PUSH, time\r\n        EXTERN, \"SystemTimeZoneInfo.__ConvertTimeFromUtc__SystemDateTime_SystemTimeZoneInfo__SystemDateTime\"\r\n
-    \       PUSH, time\r\n        PUSH, time\r\n        COPY\r\n        PUSH, timezoneID\r\n
-    \       PUSH, String_5\r\n        COPY\r\n        PUSH, String_7\r\n        PUSH,
-    String_6\r\n        COPY\r\n        PUSH, String_5\r\n        PUSH, String_6\r\n
-    \       PUSH, Boolean_2\r\n        EXTERN, \"SystemString.__op_Equality__SystemString_SystemString__SystemBoolean\"\r\n
-    \       PUSH, Boolean_2\r\n        JUMP_IF_FALSE, 0x00000280\r\n        PUSH,
-    visuals\r\n        PUSH, instance_1\r\n        COPY\r\n        PUSH, format\r\n
-    \       PUSH, format_1\r\n        COPY\r\n        PUSH, time\r\n        PUSH,
-    format_1\r\n        PUSH, provider_1\r\n        PUSH, value_0\r\n        EXTERN,
-    \"SystemDateTime.__ToString__SystemString_SystemIFormatProvider__SystemString\"\r\n
-    \       PUSH, instance_1\r\n        PUSH, value_0\r\n        EXTERN, \"UnityEngineUIText.__set_text__SystemString__SystemVoid\"\r\n
-    \       JUMP, 0x00000354\r\n        PUSH, visuals\r\n        PUSH, instance_3\r\n
-    \       COPY\r\n        PUSH, timezoneID\r\n        PUSH, String_A\r\n        COPY\r\n
-    \       PUSH, c_0\r\n        PUSH, String_B\r\n        EXTERN, \"SystemChar.__ToString__SystemChar__SystemString\"\r\n
-    \       PUSH, String_A\r\n        PUSH, String_B\r\n        PUSH, String_8\r\n
-    \       EXTERN, \"SystemString.__op_Addition__SystemString_SystemString__SystemString\"\r\n
-    \       PUSH, format\r\n        PUSH, format_2\r\n        COPY\r\n        PUSH,
-    time\r\n        PUSH, format_2\r\n        PUSH, provider_2\r\n        PUSH, String_9\r\n
-    \       EXTERN, \"SystemDateTime.__ToString__SystemString_SystemIFormatProvider__SystemString\"\r\n
-    \       PUSH, String_8\r\n        PUSH, String_9\r\n        PUSH, value_1\r\n
-    \       EXTERN, \"SystemString.__op_Addition__SystemString_SystemString__SystemString\"\r\n
-    \       PUSH, instance_3\r\n        PUSH, value_1\r\n        EXTERN, \"UnityEngineUIText.__set_text__SystemString__SystemVoid\"\r\n
-    \       JUMP, 0x0000035C\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
+    String_0\r\n        EXTERN, \"SystemDateTime.__ToString__SystemString_SystemIFormatProvider__SystemString\"\r\n
+    \       PUSH, visuals\r\n        PUSH, instance_1\r\n        COPY\r\n        PUSH,
+    instance_1\r\n        PUSH, String_1\r\n        EXTERN, \"UnityEngineUIText.__get_text__SystemString\"\r\n
+    \       PUSH, String_0\r\n        PUSH, String_1\r\n        PUSH, Boolean_1\r\n
+    \       EXTERN, \"SystemString.__op_Inequality__SystemString_SystemString__SystemBoolean\"\r\n
+    \       PUSH, Boolean_1\r\n        JUMP_IF_FALSE, 0x000001D4\r\n        PUSH,
+    visuals\r\n        PUSH, instance_2\r\n        COPY\r\n        PUSH, zone\r\n
+    \       PUSH, destinationTimeZone_0\r\n        COPY\r\n        PUSH, format\r\n
+    \       PUSH, format_0\r\n        COPY\r\n        PUSH, String_0\r\n        PUSH,
+    value_1\r\n        COPY\r\n        PUSH, instance_2\r\n        PUSH, String_0\r\n
+    \       EXTERN, \"UnityEngineUIText.__set_text__SystemString__SystemVoid\"\r\n
+    \       JUMP, 0x000001D4\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
   assemblyError: 
   graphData:
     name: 
@@ -145,39 +119,18 @@ MonoBehaviour:
         stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
-    - fullName: Variable_SystemString
-      uid: 7bf20ccd-f7b7-40d5-9ba1-ca80fdb0b08e
-      position: {x: 0, y: 0}
-      nodeUIDs:
-      - 
-      - 
-      - 
-      - 
-      - 
-      flowUIDs: []
-      nodeValues:
-      - unityObjectValue: {fileID: 0}
-        stringValue: 
-      - unityObjectValue: {fileID: 0}
-        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|lastupdate
-      - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
-      - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
-      - unityObjectValue: {fileID: 0}
-        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Event_Start
       uid: 3dffbe73-e4b4-416c-9e3a-af07405df1ac
-      position: {x: 77.82744, y: -430.12027}
+      position: {x: 13.988388, y: -485.811}
       nodeUIDs: []
       flowUIDs:
       - 54bf8c7b-027b-409e-be78-9ed32eb4723a
       nodeValues: []
     - fullName: Branch
       uid: 54bf8c7b-027b-409e-be78-9ed32eb4723a
-      position: {x: 289.44995, y: -344.05112}
+      position: {x: 225.6109, y: -399.74185}
       nodeUIDs:
-      - 773b2f39-aa8f-48f1-8a1d-557498410c58
+      - 58089478-0130-44be-8082-abbb9f045265|0
       flowUIDs:
       - 63f7192b-ec56-40a2-89dd-6139308dbd9d
       - 77594159-6ca2-4371-ab0d-a3d7866cc6fa
@@ -186,31 +139,19 @@ MonoBehaviour:
         stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
     - fullName: Get_Variable
       uid: 908daed1-4c99-4e20-8a3a-2a5aeae44c74
-      position: {x: -321.04773, y: -290.37036}
+      position: {x: -384.88678, y: -346.0611}
       nodeUIDs:
       - 
       flowUIDs: []
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|de39679e-ced6-4690-be85-729f4d3a8eff
-    - fullName: SystemString.__op_Equality__SystemString_SystemString__SystemBoolean
-      uid: 773b2f39-aa8f-48f1-8a1d-557498410c58
-      position: {x: -49.992996, y: -319.79825}
-      nodeUIDs:
-      - 908daed1-4c99-4e20-8a3a-2a5aeae44c74
-      - f0408625-8e88-43b0-88ed-0878871a9beb|0
-      flowUIDs: []
-      nodeValues:
-      - unityObjectValue: {fileID: 0}
-        stringValue: 
-      - unityObjectValue: {fileID: 0}
-        stringValue: 
     - fullName: Set_Variable
       uid: 63f7192b-ec56-40a2-89dd-6139308dbd9d
-      position: {x: 629.67737, y: -381.7136}
+      position: {x: 565.8385, y: -437.40433}
       nodeUIDs:
       - 
-      - 0382599e-e527-4a04-8378-d07211d7c030
+      - 0382599e-e527-4a04-8378-d07211d7c030|0
       flowUIDs: []
       nodeValues:
       - unityObjectValue: {fileID: 0}
@@ -219,16 +160,16 @@ MonoBehaviour:
         stringValue: 
     - fullName: SystemTimeZoneInfo.__get_Local__SystemTimeZoneInfo
       uid: 0382599e-e527-4a04-8378-d07211d7c030
-      position: {x: 283.52734, y: -425.41354}
+      position: {x: 219.6883, y: -481.10428}
       nodeUIDs: []
       flowUIDs: []
       nodeValues: []
     - fullName: Set_Variable
       uid: 77594159-6ca2-4371-ab0d-a3d7866cc6fa
-      position: {x: 627.3773, y: -235.66354}
+      position: {x: 563.53845, y: -291.35428}
       nodeUIDs:
       - 
-      - 03663ed3-86ca-4568-b9ed-1d1dbdd3cdc4
+      - 03663ed3-86ca-4568-b9ed-1d1dbdd3cdc4|0
       flowUIDs: []
       nodeValues:
       - unityObjectValue: {fileID: 0}
@@ -237,41 +178,41 @@ MonoBehaviour:
         stringValue: 
     - fullName: SystemTimeZoneInfo.__FindSystemTimeZoneById__SystemString__SystemTimeZoneInfo
       uid: 03663ed3-86ca-4568-b9ed-1d1dbdd3cdc4
-      position: {x: 94.67601, y: -196.84305}
+      position: {x: 30.83696, y: -252.53378}
       nodeUIDs:
-      - 908daed1-4c99-4e20-8a3a-2a5aeae44c74
+      - 908daed1-4c99-4e20-8a3a-2a5aeae44c74|0
       flowUIDs: []
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: 
     - fullName: Event_Update
       uid: 5f491524-f2ad-4c07-8fce-f9e9028e82b9
-      position: {x: 125.48303, y: -5.0103283}
+      position: {x: 217.35692, y: -25.78772}
       nodeUIDs: []
       flowUIDs:
       - 6ced30bc-66a7-4151-8e4c-07453b8a99ee
       nodeValues: []
     - fullName: Branch
       uid: 6ced30bc-66a7-4151-8e4c-07453b8a99ee
-      position: {x: 354.63983, y: 5.115074}
+      position: {x: 446.5137, y: -15.662323}
       nodeUIDs:
       - 33d419e2-975d-43ec-908a-d25fcecd5a42|0
       flowUIDs:
-      - a8a112b2-08c0-4e68-b1f6-80f98ba1972d
+      - 0f3a077c-40ac-4be8-8474-157e689abb17
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
     - fullName: SystemDateTime.__get_UtcNow__SystemDateTime
       uid: 6d008b30-39e4-4662-8e1d-d072e0a5b097
-      position: {x: -458.5859, y: 372.43442}
+      position: {x: -645.1976, y: 372.5022}
       nodeUIDs: []
       flowUIDs: []
       nodeValues: []
     - fullName: SystemDateTime.__ToString__SystemString_SystemIFormatProvider__SystemString
       uid: 3a085786-bd49-4198-8c31-0079a3a5c8d0
-      position: {x: -150.48459, y: 23.624653}
+      position: {x: -58.610703, y: 2.8472672}
       nodeUIDs:
-      - 6d008b30-39e4-4662-8e1d-d072e0a5b097
+      - c7471089-e3d2-47ee-89e2-bbd61fd385f9|0
       - 3ba4a927-a402-4f3f-9986-6a54b28e9765|0
       - 
       flowUIDs: []
@@ -285,7 +226,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Get_Variable
       uid: 3f75c1ac-008e-403d-be0a-6e584c0b79c8
-      position: {x: 1503.2533, y: 426.10632}
+      position: {x: 238.30635, y: 442.42325}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -294,31 +235,22 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|d5c19cf6-d952-4850-9acf-a4bd3d648968
     - fullName: UnityEngineUIText.__set_text__SystemString__SystemVoid
       uid: 0f3a077c-40ac-4be8-8474-157e689abb17
-      position: {x: 1757.197, y: 123.98724}
+      position: {x: 483.1156, y: 419.43884}
       nodeUIDs:
-      - 3f75c1ac-008e-403d-be0a-6e584c0b79c8
-      - 1b00b6cb-2ce4-48f5-8572-f589210a30c2|0
+      - 3f75c1ac-008e-403d-be0a-6e584c0b79c8|0
+      - 3a085786-bd49-4198-8c31-0079a3a5c8d0|0
       flowUIDs: []
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: 
       - unityObjectValue: {fileID: 0}
         stringValue: 
-    - fullName: Get_Variable
-      uid: c956b2bf-f34e-4dc4-99e6-1ee77938c54c
-      position: {x: -42.212852, y: 171.15729}
-      nodeUIDs:
-      - 
-      flowUIDs: []
-      nodeValues:
-      - unityObjectValue: {fileID: 0}
-        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|7bf20ccd-f7b7-40d5-9ba1-ca80fdb0b08e
     - fullName: SystemString.__op_Inequality__SystemString_SystemString__SystemBoolean
       uid: 33d419e2-975d-43ec-908a-d25fcecd5a42
-      position: {x: 178.36981, y: 104.74483}
+      position: {x: 270.24368, y: 83.96742}
       nodeUIDs:
       - 3a085786-bd49-4198-8c31-0079a3a5c8d0|0
-      - c956b2bf-f34e-4dc4-99e6-1ee77938c54c|0
+      - 8d77302e-2568-40c0-8a4a-62a868e6fb54|0
       flowUIDs: []
       nodeValues:
       - unityObjectValue: {fileID: 0}
@@ -327,7 +259,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: SystemTimeZoneInfo.__ConvertTimeFromUtc__SystemDateTime_SystemTimeZoneInfo__SystemDateTime
       uid: c7471089-e3d2-47ee-89e2-bbd61fd385f9
-      position: {x: 135.6175, y: 407.28598}
+      position: {x: -441.1975, y: 391.2629}
       nodeUIDs:
       - 6d008b30-39e4-4662-8e1d-d072e0a5b097|0
       - 3246f84f-8efa-4cd0-bf7a-7b7f378bd076|0
@@ -340,90 +272,13 @@ MonoBehaviour:
         stringValue: 
     - fullName: Get_Variable
       uid: 3246f84f-8efa-4cd0-bf7a-7b7f378bd076
-      position: {x: -367.86307, y: 466.73575}
+      position: {x: -657.0539, y: 462.7807}
       nodeUIDs:
       - 
       flowUIDs: []
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|930cf47a-af26-43f8-a68a-dd92c831f47d
-    - fullName: Branch
-      uid: 4eb771ce-6134-4fd0-8156-9e368adf98c6
-      position: {x: 1328.294, y: 373.8473}
-      nodeUIDs:
-      - 7eb99e3a-b94b-4a8a-9e93-b1ac7863374a|0
-      flowUIDs:
-      - 0f3a077c-40ac-4be8-8474-157e689abb17
-      - 3883c5bf-f1f1-489d-a954-cb72d1100403
-      nodeValues:
-      - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
-    - fullName: SystemString.__op_Equality__SystemString_SystemString__SystemBoolean
-      uid: 7eb99e3a-b94b-4a8a-9e93-b1ac7863374a
-      position: {x: 1121.6863, y: 453.1078}
-      nodeUIDs:
-      - 22373f32-84e6-44f2-911f-73991c4dcbf8
-      - 6b29bf52-676a-4455-8b42-8eb7b24c2b8a|0
-      flowUIDs: []
-      nodeValues:
-      - unityObjectValue: {fileID: 0}
-        stringValue: 
-      - unityObjectValue: {fileID: 0}
-        stringValue: 
-    - fullName: Get_Variable
-      uid: 22373f32-84e6-44f2-911f-73991c4dcbf8
-      position: {x: 919.6034, y: 423.74414}
-      nodeUIDs:
-      - 
-      flowUIDs: []
-      nodeValues:
-      - unityObjectValue: {fileID: 0}
-        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|de39679e-ced6-4690-be85-729f4d3a8eff
-    - fullName: UnityEngineUIText.__set_text__SystemString__SystemVoid
-      uid: 3883c5bf-f1f1-489d-a954-cb72d1100403
-      position: {x: 1713.3008, y: 704.18024}
-      nodeUIDs:
-      - 3f75c1ac-008e-403d-be0a-6e584c0b79c8|0
-      - cc8fa694-edd1-40c8-83a7-c3b6602926e1|0
-      flowUIDs: []
-      nodeValues:
-      - unityObjectValue: {fileID: 0}
-        stringValue: 
-      - unityObjectValue: {fileID: 0}
-        stringValue: 
-    - fullName: Get_Variable
-      uid: 5a59b8c9-7c70-4429-99da-d7ceaa482426
-      position: {x: 1088.8386, y: 746.2138}
-      nodeUIDs:
-      - 
-      flowUIDs: []
-      nodeValues:
-      - unityObjectValue: {fileID: 0}
-        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|de39679e-ced6-4690-be85-729f4d3a8eff
-    - fullName: SystemString.__op_Addition__SystemString_SystemString__SystemString
-      uid: d1552866-b97c-4931-8202-89c9a26c29d1
-      position: {x: 1312.6558, y: 823.053}
-      nodeUIDs:
-      - 5a59b8c9-7c70-4429-99da-d7ceaa482426|0
-      - 9c7888a9-5406-438a-8c8c-f13803dbb976|0
-      flowUIDs: []
-      nodeValues:
-      - unityObjectValue: {fileID: 0}
-        stringValue: 
-      - unityObjectValue: {fileID: 0}
-        stringValue: 
-    - fullName: SystemString.__op_Addition__SystemString_SystemString__SystemString
-      uid: cc8fa694-edd1-40c8-83a7-c3b6602926e1
-      position: {x: 1507.7124, y: 828.7917}
-      nodeUIDs:
-      - d1552866-b97c-4931-8202-89c9a26c29d1|0
-      - 9ce9e20b-c3a9-4426-ad77-50486e679ca4|0
-      flowUIDs: []
-      nodeValues:
-      - unityObjectValue: {fileID: 0}
-        stringValue: 
-      - unityObjectValue: {fileID: 0}
-        stringValue: 
     - fullName: Variable_SystemDateTime
       uid: 1e22453e-53e5-4531-b4fb-ba7f01b44c74
       position: {x: -1087.338, y: -569.1151}
@@ -445,80 +300,6 @@ MonoBehaviour:
         stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
-    - fullName: Set_Variable
-      uid: f10de3ce-22e4-4440-997f-19c1699b12ac
-      position: {x: 654.10266, y: 360.14438}
-      nodeUIDs:
-      - 
-      - c7471089-e3d2-47ee-89e2-bbd61fd385f9|0
-      flowUIDs:
-      - 4eb771ce-6134-4fd0-8156-9e368adf98c6
-      nodeValues:
-      - unityObjectValue: {fileID: 0}
-        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|1e22453e-53e5-4531-b4fb-ba7f01b44c74
-      - unityObjectValue: {fileID: 0}
-        stringValue: 
-    - fullName: Get_Variable
-      uid: 9b618009-db79-48a0-b0d6-7ce66d01dec7
-      position: {x: 1043.0657, y: 955.16534}
-      nodeUIDs:
-      - 
-      flowUIDs: []
-      nodeValues:
-      - unityObjectValue: {fileID: 0}
-        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|1e22453e-53e5-4531-b4fb-ba7f01b44c74
-    - fullName: SystemDateTime.__ToString__SystemString_SystemIFormatProvider__SystemString
-      uid: 9ce9e20b-c3a9-4426-ad77-50486e679ca4
-      position: {x: 1232.6052, y: 933.87305}
-      nodeUIDs:
-      - 9b618009-db79-48a0-b0d6-7ce66d01dec7|0
-      - f17aa4bf-be8e-454c-b417-9a21649fc53d|0
-      - 
-      flowUIDs: []
-      nodeValues:
-      - unityObjectValue: {fileID: 0}
-        stringValue: System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089|{}
-      - unityObjectValue: {fileID: 0}
-        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|MM/dd/yyyy
-          hh:mm:ss
-      - unityObjectValue: {fileID: 0}
-        stringValue: 
-    - fullName: SystemDateTime.__ToString__SystemString_SystemIFormatProvider__SystemString
-      uid: 1b00b6cb-2ce4-48f5-8572-f589210a30c2
-      position: {x: 1363.4363, y: -30.836983}
-      nodeUIDs:
-      - 32f7c648-7838-497d-80da-6cbb4d4ee68d
-      - 40ccb68d-0b7e-452f-82d2-d8c794a87a49|0
-      - 
-      flowUIDs: []
-      nodeValues:
-      - unityObjectValue: {fileID: 0}
-        stringValue: System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089|{}
-      - unityObjectValue: {fileID: 0}
-        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|MM/dd/yyyy
-          hh:mm:ss
-      - unityObjectValue: {fileID: 0}
-        stringValue: 
-    - fullName: Get_Variable
-      uid: 32f7c648-7838-497d-80da-6cbb4d4ee68d
-      position: {x: 1171.8855, y: -9.544769}
-      nodeUIDs:
-      - 
-      flowUIDs: []
-      nodeValues:
-      - unityObjectValue: {fileID: 0}
-        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|1e22453e-53e5-4531-b4fb-ba7f01b44c74
-    - fullName: Const_SystemString
-      uid: f0408625-8e88-43b0-88ed-0878871a9beb
-      position: {x: -360.94672, y: -199.37515}
-      nodeUIDs:
-      - 
-      flowUIDs: []
-      nodeValues:
-      - unityObjectValue: {fileID: 0}
-        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|
     - fullName: Variable_SystemString
       uid: b99f7a14-928b-43b4-b1b0-33841ec97bdc
       position: {x: 0, y: 0}
@@ -531,8 +312,8 @@ MonoBehaviour:
       flowUIDs: []
       nodeValues:
       - unityObjectValue: {fileID: 0}
-        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|MM/dd/yyyy
-          hh:mm:ss
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|hh:mm:ss
+          tt
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|format
       - unityObjectValue: {fileID: 0}
@@ -542,98 +323,67 @@ MonoBehaviour:
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Get_Variable
-      uid: f17aa4bf-be8e-454c-b417-9a21649fc53d
-      position: {x: 1050.9978, y: 1036.1204}
-      nodeUIDs:
-      - 
-      flowUIDs: []
-      nodeValues:
-      - unityObjectValue: {fileID: 0}
-        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|b99f7a14-928b-43b4-b1b0-33841ec97bdc
-    - fullName: Get_Variable
-      uid: 40ccb68d-0b7e-452f-82d2-d8c794a87a49
-      position: {x: 1149.0396, y: 68.566055}
-      nodeUIDs:
-      - 
-      flowUIDs: []
-      nodeValues:
-      - unityObjectValue: {fileID: 0}
-        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|b99f7a14-928b-43b4-b1b0-33841ec97bdc
-    - fullName: Const_SystemString
-      uid: 6b29bf52-676a-4455-8b42-8eb7b24c2b8a
-      position: {x: 860.4627, y: 517.35376}
-      nodeUIDs:
-      - 
-      flowUIDs: []
-      nodeValues:
-      - unityObjectValue: {fileID: 0}
-        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|
-    - fullName: Set_Variable
-      uid: a8a112b2-08c0-4e68-b1f6-80f98ba1972d
-      position: {x: 548.89246, y: 4.937107}
-      nodeUIDs:
-      - 
-      - 3a085786-bd49-4198-8c31-0079a3a5c8d0|0
-      flowUIDs:
-      - f10de3ce-22e4-4440-997f-19c1699b12ac
-      nodeValues:
-      - unityObjectValue: {fileID: 0}
-        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|7bf20ccd-f7b7-40d5-9ba1-ca80fdb0b08e
-      - unityObjectValue: {fileID: 0}
-        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|
-    - fullName: Get_Variable
       uid: 3ba4a927-a402-4f3f-9986-6a54b28e9765
-      position: {x: -344.85037, y: 74.787735}
+      position: {x: -252.97649, y: 54.010345}
       nodeUIDs:
       - 
       flowUIDs: []
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|b99f7a14-928b-43b4-b1b0-33841ec97bdc
-    - fullName: SystemChar.__ToString__SystemChar__SystemString
-      uid: 9c7888a9-5406-438a-8c8c-f13803dbb976
-      position: {x: 1008.83295, y: 829.42444}
+    - fullName: SystemString.__IsNullOrEmpty__SystemString__SystemBoolean
+      uid: 58089478-0130-44be-8082-abbb9f045265
+      position: {x: -45.827415, y: -371.51102}
+      nodeUIDs:
+      - 908daed1-4c99-4e20-8a3a-2a5aeae44c74|0
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: Get_Variable
+      uid: 6a165835-b734-4df9-abfe-9eda84fae058
+      position: {x: -117.57605, y: 172.6023}
       nodeUIDs:
       - 
       flowUIDs: []
       nodeValues:
       - unityObjectValue: {fileID: 0}
-        stringValue: 'System.Char, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|
-
-'
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|d5c19cf6-d952-4850-9acf-a4bd3d648968
+    - fullName: UnityEngineUIText.__get_text__SystemString
+      uid: 8d77302e-2568-40c0-8a4a-62a868e6fb54
+      position: {x: 51.4488, y: 166.58829}
+      nodeUIDs:
+      - 6a165835-b734-4df9-abfe-9eda84fae058|0
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    updateOrder: 0
   graphElementData:
   - type: 2
+    uid: ebc2a454-5174-4b4f-b25c-ac8c14da06d5
+    jsonData: '{"uid":"ebc2a454-5174-4b4f-b25c-ac8c14da06d5","layout":{"serializedVersion":"2","x":-682.0538940429688,"y":306.502197265625,"width":492.0,"height":264.0},"containedElements":["6d008b30-39e4-4662-8e1d-d072e0a5b097","3246f84f-8efa-4cd0-bf7a-7b7f378bd076","c7471089-e3d2-47ee-89e2-bbd61fd385f9"],"title":"get
+      time info","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
+  - type: 2
     uid: 3688886c-de57-47c9-9fc7-57bb362cd968
-    jsonData: '{"uid":"3688886c-de57-47c9-9fc7-57bb362cd968","layout":{"serializedVersion":"2","x":-385.9466857910156,"y":-494.1202697753906,"width":1174.0,"height":408.0},"containedElements":["77594159-6ca2-4371-ab0d-a3d7866cc6fa","0382599e-e527-4a04-8378-d07211d7c030","63f7192b-ec56-40a2-89dd-6139308dbd9d","773b2f39-aa8f-48f1-8a1d-557498410c58","54bf8c7b-027b-409e-be78-9ed32eb4723a","03663ed3-86ca-4568-b9ed-1d1dbdd3cdc4","f0408625-8e88-43b0-88ed-0878871a9beb","908daed1-4c99-4e20-8a3a-2a5aeae44c74","3dffbe73-e4b4-416c-9e3a-af07405df1ac","5d90358b-55cf-4cf2-a2cf-2ef2a1d5cb62"],"title":"start
+    jsonData: '{"uid":"3688886c-de57-47c9-9fc7-57bb362cd968","layout":{"serializedVersion":"2","x":-409.8868103027344,"y":-551.81103515625,"width":1113.0,"height":412.0},"containedElements":["77594159-6ca2-4371-ab0d-a3d7866cc6fa","0382599e-e527-4a04-8378-d07211d7c030","63f7192b-ec56-40a2-89dd-6139308dbd9d","54bf8c7b-027b-409e-be78-9ed32eb4723a","03663ed3-86ca-4568-b9ed-1d1dbdd3cdc4","908daed1-4c99-4e20-8a3a-2a5aeae44c74","3dffbe73-e4b4-416c-9e3a-af07405df1ac","5d90358b-55cf-4cf2-a2cf-2ef2a1d5cb62","58089478-0130-44be-8082-abbb9f045265"],"title":"start
       event","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
   - type: 2
     uid: 551383b0-6ba6-4302-8909-7f0cb9e40c27
-    jsonData: '{"uid":"551383b0-6ba6-4302-8909-7f0cb9e40c27","layout":{"serializedVersion":"2","x":-369.850341796875,"y":-69.01033782958985,"width":1120.0,"height":344.0},"containedElements":["a8a112b2-08c0-4e68-b1f6-80f98ba1972d","6ced30bc-66a7-4151-8e4c-07453b8a99ee","33d419e2-975d-43ec-908a-d25fcecd5a42","c956b2bf-f34e-4dc4-99e6-1ee77938c54c","3a085786-bd49-4198-8c31-0079a3a5c8d0","3ba4a927-a402-4f3f-9986-6a54b28e9765","5f491524-f2ad-4c07-8fce-f9e9028e82b9"],"title":"check
+    jsonData: '{"uid":"551383b0-6ba6-4302-8909-7f0cb9e40c27","layout":{"serializedVersion":"2","x":-277.9764404296875,"y":-91.78771209716797,"width":892.0,"height":370.0},"containedElements":["a8a112b2-08c0-4e68-b1f6-80f98ba1972d","6ced30bc-66a7-4151-8e4c-07453b8a99ee","33d419e2-975d-43ec-908a-d25fcecd5a42","3a085786-bd49-4198-8c31-0079a3a5c8d0","3ba4a927-a402-4f3f-9986-6a54b28e9765","5f491524-f2ad-4c07-8fce-f9e9028e82b9","8d77302e-2568-40c0-8a4a-62a868e6fb54","6a165835-b734-4df9-abfe-9eda84fae058"],"title":"check
       if time has changed","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
   - type: 2
-    uid: ebc2a454-5174-4b4f-b25c-ac8c14da06d5
-    jsonData: '{"uid":"ebc2a454-5174-4b4f-b25c-ac8c14da06d5","layout":{"serializedVersion":"2","x":-483.5858154296875,"y":293.14434814453127,"width":1297.0,"height":275.0},"containedElements":["f10de3ce-22e4-4440-997f-19c1699b12ac","6d008b30-39e4-4662-8e1d-d072e0a5b097","3246f84f-8efa-4cd0-bf7a-7b7f378bd076","c7471089-e3d2-47ee-89e2-bbd61fd385f9"],"title":"get
-      time info","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
-  - type: 2
-    uid: 4389b110-3c89-421f-969f-04dfffd6286c
-    jsonData: '{"uid":"4389b110-3c89-421f-969f-04dfffd6286c","layout":{"serializedVersion":"2","x":835.4627075195313,"y":308.847412109375,"width":659.0,"height":313.0},"containedElements":["6b29bf52-676a-4455-8b42-8eb7b24c2b8a","22373f32-84e6-44f2-911f-73991c4dcbf8","7eb99e3a-b94b-4a8a-9e93-b1ac7863374a","4eb771ce-6134-4fd0-8156-9e368adf98c6"],"title":"check
-      if timezone is specified","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
-  - type: 2
     uid: b68d00e3-b8e9-40ca-bf74-8775917927eb
-    jsonData: '{"uid":"b68d00e3-b8e9-40ca-bf74-8775917927eb","layout":{"serializedVersion":"2","x":1124.0391845703125,"y":-95.83690643310547,"width":842.0,"height":372.0},"containedElements":["40ccb68d-0b7e-452f-82d2-d8c794a87a49","32f7c648-7838-497d-80da-6cbb4d4ee68d","1b00b6cb-2ce4-48f5-8572-f589210a30c2","0f3a077c-40ac-4be8-8474-157e689abb17"],"title":"set
-      local time","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
-  - type: 2
-    uid: 7f87aac9-eca5-464d-b8d7-604975bdfdea
-    jsonData: '{"uid":"7f87aac9-eca5-464d-b8d7-604975bdfdea","layout":{"serializedVersion":"2","x":983.8328247070313,"y":639.1802978515625,"width":938.0,"height":501.0},"containedElements":["f17aa4bf-be8e-454c-b417-9a21649fc53d","9b618009-db79-48a0-b0d6-7ce66d01dec7","9c7888a9-5406-438a-8c8c-f13803dbb976","9ce9e20b-c3a9-4426-ad77-50486e679ca4","cc8fa694-edd1-40c8-83a7-c3b6602926e1","d1552866-b97c-4931-8202-89c9a26c29d1","5a59b8c9-7c70-4429-99da-d7ceaa482426","3883c5bf-f1f1-489d-a954-cb72d1100403","d617a466-249a-4675-93b9-5e7bc5c4938d","0dd62b51-e1e1-4c31-a390-a64a99a5becc"],"title":"set
-      timezone time","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
+    jsonData: '{"uid":"b68d00e3-b8e9-40ca-bf74-8775917927eb","layout":{"serializedVersion":"2","x":213.30633544921876,"y":353.4388427734375,"width":444.0,"height":222.0},"containedElements":["0f3a077c-40ac-4be8-8474-157e689abb17","3f75c1ac-008e-403d-be0a-6e584c0b79c8"],"title":"set
+      time","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
   - type: 5
-    uid: fbac1677-f6c3-43b1-bef8-48fd71f22979
+    uid: 77584781-920f-4b44-b8e2-8cff87356b48
     jsonData: '{"visible":true,"layout":{"serializedVersion":"2","x":10.0,"y":130.0,"width":207.0,"height":277.0}}'
   - type: 4
-    uid: beb758ac-371c-4efa-92ae-21a8a3ca8537
+    uid: 46b19eb7-0412-46d9-9a66-129169c5e5bf
     jsonData: '{"visible":true,"layout":{"serializedVersion":"2","x":10.0,"y":20.0,"width":0.0,"height":0.0}}'
   viewTransform:
-    position: {x: 522.6383, y: 374.95404}
-    scale: 0.7561437
+    position: {x: 561.09576, y: 223.45712}
+    scale: 0.2842624
   version: 1.0.0
   showAssembly: 0

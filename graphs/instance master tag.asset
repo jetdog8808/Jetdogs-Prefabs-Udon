@@ -645,6 +645,7 @@ MonoBehaviour:
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: 
+    updateOrder: 0
   graphElementData:
   - type: 5
     uid: 0e4bd99c-2b7e-4b17-878c-3a70949a1a35
@@ -653,7 +654,7 @@ MonoBehaviour:
     uid: 6c370f5a-daac-443f-8def-1aef90434439
     jsonData: '{"visible":true,"layout":{"serializedVersion":"2","x":10.0,"y":20.0,"width":0.0,"height":0.0}}'
   viewTransform:
-    position: {x: -1242.8739, y: 1137.1494}
-    scale: 0.7561437
+    position: {x: -303.31787, y: 947.9103}
+    scale: 0.49717674
   version: 1.0.0
   showAssembly: 0

@@ -1264,6 +1264,7 @@ MonoBehaviour:
       - unityObjectValue: {fileID: 0}
         stringValue: 'System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|audio
           zone fail: either global or missing revertsettings.'
+    updateOrder: 0
   graphElementData:
   - type: 2
     uid: 18ec6082-debb-4e5d-ade7-b63c873f63cc
@@ -1296,7 +1297,7 @@ MonoBehaviour:
     uid: 6b265298-bcee-478b-93f9-c79b85d2b65f
     jsonData: '{"visible":true,"layout":{"serializedVersion":"2","x":10.0,"y":20.0,"width":0.0,"height":0.0}}'
   viewTransform:
-    position: {x: 631.1443, y: 117.46066}
-    scale: 0.375937
+    position: {x: 303.46582, y: 158.97983}
+    scale: 0.43232757
   version: 1.0.0
   showAssembly: 0

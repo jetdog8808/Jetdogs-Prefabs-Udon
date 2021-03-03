@@ -186,6 +186,7 @@ MonoBehaviour:
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|fd30c93f-22ad-45fd-afc9-db088d3489d1
+    updateOrder: 0
   graphElementData:
   - type: 5
     uid: 23708ff3-6466-49bf-8cac-193452acc0c0
@@ -194,7 +195,7 @@ MonoBehaviour:
     uid: 19604816-be4a-420c-9ede-4215e28fcf47
     jsonData: '{"visible":true,"layout":{"serializedVersion":"2","x":10.0,"y":20.0,"width":0.0,"height":0.0}}'
   viewTransform:
-    position: {x: 749.4975, y: 345.7905}
+    position: {x: 900.4975, y: 508.7905}
     scale: 0.7561437
   version: 1.0.0
   showAssembly: 0
