@@ -223,6 +223,7 @@ MonoBehaviour:
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|9ee36383-a01f-430b-a43c-678259a0ec2c
+    updateOrder: 0
   graphElementData:
   - type: 5
     uid: 51724233-644c-4299-ba50-d1fd510f9bef

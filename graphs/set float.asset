@@ -849,6 +849,7 @@ MonoBehaviour:
         stringValue: 
       - unityObjectValue: {fileID: 0}
         stringValue: 
+    updateOrder: 0
   graphElementData:
   - type: 5
     uid: 2a0b15f5-5ee3-4fb7-847d-d32b8f5328e9
