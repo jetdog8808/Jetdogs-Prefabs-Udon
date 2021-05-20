@@ -18,6 +18,7 @@ using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
 
+
 public class Join_Bell : UdonSharpBehaviour
 {
     public AudioSource bell;

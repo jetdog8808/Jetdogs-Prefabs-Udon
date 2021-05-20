@@ -1,3 +1,20 @@
+V1.4.0
+*changed some box colliders to triggers.
+*added set avatar pedestal id prefab.
+*added camera rendertexture example
+*updated random int to sync variable.
+*updated world list to include instance owner.
+*updated pickup reset prefabs for object sync component and now is pickup array.
+*added object sync component.
+*edited old synced toggle to (event) synced toggle.
+
+-U# prefabs:
+*added editable mirror prefab.
+*added limited fps camera.
+*added (variable) synced toggle prefab.
+*updated setbool, setfloat, setint, to include sync option.
+*vrcpool obj spawn example.
+
 V1.3.3
 *added car prefab
 *added double jump prefab

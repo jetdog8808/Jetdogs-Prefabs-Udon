@@ -18,7 +18,7 @@ using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
 
-public class Sync_Toggle : UdonSharpBehaviour
+public class Event_Sync_Toggle : UdonSharpBehaviour
 {
     public GameObject[] gameobjectArray;
     private bool state = false;

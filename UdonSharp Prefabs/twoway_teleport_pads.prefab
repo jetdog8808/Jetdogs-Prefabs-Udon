@@ -64,6 +64,7 @@ MonoBehaviour:
   proximity: 2
   SynchronizePosition: 0
   AllowCollisionOwnershipTransfer: 0
+  Reliable: 1
   serializedProgramAsset: {fileID: 11400000, guid: a0a20193398de9a4ba7f81489e59515f,
     type: 2}
   programSource: {fileID: 11400000, guid: 5a31328647ea043418a7e83f7024bcb4, type: 2}
@@ -136,6 +137,7 @@ MonoBehaviour:
   proximity: 2
   SynchronizePosition: 0
   AllowCollisionOwnershipTransfer: 0
+  Reliable: 1
   serializedProgramAsset: {fileID: 11400000, guid: a0a20193398de9a4ba7f81489e59515f,
     type: 2}
   programSource: {fileID: 11400000, guid: 5a31328647ea043418a7e83f7024bcb4, type: 2}

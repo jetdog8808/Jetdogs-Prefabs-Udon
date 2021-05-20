@@ -18,6 +18,7 @@ MonoBehaviour:
   proximity: 2
   SynchronizePosition: 0
   AllowCollisionOwnershipTransfer: 0
+  Reliable: 0
   serializedProgramAsset: {fileID: 11400000, guid: a72c17185a6f75d49bed38231c85ca24,
     type: 2}
   programSource: {fileID: 11400000, guid: f33c0249378709047a6d438ba83638a5, type: 2}
@@ -108,6 +109,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 6cdef86b163621148a18984c8fa428e7,
         type: 2}
+    - target: {fileID: 1415578911040940289, guid: 8894fa7e4588a5c4fab98453e558847d,
+        type: 3}
+      propertyPath: Reliable
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6759095419728963412, guid: 8894fa7e4588a5c4fab98453e558847d,
         type: 3}
       propertyPath: DynamicMaterials.Array.size

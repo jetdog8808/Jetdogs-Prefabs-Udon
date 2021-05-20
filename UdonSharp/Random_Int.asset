@@ -17,6 +17,7 @@ MonoBehaviour:
   udonAssembly: 
   assemblyError: 
   sourceCsScript: {fileID: 11500000, guid: d475a4d15d3ce844ab458a1d22685dc7, type: 3}
+  behaviourSyncMode: 3
   behaviourIDHeapVarName: __refl_const_intnl_udonTypeID
   compileErrors: []
   hasInteractEvent: 1
@@ -183,7 +184,7 @@ MonoBehaviour:
       Data: 1
     - Name: syncMode
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: symbolResolvedTypeName
       Entry: 1
       Data: SystemInt32
@@ -204,10 +205,16 @@ MonoBehaviour:
       Data: 11|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
     - Name: 
       Entry: 12
-      Data: 1
+      Data: 2
     - Name: 
       Entry: 7
       Data: 12|UnityEngine.HideInInspector, UnityEngine.CoreModule
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 13|UdonSharp.UdonSyncedAttribute, UdonSharp.Runtime
     - Name: 
       Entry: 8
       Data: 
@@ -234,13 +241,13 @@ MonoBehaviour:
       Data: display
     - Name: $v
       Entry: 7
-      Data: 13|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+      Data: 14|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: fieldSymbol
       Entry: 7
-      Data: 14|UdonSharp.Compiler.SymbolDefinition, UdonSharp.Editor
+      Data: 15|UdonSharp.Compiler.SymbolDefinition, UdonSharp.Editor
     - Name: internalType
       Entry: 7
-      Data: 15|System.RuntimeType, mscorlib
+      Data: 16|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
       Data: UnityEngine.UI.Text, UnityEngine.UI
@@ -270,7 +277,7 @@ MonoBehaviour:
       Data: 
     - Name: fieldAttributes
       Entry: 7
-      Data: 16|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
+      Data: 17|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
     - Name: 
       Entry: 12
       Data: 0

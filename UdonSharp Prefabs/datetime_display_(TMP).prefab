@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2477510231000200880}
   - component: {fileID: 2477510231000200879}
-  - component: {fileID: 2477510231000200878}
   - component: {fileID: 2477510231000200877}
   - component: {fileID: 2477510231000200876}
   - component: {fileID: 2477510231000200875}
@@ -77,14 +76,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &2477510231000200878
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2477510231000200874}
-  m_Mesh: {fileID: 0}
 --- !u!222 &2477510231000200877
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -132,13 +123,12 @@ MonoBehaviour:
   m_fontColorGradientPreset: {fileID: 0}
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_outlineColor:
-    serializedVersion: 2
-    rgba: 4278190080
   m_fontSize: 5
   m_fontSizeBase: 5
   m_fontWeight: 400
@@ -146,7 +136,9 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_textAlignment: 514
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -156,10 +148,8 @@ MonoBehaviour:
   m_enableWordWrapping: 0
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
-  m_isLinkedTextComponent: 0
-  m_isTextTruncated: 0
+  parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
@@ -167,41 +157,21 @@ MonoBehaviour:
   m_parseCtrlCharacters: 1
   m_isOrthographic: 0
   m_isCullingEnabled: 0
-  m_ignoreRectMaskCulling: 0
-  m_ignoreCulling: 1
   m_horizontalMapping: 0
   m_verticalMapping: 0
   m_uvLineOffset: 0
   m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
   m_VertexBufferAutoSizeReduction: 1
-  m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
   m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_textInfo:
-    textComponent: {fileID: 2477510231000200876}
-    characterCount: 0
-    spriteCount: 0
-    spaceCount: 0
-    wordCount: 0
-    linkCount: 0
-    lineCount: 0
-    pageCount: 0
-    materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_spriteAnimator: {fileID: 0}
+  _SortingLayerID: 0
+  _SortingOrder: 0
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 2477510231000200879}
-  m_subTextObjects:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   m_maskType: 0
 --- !u!114 &2477510231000200875
 MonoBehaviour:
@@ -221,6 +191,7 @@ MonoBehaviour:
   proximity: 2
   SynchronizePosition: 0
   AllowCollisionOwnershipTransfer: 0
+  Reliable: 1
   serializedProgramAsset: {fileID: 11400000, guid: 0e313054083411a4a8451c566a1c2c5a,
     type: 2}
   programSource: {fileID: 11400000, guid: f14c7d728d1bd5c40882316eccf3dae8, type: 2}

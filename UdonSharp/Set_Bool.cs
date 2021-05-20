@@ -19,12 +19,16 @@ using UnityEngine.UI;
 using VRC.SDKBase;
 using VRC.Udon;
 
+[UdonBehaviourSyncMode(BehaviourSyncMode.Manual)]
 public class Set_Bool : UdonSharpBehaviour
 {
     public UdonBehaviour udonBehaviour;
     public string variableName;
+    public string UpdateMethod;
+    [UdonSynced(UdonSyncMode.None)]
     public bool value;
     public bool getOnStart = false;
+    public bool synce = false;
 
     public Text display;
     public Toggle toggle;
@@ -59,6 +63,10 @@ public class Set_Bool : UdonSharpBehaviour
         if (udonBehaviour)
         {
             udonBehaviour.SetProgramVariable(variableName, value);
+            if(UpdateMethod != string.Empty)
+            {
+                udonBehaviour.SendCustomEvent(UpdateMethod);
+            }
         }
 
         if (toggle)
@@ -81,18 +89,33 @@ public class Set_Bool : UdonSharpBehaviour
     {
         value = true;
         SetBool();
+        if (synce)
+        {
+            Networking.SetOwner(Networking.LocalPlayer, gameObject);
+            RequestSerialization();
+        }
     }
 
     public void SetFalse()
     {
         value = false;
         SetBool();
+        if (synce)
+        {
+            Networking.SetOwner(Networking.LocalPlayer, gameObject);
+            RequestSerialization();
+        }
     }
 
     public void Toggle()
     {
         value = !value;
         SetBool();
+        if (synce)
+        {
+            Networking.SetOwner(Networking.LocalPlayer, gameObject);
+            RequestSerialization();
+        }
     }
 
     public void SetToggle()
@@ -101,6 +124,16 @@ public class Set_Bool : UdonSharpBehaviour
         {
             value = toggle.isOn;
             SetBool();
+            if (synce)
+            {
+                Networking.SetOwner(Networking.LocalPlayer, gameObject);
+                RequestSerialization();
+            }
         }
+    }
+
+    public virtual void OnDeserialization() 
+    {
+        SetBool();
     }
 }

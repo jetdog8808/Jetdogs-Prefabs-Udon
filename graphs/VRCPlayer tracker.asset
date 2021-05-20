@@ -120,6 +120,7 @@ MonoBehaviour:
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: 
+    updateOrder: 0
   graphElementData:
   - type: 5
     uid: 44eb699f-0a44-4615-a75c-8107a759ad26

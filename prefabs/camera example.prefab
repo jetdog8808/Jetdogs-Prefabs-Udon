@@ -226,29 +226,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.27383634, y: 0.30785584, z: 0.5646639}
   m_Center: {x: 0, y: 0.051177856, z: -0.10552948}
---- !u!114 &3774256294538801545
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7982044936789527041}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45115577ef41a5b4ca741ed302693907, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactTextPlacement: {fileID: 0}
-  interactText: Use
-  interactTextGO: {fileID: 0}
-  proximity: 2
-  SynchronizePosition: 1
-  AllowCollisionOwnershipTransfer: 0
-  serializedProgramAsset: {fileID: 0}
-  programSource: {fileID: 0}
-  serializedPublicVariablesBytesString: Ai8AAAAAATIAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAFUAZABvAG4AVgBhAHIAaQBhAGIAbABlAFQAYQBiAGwAZQAsACAAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4AAAAAAAYBAAAAAAAAACcBBAAAAHQAeQBwAGUAAWgAAABTAHkAcwB0AGUAbQAuAEMAbwBsAGwAZQBjAHQAaQBvAG4AcwAuAEcAZQBuAGUAcgBpAGMALgBMAGkAcwB0AGAAMQBbAFsAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4ALgBJAG4AdABlAHIAZgBhAGMAZQBzAC4ASQBVAGQAbwBuAFYAYQByAGkAYQBiAGwAZQAsACAAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4AXQBdACwAIABtAHMAYwBvAHIAbABpAGIAAQEJAAAAVgBhAHIAaQBhAGIAbABlAHMALwEAAAABaAAAAFMAeQBzAHQAZQBtAC4AQwBvAGwAbABlAGMAdABpAG8AbgBzAC4ARwBlAG4AZQByAGkAYwAuAEwAaQBzAHQAYAAxAFsAWwBWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAEkAbgB0AGUAcgBmAGEAYwBlAHMALgBJAFUAZABvAG4AVgBhAHIAaQBhAGIAbABlACwAIABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgBdAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgABAAAABgAAAAAAAAAABwUHBQ==
-  publicVariablesUnityEngineObjects: []
-  publicVariablesSerializationDataFormat: 0
 --- !u!114 &8601654068689882147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -281,6 +258,19 @@ MonoBehaviour:
   currentlyHeldBy: {fileID: 0}
   pickupable: 1
   proximity: 2
+--- !u!114 &4931870538162177247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7982044936789527041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1783056023, guid: 661092b4961be7145bfbe56e1e62337b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AllowCollisionOwnershipTransfer: 0
 --- !u!1001 &7982044936789429409
 PrefabInstance:
   m_ObjectHideFlags: 0

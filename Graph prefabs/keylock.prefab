@@ -49,6 +49,7 @@ MonoBehaviour:
   proximity: 2
   SynchronizePosition: 0
   AllowCollisionOwnershipTransfer: 0
+  Reliable: 0
   serializedProgramAsset: {fileID: 11400000, guid: bdab16d3ceda4674a8b892d8dca6c400,
     type: 2}
   programSource: {fileID: 11400000, guid: b239dd62dd3bced498056f068bfa48d4, type: 2}
@@ -277,6 +278,7 @@ MonoBehaviour:
   proximity: 2
   SynchronizePosition: 0
   AllowCollisionOwnershipTransfer: 0
+  Reliable: 0
   serializedProgramAsset: {fileID: 11400000, guid: d85c903846a264c4abe0fe42538c30b5,
     type: 2}
   programSource: {fileID: 11400000, guid: a8023811748b3fa49894060970f1e501, type: 2}
@@ -297,9 +299,9 @@ GameObject:
   - component: {fileID: 8736611209890123297}
   - component: {fileID: 8736611209890123296}
   - component: {fileID: 8736611209890123311}
-  - component: {fileID: 1188925401364729806}
   - component: {fileID: 8159146967365976580}
   - component: {fileID: 8922770947120978605}
+  - component: {fileID: 6755902425465435920}
   m_Layer: 13
   m_Name: key
   m_TagString: Untagged
@@ -380,29 +382,6 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
---- !u!114 &1188925401364729806
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8736611209890123310}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45115577ef41a5b4ca741ed302693907, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactTextPlacement: {fileID: 0}
-  interactText: Use
-  interactTextGO: {fileID: 0}
-  proximity: 2
-  SynchronizePosition: 1
-  AllowCollisionOwnershipTransfer: 1
-  serializedProgramAsset: {fileID: 0}
-  programSource: {fileID: 0}
-  serializedPublicVariablesBytesString: Ai8AAAAAATIAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAFUAZABvAG4AVgBhAHIAaQBhAGIAbABlAFQAYQBiAGwAZQAsACAAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4AAAAAAAYBAAAAAAAAACcBBAAAAHQAeQBwAGUAAWgAAABTAHkAcwB0AGUAbQAuAEMAbwBsAGwAZQBjAHQAaQBvAG4AcwAuAEcAZQBuAGUAcgBpAGMALgBMAGkAcwB0AGAAMQBbAFsAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4ALgBJAG4AdABlAHIAZgBhAGMAZQBzAC4ASQBVAGQAbwBuAFYAYQByAGkAYQBiAGwAZQAsACAAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4AXQBdACwAIABtAHMAYwBvAHIAbABpAGIAAQEJAAAAVgBhAHIAaQBhAGIAbABlAHMALwEAAAABaAAAAFMAeQBzAHQAZQBtAC4AQwBvAGwAbABlAGMAdABpAG8AbgBzAC4ARwBlAG4AZQByAGkAYwAuAEwAaQBzAHQAYAAxAFsAWwBWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAEkAbgB0AGUAcgBmAGEAYwBlAHMALgBJAFUAZABvAG4AVgBhAHIAaQBhAGIAbABlACwAIABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgBdAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgABAAAABgAAAAAAAAAABwUHBQ==
-  publicVariablesUnityEngineObjects: []
-  publicVariablesSerializationDataFormat: 0
 --- !u!54 &8159146967365976580
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -451,3 +430,16 @@ MonoBehaviour:
   currentlyHeldBy: {fileID: 0}
   pickupable: 1
   proximity: 2
+--- !u!114 &6755902425465435920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8736611209890123310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1783056023, guid: 661092b4961be7145bfbe56e1e62337b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AllowCollisionOwnershipTransfer: 0

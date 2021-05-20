@@ -19,12 +19,16 @@ using UnityEngine.UI;
 using VRC.SDKBase;
 using VRC.Udon;
 
+[UdonBehaviourSyncMode(BehaviourSyncMode.Manual)]
 public class Set_Float : UdonSharpBehaviour
 {
     public UdonBehaviour udonBehaviour; 
     public string variableName;
+    public string UpdateMethod;
+    [UdonSynced(UdonSyncMode.None)]
     public float value;
     public bool getOnStart = false;
+    public bool synce = false;
     public float step = 1f;
     public string format = "0.00";
 
@@ -72,6 +76,10 @@ public class Set_Float : UdonSharpBehaviour
         if (udonBehaviour)
         {
             udonBehaviour.SetProgramVariable(variableName, value);
+            if (UpdateMethod != string.Empty)
+            {
+                udonBehaviour.SendCustomEvent(UpdateMethod);
+            }
         }
 
         if (slider)
@@ -94,18 +102,33 @@ public class Set_Float : UdonSharpBehaviour
     {
         value += step;
         SetFloat();
+        if (synce)
+        {
+            Networking.SetOwner(Networking.LocalPlayer, gameObject);
+            RequestSerialization();
+        }
     }
 
     public void Decrease()
     {
         value -= step;
         SetFloat();
+        if (synce)
+        {
+            Networking.SetOwner(Networking.LocalPlayer, gameObject);
+            RequestSerialization();
+        }
     }
 
     public void ResetValue()
     {
         value = originalValue;
         SetFloat();
+        if (synce)
+        {
+            Networking.SetOwner(Networking.LocalPlayer, gameObject);
+            RequestSerialization();
+        }
     }
 
     public void SetSlider()
@@ -114,6 +137,17 @@ public class Set_Float : UdonSharpBehaviour
         {
             value = slider.value;
             SetFloat();
+            if (synce)
+            {
+                Networking.SetOwner(Networking.LocalPlayer, gameObject);
+                RequestSerialization();
+            }
         }
     }
+
+    public virtual void OnDeserialization()
+    {
+        SetFloat();
+    }
+
 }

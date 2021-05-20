@@ -19,23 +19,30 @@ using UnityEngine.UI;
 using VRC.SDKBase;
 using VRC.Udon;
 
+[UdonBehaviourSyncMode(BehaviourSyncMode.Manual)]
 public class Random_Int : UdonSharpBehaviour
 {
     public int min;
     public int max;
-    [HideInInspector]
+    [HideInInspector, UdonSynced(UdonSyncMode.None)]
     public int result;
     public Text display;
 
     public virtual void Interact() 
     {
-        GenerateInt();
+        Networking.SetOwner(Networking.LocalPlayer, gameObject);
+        result = Random.Range(min, max);
+        RequestSerialization();
+        DisplayResult();
     }
 
-    public void GenerateInt()
+    public virtual void OnDeserialization() 
     {
-        result = Random.Range(min, max);
+        DisplayResult();
+    }
 
+    public void DisplayResult()
+    {
         if (display)
         {
             display.text = result.ToString();

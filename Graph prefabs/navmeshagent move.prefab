@@ -305,6 +305,7 @@ MonoBehaviour:
   proximity: 2
   SynchronizePosition: 0
   AllowCollisionOwnershipTransfer: 0
+  Reliable: 0
   serializedProgramAsset: {fileID: 11400000, guid: 14b9e3cac9fcfa949aba5119bd4e8555,
     type: 2}
   programSource: {fileID: 11400000, guid: 2b3b27feb909dcf49a56b28b2fb6edc0, type: 2}
@@ -359,7 +360,7 @@ GameObject:
   - component: {fileID: 6988952683323909980}
   - component: {fileID: 5376381129960081925}
   - component: {fileID: 678226196892565335}
-  - component: {fileID: 6370282380057608569}
+  - component: {fileID: 4030232566652890037}
   m_Layer: 13
   m_Name: Quad
   m_TagString: Untagged
@@ -488,7 +489,7 @@ MonoBehaviour:
   currentlyHeldBy: {fileID: 0}
   pickupable: 1
   proximity: 2
---- !u!114 &6370282380057608569
+--- !u!114 &4030232566652890037
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -497,17 +498,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5975544131305130875}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45115577ef41a5b4ca741ed302693907, type: 3}
+  m_Script: {fileID: -1783056023, guid: 661092b4961be7145bfbe56e1e62337b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactTextPlacement: {fileID: 0}
-  interactText: Use
-  interactTextGO: {fileID: 0}
-  proximity: 2
-  SynchronizePosition: 1
-  AllowCollisionOwnershipTransfer: 0
-  serializedProgramAsset: {fileID: 0}
-  programSource: {fileID: 0}
-  serializedPublicVariablesBytesString: Ai8AAAAAATIAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAFUAZABvAG4AVgBhAHIAaQBhAGIAbABlAFQAYQBiAGwAZQAsACAAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4AAAAAAAYBAAAAAAAAACcBBAAAAHQAeQBwAGUAAWgAAABTAHkAcwB0AGUAbQAuAEMAbwBsAGwAZQBjAHQAaQBvAG4AcwAuAEcAZQBuAGUAcgBpAGMALgBMAGkAcwB0AGAAMQBbAFsAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4ALgBJAG4AdABlAHIAZgBhAGMAZQBzAC4ASQBVAGQAbwBuAFYAYQByAGkAYQBiAGwAZQAsACAAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4AXQBdACwAIABtAHMAYwBvAHIAbABpAGIAAQEJAAAAVgBhAHIAaQBhAGIAbABlAHMALwEAAAABaAAAAFMAeQBzAHQAZQBtAC4AQwBvAGwAbABlAGMAdABpAG8AbgBzAC4ARwBlAG4AZQByAGkAYwAuAEwAaQBzAHQAYAAxAFsAWwBWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAEkAbgB0AGUAcgBmAGEAYwBlAHMALgBJAFUAZABvAG4AVgBhAHIAaQBhAGIAbABlACwAIABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgBdAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgABAAAABgAAAAAAAAAABwUHBQ==
-  publicVariablesUnityEngineObjects: []
-  publicVariablesSerializationDataFormat: 0
+  AllowCollisionOwnershipTransfer: 1

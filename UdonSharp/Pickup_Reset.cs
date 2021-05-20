@@ -17,17 +17,39 @@ using UdonSharp;
 using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
+using VRC.SDK3.Components;
 
 public class Pickup_Reset : UdonSharpBehaviour
 {
-    public VRC_Pickup pickup;
-    public Transform resetPoint;
-    public bool forceDrop = true;
+    public VRC_Pickup[] pickup;
     [HideInInspector]
-    public Rigidbody pickupRigidody;
+    public VRCObjectSync[] syncCom;
+    [HideInInspector]
+    public Rigidbody[] pickupRigibody;
+    [HideInInspector]
+    public Vector3[] originPoint;
+    [HideInInspector]
+    public Quaternion[] originRotation;
+    public bool forceDrop = true;
+    
     private void Start()
     {
-        pickupRigidody = pickup.GetComponent<Rigidbody>();
+        syncCom = new VRCObjectSync[pickup.Length];
+        originPoint = new Vector3[pickup.Length];
+        originRotation = new Quaternion[pickup.Length];
+        pickupRigibody = new Rigidbody[pickup.Length];
+
+        for (int i = 0; i < pickup.Length; i++)
+        {
+            syncCom[i] = (VRCObjectSync)pickup[i].GetComponent(typeof(VRCObjectSync));
+
+            if(syncCom[i] == null)
+            {
+                pickupRigibody[i] = pickup[i].GetComponent<Rigidbody>();
+                originPoint[i] = pickup[i].transform.position;
+                originRotation[i] = pickup[i].transform.rotation;
+            }
+        }
     }
     public virtual void Interact()
     {
@@ -36,37 +58,43 @@ public class Pickup_Reset : UdonSharpBehaviour
 
     public void ResetPickup()
     {
-        if(pickup.IsHeld)
+        for (int i = 0; i < pickup.Length; i++)
         {
-            if (forceDrop)
+            if (syncCom[i] == null)
             {
-                if (pickup.currentPlayer.isLocal)
+                if(pickup[i].currentPlayer != null)
                 {
-                    DropandReset();
+                    if (forceDrop)
+                    {
+                        pickup[i].Drop();
+                    }
+                    else
+                    {
+                        continue;
+                    }
                 }
-                else
+                
+                pickupRigibody[i].position = originPoint[i];
+                pickupRigibody[i].rotation = originRotation[i];
+            }
+            else
+            {
+                if (pickup[i].currentPlayer != null)
                 {
-                    SendCustomNetworkEvent(VRC.Udon.Common.Interfaces.NetworkEventTarget.All, "DropandReset");
+                    if (forceDrop)
+                    {
+                        pickup[i].Drop(pickup[i].currentPlayer);
+                    }
+                    else
+                    {
+                        continue;
+                    }
                 }
+                Networking.SetOwner(Networking.LocalPlayer, syncCom[i].gameObject);
+                syncCom[i].Respawn();
             }
         }
-        else
-        {
-            Networking.SetOwner(Networking.LocalPlayer, pickup.gameObject);
 
-            pickupRigidody.position = resetPoint.position;
-            pickupRigidody.rotation = resetPoint.rotation;
-        }
-    }
-
-    public void DropandReset()
-    {
-        if (pickup.currentPlayer.isLocal)
-        {
-            pickup.Drop();
-            pickupRigidody.position = resetPoint.position;
-            pickupRigidody.rotation = resetPoint.rotation;
-        }
     }
    
 }

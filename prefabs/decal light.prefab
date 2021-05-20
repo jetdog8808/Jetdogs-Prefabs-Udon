@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 677725298469476767}
   - component: {fileID: 6061734445592300415}
   - component: {fileID: 1660543678276190642}
-  - component: {fileID: 5026564879973565780}
   - component: {fileID: 5956302392497211175}
+  - component: {fileID: 4589855957650483387}
   m_Layer: 13
   m_Name: decal light
   m_TagString: Untagged
@@ -149,29 +149,6 @@ MonoBehaviour:
   currentlyHeldBy: {fileID: 0}
   pickupable: 1
   proximity: 2
---- !u!114 &5026564879973565780
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7704346866626794409}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45115577ef41a5b4ca741ed302693907, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactTextPlacement: {fileID: 0}
-  interactText: Use
-  interactTextGO: {fileID: 0}
-  proximity: 2
-  SynchronizePosition: 1
-  AllowCollisionOwnershipTransfer: 0
-  serializedProgramAsset: {fileID: 0}
-  programSource: {fileID: 0}
-  serializedPublicVariablesBytesString: Ai8AAAAAATIAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAFUAZABvAG4AVgBhAHIAaQBhAGIAbABlAFQAYQBiAGwAZQAsACAAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4AAAAAAAYBAAAAAAAAACcBBAAAAHQAeQBwAGUAAWgAAABTAHkAcwB0AGUAbQAuAEMAbwBsAGwAZQBjAHQAaQBvAG4AcwAuAEcAZQBuAGUAcgBpAGMALgBMAGkAcwB0AGAAMQBbAFsAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4ALgBJAG4AdABlAHIAZgBhAGMAZQBzAC4ASQBVAGQAbwBuAFYAYQByAGkAYQBiAGwAZQAsACAAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4AXQBdACwAIABtAHMAYwBvAHIAbABpAGIAAQEJAAAAVgBhAHIAaQBhAGIAbABlAHMALwEAAAABaAAAAFMAeQBzAHQAZQBtAC4AQwBvAGwAbABlAGMAdABpAG8AbgBzAC4ARwBlAG4AZQByAGkAYwAuAEwAaQBzAHQAYAAxAFsAWwBWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAEkAbgB0AGUAcgBmAGEAYwBlAHMALgBJAFUAZABvAG4AVgBhAHIAaQBhAGIAbABlACwAIABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgBdAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgABAAAABgAAAAAAAAAABwUHBQ==
-  publicVariablesUnityEngineObjects: []
-  publicVariablesSerializationDataFormat: 0
 --- !u!65 &5956302392497211175
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -185,3 +162,16 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.193536, y: 0.193536, z: 0.40337843}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4589855957650483387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7704346866626794409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1783056023, guid: 661092b4961be7145bfbe56e1e62337b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AllowCollisionOwnershipTransfer: 1

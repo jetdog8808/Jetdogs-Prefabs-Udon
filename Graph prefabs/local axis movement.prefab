@@ -328,6 +328,7 @@ MonoBehaviour:
   proximity: 2
   SynchronizePosition: 0
   AllowCollisionOwnershipTransfer: 0
+  Reliable: 0
   serializedProgramAsset: {fileID: 11400000, guid: 6eeb4a6595ffb1141b3516986abed436,
     type: 2}
   programSource: {fileID: 11400000, guid: 761eaca24c64daf46b60e3bbc6e9e0b1, type: 2}
@@ -446,6 +447,7 @@ MonoBehaviour:
   proximity: 2
   SynchronizePosition: 0
   AllowCollisionOwnershipTransfer: 0
+  Reliable: 0
   serializedProgramAsset: {fileID: 11400000, guid: 6eeb4a6595ffb1141b3516986abed436,
     type: 2}
   programSource: {fileID: 11400000, guid: 761eaca24c64daf46b60e3bbc6e9e0b1, type: 2}
@@ -467,7 +469,7 @@ GameObject:
   - component: {fileID: 5436927639649325657}
   - component: {fileID: 5436927639649325662}
   - component: {fileID: 5436927639649325663}
-  - component: {fileID: 5436927639649325660}
+  - component: {fileID: 7113428881123462201}
   m_Layer: 13
   m_Name: pickup Capsule
   m_TagString: Untagged
@@ -596,7 +598,7 @@ MonoBehaviour:
   currentlyHeldBy: {fileID: 0}
   pickupable: 1
   proximity: 2
---- !u!114 &5436927639649325660
+--- !u!114 &7113428881123462201
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -605,20 +607,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 5436927639649325650}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45115577ef41a5b4ca741ed302693907, type: 3}
+  m_Script: {fileID: -1783056023, guid: 661092b4961be7145bfbe56e1e62337b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactTextPlacement: {fileID: 0}
-  interactText: Use
-  interactTextGO: {fileID: 0}
-  proximity: 2
-  SynchronizePosition: 1
-  AllowCollisionOwnershipTransfer: 0
-  serializedProgramAsset: {fileID: 0}
-  programSource: {fileID: 0}
-  serializedPublicVariablesBytesString: Ai8AAAAAATIAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAFUAZABvAG4AVgBhAHIAaQBhAGIAbABlAFQAYQBiAGwAZQAsACAAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4AAAAAAAYBAAAAAAAAACcBBAAAAHQAeQBwAGUAAWgAAABTAHkAcwB0AGUAbQAuAEMAbwBsAGwAZQBjAHQAaQBvAG4AcwAuAEcAZQBuAGUAcgBpAGMALgBMAGkAcwB0AGAAMQBbAFsAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4ALgBJAG4AdABlAHIAZgBhAGMAZQBzAC4ASQBVAGQAbwBuAFYAYQByAGkAYQBiAGwAZQAsACAAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4AXQBdACwAIABtAHMAYwBvAHIAbABpAGIAAQEJAAAAVgBhAHIAaQBhAGIAbABlAHMALwEAAAABaAAAAFMAeQBzAHQAZQBtAC4AQwBvAGwAbABlAGMAdABpAG8AbgBzAC4ARwBlAG4AZQByAGkAYwAuAEwAaQBzAHQAYAAxAFsAWwBWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAEkAbgB0AGUAcgBmAGEAYwBlAHMALgBJAFUAZABvAG4AVgBhAHIAaQBhAGIAbABlACwAIABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgBdAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgABAAAABgAAAAAAAAAABwUHBQ==
-  publicVariablesUnityEngineObjects: []
-  publicVariablesSerializationDataFormat: 0
+  AllowCollisionOwnershipTransfer: 1
 --- !u!1 &5436927639665277440
 GameObject:
   m_ObjectHideFlags: 0

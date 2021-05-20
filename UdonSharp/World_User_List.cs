@@ -25,7 +25,7 @@ public class World_User_List : UdonSharpBehaviour
     public VRCPlayerApi[] userList;
     public Text numberDisplay;
     public Text playerList;
-    public string playerformat = "{Name}|ID:{ID}|{VR}|{Master}";
+    public string playerformat = "{Name}|ID:{ID}|{VR}|{Master}|{Instance Owner}";
 
     public virtual void OnPlayerJoined(VRC.SDKBase.VRCPlayerApi player) 
     {
@@ -101,7 +101,14 @@ public class World_User_List : UdonSharpBehaviour
                     {
                         tempstring = tempstring.Replace("{Master}", string.Empty);
                     }
-
+                    if (userList[i].isInstanceOwner)
+                    {
+                        tempstring = tempstring.Replace("{Instance Owner}", "Instance Owner");
+                    }
+                    else
+                    {
+                        tempstring = tempstring.Replace("{Instance Owner}", string.Empty);
+                    }
 
                     stringList = string.Concat(stringList, tempstring, "\r\n");
                 }

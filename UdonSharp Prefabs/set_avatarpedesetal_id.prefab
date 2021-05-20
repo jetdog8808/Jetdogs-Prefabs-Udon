@@ -140,6 +140,7 @@ MonoBehaviour:
   proximity: 2
   SynchronizePosition: 0
   AllowCollisionOwnershipTransfer: 0
+  Reliable: 0
   serializedProgramAsset: {fileID: 11400000, guid: 353fe129042f4124b9ce025f40c0cec2,
     type: 2}
   programSource: {fileID: 11400000, guid: e623317c3659609488ddda875a1605eb, type: 2}
@@ -186,6 +187,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8785716797543559468}
     m_Modifications:
+    - target: {fileID: 6807726251640588888, guid: 23dafc7d7a578b44f9cb37330ca2a156,
+        type: 3}
+      propertyPath: serializedProgramAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 78c2908e9505d4e4c896839f5d357835,
+        type: 2}
     - target: {fileID: 6807726251640588890, guid: 23dafc7d7a578b44f9cb37330ca2a156,
         type: 3}
       propertyPath: m_LocalPosition.x
