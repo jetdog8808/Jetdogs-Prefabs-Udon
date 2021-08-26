@@ -14,25 +14,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   serializedUdonProgramAsset: {fileID: 11400000, guid: dae3847adfddf084a8d3dc2ba1d81ffe,
     type: 2}
-  udonAssembly: ".data_start\r\n\r\n    .export udonbehaviour\r\n    .export eventname\r\n
-    \   .export networked\r\n    \r\n    Boolean_0: %SystemBoolean, null\r\n    instance_0:
-    %VRCUdonUdonBehaviour, this\r\n    target_0: %VRCUdonCommonInterfacesNetworkEventTarget,
-    null\r\n    eventName_0: %SystemString, null\r\n    instance_1: %VRCUdonUdonBehaviour,
-    this\r\n    eventName_1: %SystemString, null\r\n    instance_2: %VRCUdonUdonBehaviour,
-    this\r\n    eventName_2: %SystemString, null\r\n    udonbehaviour: %VRCUdonUdonBehaviour,
-    this\r\n    eventname: %SystemString, null\r\n    networked: %SystemBoolean, null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n
-    \   .export SendEvent\r\n    \r\n    SendEvent:\r\n    \r\n        PUSH, networked\r\n
-    \       JUMP_IF_FALSE, 0x00000060\r\n        PUSH, udonbehaviour\r\n        PUSH,
-    instance_0\r\n        COPY\r\n        PUSH, eventname\r\n        PUSH, eventName_0\r\n
-    \       COPY\r\n        PUSH, instance_0\r\n        PUSH, target_0\r\n        PUSH,
-    eventName_0\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomNetworkEvent__VRCUdonCommonInterfacesNetworkEventTarget_SystemString__SystemVoid\"\r\n
-    \       JUMP, 0x000000A0\r\n        PUSH, udonbehaviour\r\n        PUSH, instance_1\r\n
-    \       COPY\r\n        PUSH, eventname\r\n        PUSH, eventName_1\r\n        COPY\r\n
-    \       PUSH, instance_1\r\n        PUSH, eventName_1\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n
-    \       JUMP, 0xFFFFFFFC\r\n    \r\n    .export _interact\r\n    \r\n    _interact:\r\n
-    \   \r\n        PUSH, instance_2\r\n        PUSH, eventName_2\r\n        EXTERN,
-    \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n
-    \       JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
+  udonAssembly: ".data_start\r\n\r\n    .export udonBehaviour\r\n    .export eventName\r\n   
+    .export networked\r\n    \r\n    __Boolean_0: %SystemBoolean, null\r\n    __instance_0:
+    %VRCUdonUdonBehaviour, this\r\n    __target_0: %VRCUdonCommonInterfacesNetworkEventTarget,
+    null\r\n    __eventName_0: %SystemString, null\r\n    __instance_1: %VRCUdonUdonBehaviour,
+    this\r\n    __eventName_1: %SystemString, null\r\n    __instance_2: %VRCUdonUdonBehaviour,
+    this\r\n    __eventName_2: %SystemString, null\r\n    udonBehaviour: %VRCUdonUdonBehaviour,
+    this\r\n    eventName: %SystemString, null\r\n    networked: %SystemBoolean,
+    null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n    .export SendEvent\r\n   
+    \r\n    SendEvent:\r\n    \r\n        PUSH, networked\r\n        JUMP_IF_FALSE,
+    0x00000060\r\n        PUSH, udonBehaviour\r\n        PUSH, __instance_0\r\n       
+    COPY\r\n        PUSH, eventName\r\n        PUSH, __eventName_0\r\n        COPY\r\n       
+    PUSH, __instance_0\r\n        PUSH, __target_0\r\n        PUSH, __eventName_0\r\n       
+    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomNetworkEvent__VRCUdonCommonInterfacesNetworkEventTarget_SystemString__SystemVoid\"\r\n       
+    JUMP, 0x000000A0\r\n        PUSH, udonBehaviour\r\n        PUSH, __instance_1\r\n       
+    COPY\r\n        PUSH, eventName\r\n        PUSH, __eventName_1\r\n        COPY\r\n       
+    PUSH, __instance_1\r\n        PUSH, __eventName_1\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n       
+    JUMP, 0xFFFFFFFC\r\n    \r\n    .export _interact\r\n    \r\n    _interact:\r\n   
+    \r\n        PUSH, __instance_2\r\n        PUSH, __eventName_2\r\n        EXTERN,
+    \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n       
+    JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
   assemblyError: 
   graphData:
     name: 
@@ -52,11 +53,13 @@ MonoBehaviour:
       - unityObjectValue: {fileID: 0}
         stringValue: 
       - unityObjectValue: {fileID: 0}
-        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|udonbehaviour
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|udonBehaviour
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|True
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|True
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Variable_SystemString
@@ -73,11 +76,13 @@ MonoBehaviour:
       - unityObjectValue: {fileID: 0}
         stringValue: 
       - unityObjectValue: {fileID: 0}
-        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|eventname
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|eventName
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|True
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|True
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Variable_SystemBoolean
@@ -96,14 +101,16 @@ MonoBehaviour:
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|networked
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|True
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|True
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Event_Custom
       uid: 09bea01b-4ab2-487a-bdc2-f0ceea70ebce
-      position: {x: 280, y: 174.35002}
+      position: {x: -243.15, y: 357}
       nodeUIDs:
       - 
       flowUIDs:
@@ -113,7 +120,7 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|SendEvent
     - fullName: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
       uid: 0aa156db-8ba2-4d38-96b8-badeda377b7d
-      position: {x: 881.3504, y: 287.85007}
+      position: {x: 358.85, y: 471}
       nodeUIDs:
       - 334496b9-dbc5-4dec-8e4f-86bcd63cb568|0
       - 19be35c8-4ade-440e-b7eb-6ed9766faf50|0
@@ -125,7 +132,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomNetworkEvent__VRCUdonCommonInterfacesNetworkEventTarget_SystemString__SystemVoid
       uid: 8cd13a27-0961-48ae-a4b1-779852d923bc
-      position: {x: 872.7502, y: 101.45003}
+      position: {x: 350.85, y: 284}
       nodeUIDs:
       - 334496b9-dbc5-4dec-8e4f-86bcd63cb568|0
       - 
@@ -141,7 +148,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Branch
       uid: 0f81ab84-4010-4a13-922f-cfdbaa1bf7e4
-      position: {x: 568.5002, y: 198.95007}
+      position: {x: 46.850006, y: 382}
       nodeUIDs:
       - 87d8afc8-e2bb-4497-9f11-686c8a9608b0|0
       flowUIDs:
@@ -149,10 +156,11 @@ MonoBehaviour:
       - 0aa156db-8ba2-4d38-96b8-badeda377b7d
       nodeValues:
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
     - fullName: Get_Variable
       uid: 87d8afc8-e2bb-4497-9f11-686c8a9608b0
-      position: {x: 316.83896, y: 278.92865}
+      position: {x: -206.15, y: 462}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -161,7 +169,7 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|6622d12f-4890-42ac-92bd-0b5434435f6d
     - fullName: Get_Variable
       uid: 19be35c8-4ade-440e-b7eb-6ed9766faf50
-      position: {x: 558.64087, y: 332.8292}
+      position: {x: 36.850006, y: 516}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -170,7 +178,7 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|5b70c0f9-ec91-4615-897b-1dad2d0a92d6
     - fullName: Get_Variable
       uid: 334496b9-dbc5-4dec-8e4f-86bcd63cb568
-      position: {x: 517.3501, y: 102.05005}
+      position: {x: -5.149994, y: 285}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -199,13 +207,20 @@ MonoBehaviour:
     updateOrder: 0
   graphElementData:
   - type: 5
-    uid: 77584781-920f-4b44-b8e2-8cff87356b48
+    uid: cc2575ad-a2b2-4f29-b4b1-e933f3413d6e
     jsonData: '{"visible":true,"layout":{"serializedVersion":"2","x":1.0,"y":125.0,"width":236.0,"height":278.0}}'
   - type: 4
     uid: 46b19eb7-0412-46d9-9a66-129169c5e5bf
     jsonData: '{"visible":true,"layout":{"serializedVersion":"2","x":10.0,"y":20.0,"width":0.0,"height":0.0}}'
+  - type: 2
+    uid: 8dfd1cc9-1dbd-4bde-a4ad-842a7975dd00
+    jsonData: '{"uid":"8dfd1cc9-1dbd-4bde-a4ad-842a7975dd00","layout":{"serializedVersion":"2","x":-268.0000305175781,"y":226.00003051757813,"width":901.0,"height":401.0},"containedElements":["09bea01b-4ab2-487a-bdc2-f0ceea70ebce","0aa156db-8ba2-4d38-96b8-badeda377b7d","8cd13a27-0961-48ae-a4b1-779852d923bc","0f81ab84-4010-4a13-922f-cfdbaa1bf7e4","87d8afc8-e2bb-4497-9f11-686c8a9608b0","19be35c8-4ade-440e-b7eb-6ed9766faf50","334496b9-dbc5-4dec-8e4f-86bcd63cb568"],"title":"send
+      event","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
+  - type: 2
+    uid: 7e185c00-1f1a-4737-962e-1d3f881119c4
+    jsonData: '{"uid":"7e185c00-1f1a-4737-962e-1d3f881119c4","layout":{"serializedVersion":"2","x":-107.00003814697266,"y":-109.00000762939453,"width":490.0,"height":214.0},"containedElements":["11b40fa9-c607-4889-be06-3efe52ac5648","0ab4c0d8-1a4e-47a1-a70d-9d92b687cabb"],"title":"interact","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
   viewTransform:
-    position: {x: 181.13554, y: 119.35752}
-    scale: 0.57175326
+    position: {x: 540, y: 299.2}
+    scale: 0.8695652
   version: 1.0.0
   showAssembly: 0

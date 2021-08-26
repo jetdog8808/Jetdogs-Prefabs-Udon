@@ -5,6 +5,8 @@ using VRC.SDKBase;
 using VRC.Udon;
 using VRC.SDK3.Components;
 
+namespace JetDog.Prefabs
+{
 [UdonBehaviourSyncMode(BehaviourSyncMode.Manual)]
 [RequireComponent(typeof(VRCObjectPool)), RequireComponent(typeof(BoxCollider))]
 public class simpleVRCPoolController : UdonSharpBehaviour
@@ -27,17 +29,20 @@ public class simpleVRCPoolController : UdonSharpBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        if (!Utilities.IsValid(other)) //player stations will break this.
+        if (!Utilities.IsValid(other) || other == null)
         {
             Debug.Log("trigger had something bad enter");
             return;
         }
 
         VRCPickup temppickup = (VRCPickup)other.GetComponent(typeof(VRCPickup));
+        
 
         if (temppickup)
         {
             temppickup.Drop();
+            Rigidbody temprigid = other.GetComponent<Rigidbody>();
+            if (temprigid) temprigid.velocity = Vector3.zero;
         }
 
         if (Networking.LocalPlayer.IsOwner(other.gameObject))
@@ -48,3 +53,5 @@ public class simpleVRCPoolController : UdonSharpBehaviour
     }
 
 }
+}
+

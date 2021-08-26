@@ -18,6 +18,8 @@ using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
 
+namespace JetDog.Prefabs
+{
 public class Teleport_TwoWay : UdonSharpBehaviour
 {
     public Transform teleporterPoint;
@@ -53,3 +55,5 @@ public class Teleport_TwoWay : UdonSharpBehaviour
         }
     }
 }
+}
+

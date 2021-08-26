@@ -19,17 +19,15 @@ using VRC.SDKBase;
 using VRC.Udon;
 using VRC.SDK3.Components;
 
+namespace JetDog.Prefabs
+{
 public class Pickup_Reset : UdonSharpBehaviour
 {
     public VRC_Pickup[] pickup;
-    [HideInInspector]
-    public VRCObjectSync[] syncCom;
-    [HideInInspector]
-    public Rigidbody[] pickupRigibody;
-    [HideInInspector]
-    public Vector3[] originPoint;
-    [HideInInspector]
-    public Quaternion[] originRotation;
+    private VRCObjectSync[] syncCom;
+    private Rigidbody[] pickupRigibody;
+    private Vector3[] originPoint;
+    private Quaternion[] originRotation;
     public bool forceDrop = true;
     
     private void Start()
@@ -51,7 +49,7 @@ public class Pickup_Reset : UdonSharpBehaviour
             }
         }
     }
-    public virtual void Interact()
+    public override void Interact()
     {
         ResetPickup();
     }
@@ -98,3 +96,5 @@ public class Pickup_Reset : UdonSharpBehaviour
     }
    
 }
+}
+

@@ -19,6 +19,8 @@ using UnityEngine.AI; //needs to be added to use navagents.
 using VRC.SDKBase;
 using VRC.Udon;
 
+namespace JetDog.Prefabs
+{
 public class Navagent_Follow : UdonSharpBehaviour
 {
     public NavMeshAgent navagent;
@@ -42,3 +44,5 @@ public class Navagent_Follow : UdonSharpBehaviour
         }
     }
 }
+}
+

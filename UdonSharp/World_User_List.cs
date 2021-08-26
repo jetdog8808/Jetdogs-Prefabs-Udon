@@ -18,106 +18,82 @@ using UnityEngine;
 using UnityEngine.UI;
 using VRC.SDKBase;
 using VRC.Udon;
+using System;
 
+namespace JetDog.Prefabs
+{
 public class World_User_List : UdonSharpBehaviour
 {
     [HideInInspector]
-    public VRCPlayerApi[] userList;
+    public VRCPlayerApi[] userList = new VRCPlayerApi[80];
     public Text numberDisplay;
     public Text playerList;
-    public string playerformat = "{Name}|ID:{ID}|{VR}|{Master}|{Instance Owner}";
+    [Tooltip("user display name = {Name}\nNetwork ID = {ID}\nVR or Desktop = {VR}\nMaster of instance = {Master}\nInstance Owner = {Instance}")]
+    public string playerformat = "{Name}|ID:{ID}|{VR}|{Master}|{Instance}";
+
+    private void Start()
+    {
+        playerformat = playerformat
+            .Replace("{Name}", "{0}")
+            .Replace("{ID}", "{1}")
+            .Replace("{VR}", "{2}")
+            .Replace("{Master}", "{3}")
+            .Replace("{Instance}", "{4}");
+        Debug.Log(playerformat);
+    }
 
     public virtual void OnPlayerJoined(VRC.SDKBase.VRCPlayerApi player) 
     {
         RefreshList();
-        RefreshUsers();
-
-        if (numberDisplay)
-        {
-            numberDisplay.text = VRCPlayerApi.GetPlayerCount().ToString();
-        }
     }
-    public virtual void OnPlayerLeft(VRC.SDKBase.VRCPlayerApi player) //getting the player array on player leave still has the leaving player so you must remove it manually.
+
+    public virtual void OnPlayerLeft(VRC.SDKBase.VRCPlayerApi player) 
     {
-        
-        for (int i = 0; i < userList.Length; i++)
-        {
-            if(userList[i] == player)
-            {
-                userList[i] = null;
-                break;
-            }
-        }
-        RefreshUsers();
-
-        if (numberDisplay)
-        {
-            /*
-            int usernumber = 0;
-            foreach (VRCPlayerApi user in userList)
-            {
-                if(user != null)
-                {
-                    usernumber += 1;
-                }
-            }
-
-            numberDisplay.text = usernumber.ToString();
-            */
-            numberDisplay.text = VRCPlayerApi.GetPlayerCount().ToString();
-        }
+        SendCustomEventDelayedFrames(nameof(RefreshList), 1, VRC.Udon.Common.Enums.EventTiming.Update);
     }
 
     public void RefreshList()
     {
-        userList = VRCPlayerApi.GetPlayers(new VRCPlayerApi[VRCPlayerApi.GetPlayerCount()]);
+        Array.Clear(userList, 0, userList.Length);
+
+        userList = VRCPlayerApi.GetPlayers(userList);
+
+        RefreshUsers();
+        RefreshCount();
     }
 
     public void RefreshUsers()
     {
-        if (playerList)
+        if (!playerList) return;
+
+        string stringList = string.Empty;
+
+        for (int i = 0; i < userList.Length; i++)
         {
-            string stringList = string.Empty;
+            if (userList[i] == null || !Utilities.IsValid(userList[i])) continue;
 
-            for (int i = 0; i < userList.Length; i++)
-            {
-                if (Utilities.IsValid(userList[i]))
-                {
-                    string tempstring = playerformat.Replace("{Name}", userList[i].displayName);
-                    tempstring = tempstring.Replace("{ID}", userList[i].playerId.ToString());
-                    if (userList[i].IsUserInVR())
-                    {
-                        tempstring = tempstring.Replace("{VR}", "VR");
-                    }
-                    else
-                    {
-                        tempstring = tempstring.Replace("{VR}", "Desktop");
-                    }
-                    if (userList[i].isMaster)
-                    {
-                        tempstring = tempstring.Replace("{Master}", "Master");
-                    }
-                    else
-                    {
-                        tempstring = tempstring.Replace("{Master}", string.Empty);
-                    }
-                    if (userList[i].isInstanceOwner)
-                    {
-                        tempstring = tempstring.Replace("{Instance Owner}", "Instance Owner");
-                    }
-                    else
-                    {
-                        tempstring = tempstring.Replace("{Instance Owner}", string.Empty);
-                    }
 
-                    stringList = string.Concat(stringList, tempstring, "\r\n");
-                }
-            }
-
-            playerList.text = stringList;
+            /*
+             * {0} = display name
+             * {1} = network id
+             * {2} = vr mode
+             * {3} = instance master
+             * {4} = instance owner
+             */
+            stringList = string.Concat(stringList, string.Format(playerformat, userList[i].displayName, userList[i].playerId, userList[i].IsUserInVR() ? "VR" : "Desktop", userList[i].isMaster ? "Master" : string.Empty, userList[i].isInstanceOwner ? "Instance Owner" : string.Empty), "\r\n");
         }
-        
-        
-        
+
+        playerList.text = stringList;
+
+    }
+
+    public void RefreshCount()
+    {
+        if (numberDisplay)
+        {
+            numberDisplay.text = VRCPlayerApi.GetPlayerCount().ToString();
+        }
     }
 }
+}
+

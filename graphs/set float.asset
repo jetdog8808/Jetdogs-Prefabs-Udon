@@ -14,113 +14,114 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   serializedUdonProgramAsset: {fileID: 11400000, guid: 6ea24d3281c45534fa0efcdd9b6c583a,
     type: 2}
-  udonAssembly: ".data_start\r\n\r\n    .export step\r\n    .export udonbehaviour\r\n
-    \   .export variablename\r\n    .export visual\r\n    .export format\r\n    \r\n
-    \   Boolean_0: %SystemBoolean, null\r\n    Object_0: %SystemObject, null\r\n    Object_1:
-    %SystemObject, null\r\n    var_0: %SystemObject, null\r\n    value_0: %SystemObject,
-    null\r\n    instance_0: %VRCUdonUdonBehaviour, this\r\n    symbolName_0: %SystemString,
-    null\r\n    instance_1: %UnityEngineUIText, null\r\n    value_1: %SystemString,
-    null\r\n    instance_2: %SystemSingle, null\r\n    format_0: %SystemString, null\r\n
-    \   provider_0: %SystemIFormatProvider, null\r\n    instance_3: %VRCUdonUdonBehaviour,
-    this\r\n    symbolName_1: %SystemString, null\r\n    value_2: %SystemObject, null\r\n
-    \   Boolean_1: %SystemBoolean, null\r\n    Object_2: %SystemObject, null\r\n    Object_3:
-    %SystemObject, null\r\n    var_1: %SystemObject, null\r\n    instance_5: %UnityEngineUIText,
-    null\r\n    value_4: %SystemString, null\r\n    instance_6: %SystemSingle, null\r\n
-    \   format_1: %SystemString, null\r\n    provider_1: %SystemIFormatProvider, null\r\n
-    \   Single_0: %SystemSingle, null\r\n    Single_1: %SystemSingle, null\r\n    value_3:
-    %SystemObject, null\r\n    instance_4: %VRCUdonUdonBehaviour, this\r\n    symbolName_2:
-    %SystemString, null\r\n    instance_7: %VRCUdonUdonBehaviour, this\r\n    symbolName_3:
-    %SystemString, null\r\n    value_5: %SystemObject, null\r\n    Boolean_2: %SystemBoolean,
-    null\r\n    Object_4: %SystemObject, null\r\n    Object_5: %SystemObject, null\r\n
-    \   var_2: %SystemObject, null\r\n    instance_9: %UnityEngineUIText, null\r\n
-    \   value_7: %SystemString, null\r\n    instance_A: %SystemSingle, null\r\n    format_2:
-    %SystemString, null\r\n    provider_2: %SystemIFormatProvider, null\r\n    Single_2:
-    %SystemSingle, null\r\n    Single_3: %SystemSingle, null\r\n    value_6: %SystemObject,
-    null\r\n    instance_8: %VRCUdonUdonBehaviour, this\r\n    symbolName_4: %SystemString,
-    null\r\n    instance_B: %VRCUdonUdonBehaviour, this\r\n    symbolName_5: %SystemString,
-    null\r\n    value_8: %SystemObject, null\r\n    Boolean_3: %SystemBoolean, null\r\n
-    \   Object_6: %SystemObject, null\r\n    Object_7: %SystemObject, null\r\n    var_3:
-    %SystemObject, null\r\n    instance_C: %UnityEngineUIText, null\r\n    value_9:
-    %SystemString, null\r\n    instance_D: %SystemSingle, null\r\n    format_3: %SystemString,
-    null\r\n    provider_3: %SystemIFormatProvider, null\r\n    step: %SystemSingle,
-    null\r\n    udonbehaviour: %VRCUdonUdonBehaviour, this\r\n    variablename: %SystemString,
-    null\r\n    visual: %UnityEngineUIText, null\r\n    start: %SystemSingle, null\r\n
-    \   format: %SystemString, null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n    .export
-    _start\r\n    \r\n    _start:\r\n    \r\n        PUSH, visual\r\n        PUSH,
-    Object_0\r\n        COPY\r\n        PUSH, var_0\r\n        PUSH, Object_1\r\n
-    \       COPY\r\n        PUSH, Object_0\r\n        PUSH, Object_1\r\n        PUSH,
-    Boolean_0\r\n        EXTERN, \"SystemObject.__op_Inequality__SystemObject_SystemObject__SystemBoolean\"\r\n
-    \       PUSH, Boolean_0\r\n        JUMP_IF_FALSE, 0x0000013C\r\n        PUSH,
-    udonbehaviour\r\n        PUSH, instance_0\r\n        COPY\r\n        PUSH, variablename\r\n
-    \       PUSH, symbolName_0\r\n        COPY\r\n        PUSH, instance_0\r\n        PUSH,
-    symbolName_0\r\n        PUSH, value_0\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject\"\r\n
-    \       PUSH, value_0\r\n        PUSH, start\r\n        EXTERN, \"SystemConvert.__ToSingle__SystemObject__SystemSingle\"\r\n
-    \       PUSH, start\r\n        PUSH, start\r\n        COPY\r\n        PUSH, visual\r\n
-    \       PUSH, instance_1\r\n        COPY\r\n        PUSH, format\r\n        PUSH,
-    format_0\r\n        COPY\r\n        PUSH, start\r\n        PUSH, format_0\r\n
-    \       PUSH, provider_0\r\n        PUSH, value_1\r\n        EXTERN, \"SystemSingle.__ToString__SystemString_SystemIFormatProvider__SystemString\"\r\n
-    \       PUSH, instance_1\r\n        PUSH, value_1\r\n        EXTERN, \"UnityEngineUIText.__set_text__SystemString__SystemVoid\"\r\n
-    \       JUMP, 0x0000013C\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n    .export increase\r\n
-    \   \r\n    increase:\r\n    \r\n        PUSH, udonbehaviour\r\n        PUSH,
-    instance_3\r\n        COPY\r\n        PUSH, variablename\r\n        PUSH, symbolName_1\r\n
-    \       COPY\r\n        PUSH, udonbehaviour\r\n        PUSH, instance_4\r\n        COPY\r\n
-    \       PUSH, variablename\r\n        PUSH, symbolName_2\r\n        COPY\r\n        PUSH,
-    instance_4\r\n        PUSH, symbolName_2\r\n        PUSH, value_3\r\n        EXTERN,
-    \"VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject\"\r\n
-    \       PUSH, value_3\r\n        PUSH, Single_0\r\n        EXTERN, \"SystemConvert.__ToSingle__SystemObject__SystemSingle\"\r\n
-    \       PUSH, Single_0\r\n        PUSH, step\r\n        PUSH, value_2\r\n        EXTERN,
-    \"SystemSingle.__op_Addition__SystemSingle_SystemSingle__SystemSingle\"\r\n        PUSH,
-    instance_3\r\n        PUSH, symbolName_1\r\n        PUSH, value_2\r\n        EXTERN,
-    \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n
-    \       PUSH, visual\r\n        PUSH, Object_2\r\n        COPY\r\n        PUSH,
-    var_1\r\n        PUSH, Object_3\r\n        COPY\r\n        PUSH, Object_2\r\n
-    \       PUSH, Object_3\r\n        PUSH, Boolean_1\r\n        EXTERN, \"SystemObject.__op_Inequality__SystemObject_SystemObject__SystemBoolean\"\r\n
-    \       PUSH, Boolean_1\r\n        JUMP_IF_FALSE, 0x00000310\r\n        PUSH,
-    visual\r\n        PUSH, instance_5\r\n        COPY\r\n        PUSH, udonbehaviour\r\n
-    \       PUSH, instance_4\r\n        COPY\r\n        PUSH, variablename\r\n        PUSH,
-    symbolName_2\r\n        COPY\r\n        PUSH, value_2\r\n        PUSH, instance_6\r\n
-    \       COPY\r\n        PUSH, format\r\n        PUSH, format_1\r\n        COPY\r\n
-    \       PUSH, value_2\r\n        PUSH, format_1\r\n        PUSH, provider_1\r\n
-    \       PUSH, value_4\r\n        EXTERN, \"SystemSingle.__ToString__SystemString_SystemIFormatProvider__SystemString\"\r\n
-    \       PUSH, instance_5\r\n        PUSH, value_4\r\n        EXTERN, \"UnityEngineUIText.__set_text__SystemString__SystemVoid\"\r\n
-    \       JUMP, 0x00000310\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n    .export decrease\r\n
-    \   \r\n    decrease:\r\n    \r\n        PUSH, udonbehaviour\r\n        PUSH,
-    instance_7\r\n        COPY\r\n        PUSH, variablename\r\n        PUSH, symbolName_3\r\n
-    \       COPY\r\n        PUSH, udonbehaviour\r\n        PUSH, instance_8\r\n        COPY\r\n
-    \       PUSH, variablename\r\n        PUSH, symbolName_4\r\n        COPY\r\n        PUSH,
-    instance_8\r\n        PUSH, symbolName_4\r\n        PUSH, value_6\r\n        EXTERN,
-    \"VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject\"\r\n
-    \       PUSH, value_6\r\n        PUSH, Single_2\r\n        EXTERN, \"SystemConvert.__ToSingle__SystemObject__SystemSingle\"\r\n
-    \       PUSH, Single_2\r\n        PUSH, step\r\n        PUSH, value_5\r\n        EXTERN,
-    \"SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle\"\r\n
-    \       PUSH, instance_7\r\n        PUSH, symbolName_3\r\n        PUSH, value_5\r\n
-    \       EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n
-    \       PUSH, visual\r\n        PUSH, Object_4\r\n        COPY\r\n        PUSH,
-    var_2\r\n        PUSH, Object_5\r\n        COPY\r\n        PUSH, Object_4\r\n
-    \       PUSH, Object_5\r\n        PUSH, Boolean_2\r\n        EXTERN, \"SystemObject.__op_Inequality__SystemObject_SystemObject__SystemBoolean\"\r\n
-    \       PUSH, Boolean_2\r\n        JUMP_IF_FALSE, 0x000004E4\r\n        PUSH,
-    visual\r\n        PUSH, instance_9\r\n        COPY\r\n        PUSH, udonbehaviour\r\n
-    \       PUSH, instance_8\r\n        COPY\r\n        PUSH, variablename\r\n        PUSH,
-    symbolName_4\r\n        COPY\r\n        PUSH, value_5\r\n        PUSH, instance_A\r\n
-    \       COPY\r\n        PUSH, format\r\n        PUSH, format_2\r\n        COPY\r\n
-    \       PUSH, value_5\r\n        PUSH, format_2\r\n        PUSH, provider_2\r\n
-    \       PUSH, value_7\r\n        EXTERN, \"SystemSingle.__ToString__SystemString_SystemIFormatProvider__SystemString\"\r\n
-    \       PUSH, instance_9\r\n        PUSH, value_7\r\n        EXTERN, \"UnityEngineUIText.__set_text__SystemString__SystemVoid\"\r\n
-    \       JUMP, 0x000004E4\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n    .export reset\r\n
-    \   \r\n    reset:\r\n    \r\n        PUSH, udonbehaviour\r\n        PUSH, instance_B\r\n
-    \       COPY\r\n        PUSH, variablename\r\n        PUSH, symbolName_5\r\n        COPY\r\n
-    \       PUSH, instance_B\r\n        PUSH, symbolName_5\r\n        PUSH, start\r\n
-    \       EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n
-    \       PUSH, visual\r\n        PUSH, Object_6\r\n        COPY\r\n        PUSH,
-    var_3\r\n        PUSH, Object_7\r\n        COPY\r\n        PUSH, Object_6\r\n
-    \       PUSH, Object_7\r\n        PUSH, Boolean_3\r\n        EXTERN, \"SystemObject.__op_Inequality__SystemObject_SystemObject__SystemBoolean\"\r\n
-    \       PUSH, Boolean_3\r\n        JUMP_IF_FALSE, 0x000005FC\r\n        PUSH,
-    visual\r\n        PUSH, instance_C\r\n        COPY\r\n        PUSH, format\r\n
-    \       PUSH, format_3\r\n        COPY\r\n        PUSH, start\r\n        PUSH,
-    format_3\r\n        PUSH, provider_3\r\n        PUSH, value_9\r\n        EXTERN,
-    \"SystemSingle.__ToString__SystemString_SystemIFormatProvider__SystemString\"\r\n
-    \       PUSH, instance_C\r\n        PUSH, value_9\r\n        EXTERN, \"UnityEngineUIText.__set_text__SystemString__SystemVoid\"\r\n
-    \       JUMP, 0x000005FC\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
+  udonAssembly: ".data_start\r\n\r\n    .export step\r\n    .export udonbehaviour\r\n   
+    .export variablename\r\n    .export visual\r\n    .export format\r\n    \r\n   
+    __Boolean_0: %SystemBoolean, null\r\n    __Object_0: %SystemObject, null\r\n   
+    __Object_1: %SystemObject, null\r\n    __var_0: %SystemObject, null\r\n    __value_0:
+    %SystemObject, null\r\n    __instance_0: %VRCUdonUdonBehaviour, this\r\n    __symbolName_0:
+    %SystemString, null\r\n    __instance_1: %UnityEngineUIText, null\r\n    __value_1:
+    %SystemString, null\r\n    __instance_2: %SystemSingle, null\r\n    __format_0:
+    %SystemString, null\r\n    __provider_0: %SystemIFormatProvider, null\r\n   
+    __instance_3: %VRCUdonUdonBehaviour, this\r\n    __symbolName_1: %SystemString,
+    null\r\n    __value_2: %SystemObject, null\r\n    __Boolean_1: %SystemBoolean,
+    null\r\n    __Object_2: %SystemObject, null\r\n    __Object_3: %SystemObject,
+    null\r\n    __var_1: %SystemObject, null\r\n    __instance_5: %UnityEngineUIText,
+    null\r\n    __value_4: %SystemString, null\r\n    __instance_6: %SystemSingle,
+    null\r\n    __format_1: %SystemString, null\r\n    __provider_1: %SystemIFormatProvider,
+    null\r\n    __Single_0: %SystemSingle, null\r\n    __Single_1: %SystemSingle,
+    null\r\n    __value_3: %SystemObject, null\r\n    __instance_4: %VRCUdonUdonBehaviour,
+    this\r\n    __symbolName_2: %SystemString, null\r\n    __instance_7: %VRCUdonUdonBehaviour,
+    this\r\n    __symbolName_3: %SystemString, null\r\n    __value_5: %SystemObject,
+    null\r\n    __Boolean_2: %SystemBoolean, null\r\n    __Object_4: %SystemObject,
+    null\r\n    __Object_5: %SystemObject, null\r\n    __var_2: %SystemObject, null\r\n   
+    __instance_9: %UnityEngineUIText, null\r\n    __value_7: %SystemString, null\r\n   
+    __instance_A: %SystemSingle, null\r\n    __format_2: %SystemString, null\r\n   
+    __provider_2: %SystemIFormatProvider, null\r\n    __Single_2: %SystemSingle,
+    null\r\n    __Single_3: %SystemSingle, null\r\n    __value_6: %SystemObject,
+    null\r\n    __instance_8: %VRCUdonUdonBehaviour, this\r\n    __symbolName_4:
+    %SystemString, null\r\n    __instance_B: %VRCUdonUdonBehaviour, this\r\n    __symbolName_5:
+    %SystemString, null\r\n    __value_8: %SystemObject, null\r\n    __Boolean_3:
+    %SystemBoolean, null\r\n    __Object_6: %SystemObject, null\r\n    __Object_7:
+    %SystemObject, null\r\n    __var_3: %SystemObject, null\r\n    __instance_C:
+    %UnityEngineUIText, null\r\n    __value_9: %SystemString, null\r\n    __instance_D:
+    %SystemSingle, null\r\n    __format_3: %SystemString, null\r\n    __provider_3:
+    %SystemIFormatProvider, null\r\n    step: %SystemSingle, null\r\n    udonbehaviour:
+    %VRCUdonUdonBehaviour, this\r\n    variablename: %SystemString, null\r\n    visual:
+    %UnityEngineUIText, null\r\n    start: %SystemSingle, null\r\n    format: %SystemString,
+    null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n    .export _start\r\n    \r\n   
+    _start:\r\n    \r\n        PUSH, visual\r\n        PUSH, __Object_0\r\n       
+    COPY\r\n        PUSH, __var_0\r\n        PUSH, __Object_1\r\n        COPY\r\n       
+    PUSH, __Object_0\r\n        PUSH, __Object_1\r\n        PUSH, __Boolean_0\r\n       
+    EXTERN, \"SystemObject.__op_Inequality__SystemObject_SystemObject__SystemBoolean\"\r\n       
+    PUSH, __Boolean_0\r\n        JUMP_IF_FALSE, 0x00000128\r\n        PUSH, udonbehaviour\r\n       
+    PUSH, __instance_0\r\n        COPY\r\n        PUSH, variablename\r\n        PUSH,
+    __symbolName_0\r\n        COPY\r\n        PUSH, __instance_0\r\n        PUSH,
+    __symbolName_0\r\n        PUSH, __value_0\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject\"\r\n       
+    PUSH, __value_0\r\n        PUSH, start\r\n        EXTERN, \"SystemConvert.__ToSingle__SystemObject__SystemSingle\"\r\n       
+    PUSH, visual\r\n        PUSH, __instance_1\r\n        COPY\r\n        PUSH, format\r\n       
+    PUSH, __format_0\r\n        COPY\r\n        PUSH, start\r\n        PUSH, __format_0\r\n       
+    PUSH, __provider_0\r\n        PUSH, __value_1\r\n        EXTERN, \"SystemSingle.__ToString__SystemString_SystemIFormatProvider__SystemString\"\r\n       
+    PUSH, __instance_1\r\n        PUSH, __value_1\r\n        EXTERN, \"UnityEngineUIText.__set_text__SystemString__SystemVoid\"\r\n       
+    JUMP, 0x00000128\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n    .export increase\r\n   
+    \r\n    increase:\r\n    \r\n        PUSH, udonbehaviour\r\n        PUSH, __instance_3\r\n       
+    COPY\r\n        PUSH, variablename\r\n        PUSH, __symbolName_1\r\n       
+    COPY\r\n        PUSH, udonbehaviour\r\n        PUSH, __instance_4\r\n       
+    COPY\r\n        PUSH, variablename\r\n        PUSH, __symbolName_2\r\n       
+    COPY\r\n        PUSH, __instance_4\r\n        PUSH, __symbolName_2\r\n       
+    PUSH, __value_3\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject\"\r\n       
+    PUSH, __value_3\r\n        PUSH, __Single_0\r\n        EXTERN, \"SystemConvert.__ToSingle__SystemObject__SystemSingle\"\r\n       
+    PUSH, __Single_0\r\n        PUSH, step\r\n        PUSH, __value_2\r\n       
+    EXTERN, \"SystemSingle.__op_Addition__SystemSingle_SystemSingle__SystemSingle\"\r\n       
+    PUSH, __instance_3\r\n        PUSH, __symbolName_1\r\n        PUSH, __value_2\r\n       
+    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n       
+    PUSH, visual\r\n        PUSH, __Object_2\r\n        COPY\r\n        PUSH, __var_1\r\n       
+    PUSH, __Object_3\r\n        COPY\r\n        PUSH, __Object_2\r\n        PUSH,
+    __Object_3\r\n        PUSH, __Boolean_1\r\n        EXTERN, \"SystemObject.__op_Inequality__SystemObject_SystemObject__SystemBoolean\"\r\n       
+    PUSH, __Boolean_1\r\n        JUMP_IF_FALSE, 0x000002FC\r\n        PUSH, visual\r\n       
+    PUSH, __instance_5\r\n        COPY\r\n        PUSH, udonbehaviour\r\n       
+    PUSH, __instance_4\r\n        COPY\r\n        PUSH, variablename\r\n        PUSH,
+    __symbolName_2\r\n        COPY\r\n        PUSH, __value_2\r\n        PUSH, __instance_6\r\n       
+    COPY\r\n        PUSH, format\r\n        PUSH, __format_1\r\n        COPY\r\n       
+    PUSH, __value_2\r\n        PUSH, __format_1\r\n        PUSH, __provider_1\r\n       
+    PUSH, __value_4\r\n        EXTERN, \"SystemSingle.__ToString__SystemString_SystemIFormatProvider__SystemString\"\r\n       
+    PUSH, __instance_5\r\n        PUSH, __value_4\r\n        EXTERN, \"UnityEngineUIText.__set_text__SystemString__SystemVoid\"\r\n       
+    JUMP, 0x000002FC\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n    .export decrease\r\n   
+    \r\n    decrease:\r\n    \r\n        PUSH, udonbehaviour\r\n        PUSH, __instance_7\r\n       
+    COPY\r\n        PUSH, variablename\r\n        PUSH, __symbolName_3\r\n       
+    COPY\r\n        PUSH, udonbehaviour\r\n        PUSH, __instance_8\r\n       
+    COPY\r\n        PUSH, variablename\r\n        PUSH, __symbolName_4\r\n       
+    COPY\r\n        PUSH, __instance_8\r\n        PUSH, __symbolName_4\r\n       
+    PUSH, __value_6\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject\"\r\n       
+    PUSH, __value_6\r\n        PUSH, __Single_2\r\n        EXTERN, \"SystemConvert.__ToSingle__SystemObject__SystemSingle\"\r\n       
+    PUSH, __Single_2\r\n        PUSH, step\r\n        PUSH, __value_5\r\n       
+    EXTERN, \"SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle\"\r\n       
+    PUSH, __instance_7\r\n        PUSH, __symbolName_3\r\n        PUSH, __value_5\r\n       
+    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n       
+    PUSH, visual\r\n        PUSH, __Object_4\r\n        COPY\r\n        PUSH, __var_2\r\n       
+    PUSH, __Object_5\r\n        COPY\r\n        PUSH, __Object_4\r\n        PUSH,
+    __Object_5\r\n        PUSH, __Boolean_2\r\n        EXTERN, \"SystemObject.__op_Inequality__SystemObject_SystemObject__SystemBoolean\"\r\n       
+    PUSH, __Boolean_2\r\n        JUMP_IF_FALSE, 0x000004D0\r\n        PUSH, visual\r\n       
+    PUSH, __instance_9\r\n        COPY\r\n        PUSH, udonbehaviour\r\n       
+    PUSH, __instance_8\r\n        COPY\r\n        PUSH, variablename\r\n        PUSH,
+    __symbolName_4\r\n        COPY\r\n        PUSH, __value_5\r\n        PUSH, __instance_A\r\n       
+    COPY\r\n        PUSH, format\r\n        PUSH, __format_2\r\n        COPY\r\n       
+    PUSH, __value_5\r\n        PUSH, __format_2\r\n        PUSH, __provider_2\r\n       
+    PUSH, __value_7\r\n        EXTERN, \"SystemSingle.__ToString__SystemString_SystemIFormatProvider__SystemString\"\r\n       
+    PUSH, __instance_9\r\n        PUSH, __value_7\r\n        EXTERN, \"UnityEngineUIText.__set_text__SystemString__SystemVoid\"\r\n       
+    JUMP, 0x000004D0\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n    .export reset\r\n   
+    \r\n    reset:\r\n    \r\n        PUSH, udonbehaviour\r\n        PUSH, __instance_B\r\n       
+    COPY\r\n        PUSH, variablename\r\n        PUSH, __symbolName_5\r\n       
+    COPY\r\n        PUSH, __instance_B\r\n        PUSH, __symbolName_5\r\n       
+    PUSH, start\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n       
+    PUSH, visual\r\n        PUSH, __Object_6\r\n        COPY\r\n        PUSH, __var_3\r\n       
+    PUSH, __Object_7\r\n        COPY\r\n        PUSH, __Object_6\r\n        PUSH,
+    __Object_7\r\n        PUSH, __Boolean_3\r\n        EXTERN, \"SystemObject.__op_Inequality__SystemObject_SystemObject__SystemBoolean\"\r\n       
+    PUSH, __Boolean_3\r\n        JUMP_IF_FALSE, 0x000005E8\r\n        PUSH, visual\r\n       
+    PUSH, __instance_C\r\n        COPY\r\n        PUSH, format\r\n        PUSH, __format_3\r\n       
+    COPY\r\n        PUSH, start\r\n        PUSH, __format_3\r\n        PUSH, __provider_3\r\n       
+    PUSH, __value_9\r\n        EXTERN, \"SystemSingle.__ToString__SystemString_SystemIFormatProvider__SystemString\"\r\n       
+    PUSH, __instance_C\r\n        PUSH, __value_9\r\n        EXTERN, \"UnityEngineUIText.__set_text__SystemString__SystemVoid\"\r\n       
+    JUMP, 0x000005E8\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
   assemblyError: 
   graphData:
     name: 
@@ -142,9 +143,11 @@ MonoBehaviour:
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|step
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|True
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|True
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Variable_VRCUdonCommonInterfacesIUdonEventReceiver
@@ -163,9 +166,11 @@ MonoBehaviour:
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|udonbehaviour
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|True
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|True
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Variable_SystemString
@@ -184,9 +189,11 @@ MonoBehaviour:
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|variablename
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|True
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|True
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Variable_UnityEngineUIText
@@ -205,9 +212,11 @@ MonoBehaviour:
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|visual
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|True
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|True
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid
@@ -272,7 +281,8 @@ MonoBehaviour:
       - 52f47bdd-5ca6-4e26-9cfa-33c5ee731d7a
       nodeValues:
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
     - fullName: SystemObject.__op_Inequality__SystemObject_SystemObject__SystemBoolean
       uid: 0e265508-8ad0-48cd-ba0d-d73257b21777
       position: {x: -256.59488, y: -591.61304}
@@ -445,7 +455,8 @@ MonoBehaviour:
       - b1a4b1f4-310d-499c-aa8e-2f7838c4329c
       nodeValues:
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
     - fullName: Get_Variable
       uid: c2e041fc-9c1b-4f8a-8c09-50cdecd8dd5b
       position: {x: 511.9278, y: 447.94592}
@@ -503,7 +514,8 @@ MonoBehaviour:
       - cebac251-5725-49f8-852c-d4ee82bd2ed9
       nodeValues:
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
     - fullName: SystemObject.__op_Inequality__SystemObject_SystemObject__SystemBoolean
       uid: 5b6fafd1-d395-4503-b502-263c95dab4d6
       position: {x: 2510.9084, y: -368.55087}
@@ -645,9 +657,11 @@ MonoBehaviour:
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|start
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Set_Variable
@@ -688,9 +702,11 @@ MonoBehaviour:
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|format
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|True
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|True
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Get_Variable
@@ -738,7 +754,8 @@ MonoBehaviour:
       - ef83bda6-ded0-4f31-912a-0bb36d30fe67
       nodeValues:
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
     - fullName: SystemObject.__op_Inequality__SystemObject_SystemObject__SystemBoolean
       uid: ab170c9a-ff6c-417f-8b09-dbf6096cddea
       position: {x: 1923.9094, y: 356.6656}

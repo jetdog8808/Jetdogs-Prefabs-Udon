@@ -45,7 +45,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 1df7fff74a23e804c9df642eef1bdf29, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.05
+  m_Volume: 0.02
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -147,6 +147,7 @@ MonoBehaviour:
   proximity: 2
   SynchronizePosition: 0
   AllowCollisionOwnershipTransfer: 0
+  Reliable: 0
   serializedProgramAsset: {fileID: 11400000, guid: 1cc24d3b9bfa0724e946b02b2b13bd1c,
     type: 2}
   programSource: {fileID: 11400000, guid: 6822c336e0440ca42ba10e25cb8a1248, type: 2}

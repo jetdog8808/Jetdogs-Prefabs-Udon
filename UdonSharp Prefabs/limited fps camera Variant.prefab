@@ -18,6 +18,7 @@ MonoBehaviour:
   proximity: 2
   SynchronizePosition: 0
   AllowCollisionOwnershipTransfer: 0
+  Reliable: 0
   serializedProgramAsset: {fileID: 11400000, guid: 479d38e2dcb24504aa8776e4449b25df,
     type: 2}
   programSource: {fileID: 11400000, guid: d730be4705c764544844740807a39620, type: 2}
@@ -33,6 +34,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3815033953111451235, guid: fe19c484debd5724e860a506a383affd,
         type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3815033953111451235, guid: fe19c484debd5724e860a506a383affd,
+        type: 3}
       propertyPath: m_TargetTexture
       value: 
       objectReference: {fileID: 8400000, guid: 1f4ade3291a1be547a01f99eb5d87960, type: 2}
@@ -40,6 +46,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: limited fps camera Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741275669508232837, guid: fe19c484debd5724e860a506a383affd,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4741275669508232837, guid: fe19c484debd5724e860a506a383affd,
         type: 3}
@@ -58,6 +69,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4741275669508232837, guid: fe19c484debd5724e860a506a383affd,
         type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741275669508232837, guid: fe19c484debd5724e860a506a383affd,
+        type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
@@ -69,16 +85,6 @@ PrefabInstance:
     - target: {fileID: 4741275669508232837, guid: fe19c484debd5724e860a506a383affd,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4741275669508232837, guid: fe19c484debd5724e860a506a383affd,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4741275669508232837, guid: fe19c484debd5724e860a506a383affd,
-        type: 3}
-      propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4741275669508232837, guid: fe19c484debd5724e860a506a383affd,

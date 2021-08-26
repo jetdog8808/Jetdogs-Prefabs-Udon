@@ -18,6 +18,8 @@ using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
 
+namespace JetDog.Prefabs
+{
 public class Trigger_Teleporter : UdonSharpBehaviour
 {
     public Transform teleportPoint;
@@ -32,3 +34,5 @@ public class Trigger_Teleporter : UdonSharpBehaviour
         }
     }
 }
+}
+

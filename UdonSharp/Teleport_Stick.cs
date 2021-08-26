@@ -18,6 +18,8 @@ using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
 
+namespace JetDog.Prefabs
+{
 public class Teleport_Stick : UdonSharpBehaviour
 {
     public Transform rayAim;
@@ -33,7 +35,7 @@ public class Teleport_Stick : UdonSharpBehaviour
 
     void Start()
     {
-        Debug.Log(hitMask.value);
+        //Debug.Log(hitMask.value);
         pickup = (VRC_Pickup)GetComponent(typeof(VRC_Pickup));
         transform = GetComponent<Transform>();
         transform.hasChanged = false;
@@ -101,3 +103,5 @@ public class Teleport_Stick : UdonSharpBehaviour
     
     }
 }
+}
+

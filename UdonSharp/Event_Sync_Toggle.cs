@@ -18,33 +18,39 @@ using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
 
+namespace JetDog.Prefabs
+{
 public class Event_Sync_Toggle : UdonSharpBehaviour
 {
     public GameObject[] gameobjectArray;
+    //local state of toggle
     private bool state = false;
 
     void Start()
     {
+        //request master what state things are.
         if (!Networking.IsMaster)
         {
-            SendCustomNetworkEvent(VRC.Udon.Common.Interfaces.NetworkEventTarget.Owner, "RequestState");
+            SendCustomNetworkEvent(VRC.Udon.Common.Interfaces.NetworkEventTarget.Owner, nameof(RequestState));
         }        
     }
 
-    public virtual void Interact() 
+    public override void Interact() 
     {
+        //send a event of the state you are switching too.
         if (!state)
         {
-            SendCustomNetworkEvent(VRC.Udon.Common.Interfaces.NetworkEventTarget.All, "OnToggle");
+            SendCustomNetworkEvent(VRC.Udon.Common.Interfaces.NetworkEventTarget.All, nameof(OnToggle));
         }
         else
         {
-            SendCustomNetworkEvent(VRC.Udon.Common.Interfaces.NetworkEventTarget.All, "OffToggle");
+            SendCustomNetworkEvent(VRC.Udon.Common.Interfaces.NetworkEventTarget.All, nameof(OffToggle));
         }
     }
 
     public void Toggle()
     {
+        //invert your current state of objects.
         state = !state;
         for (int i = 0; i < gameobjectArray.Length; i++)
         {
@@ -54,18 +60,20 @@ public class Event_Sync_Toggle : UdonSharpBehaviour
 
     public void RequestState()
     {
+        //master replying back what state they are at.
         if (state)
         {
-            SendCustomNetworkEvent(VRC.Udon.Common.Interfaces.NetworkEventTarget.All, "OnToggle");
+            SendCustomNetworkEvent(VRC.Udon.Common.Interfaces.NetworkEventTarget.All, nameof(OnToggle));
         }
         else
         {
-            SendCustomNetworkEvent(VRC.Udon.Common.Interfaces.NetworkEventTarget.All, "OffToggle");
+            SendCustomNetworkEvent(VRC.Udon.Common.Interfaces.NetworkEventTarget.All, nameof(OffToggle));
         }
     }
 
     public void OnToggle()
     {
+        //if state is off switch it.
         if (!state)
         {
             Toggle();
@@ -74,9 +82,12 @@ public class Event_Sync_Toggle : UdonSharpBehaviour
 
     public void OffToggle()
     {
+        //if state is on switch it.
         if (state)
         {
             Toggle();
         }
     }
 }
+}
+

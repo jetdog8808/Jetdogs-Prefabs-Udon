@@ -14,22 +14,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   serializedUdonProgramAsset: {fileID: 11400000, guid: d85c903846a264c4abe0fe42538c30b5,
     type: 2}
-  udonAssembly: ".data_start\r\n\r\n    .export key\r\n    .export udonbehaviour\r\n
-    \   .export eventname\r\n    \r\n    Boolean_0: %SystemBoolean, null\r\n    Object_0:
-    %SystemObject, null\r\n    Object_1: %SystemObject, null\r\n    onTriggerEnterOther:
-    %UnityEngineCollider, null\r\n    instance_0: %VRCUdonUdonBehaviour, this\r\n
-    \   eventName_0: %SystemString, null\r\n    key: %UnityEngineCollider, null\r\n
-    \   udonbehaviour: %VRCUdonUdonBehaviour, this\r\n    eventname: %SystemString,
-    null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n    .export _onTriggerEnter\r\n
-    \   \r\n    _onTriggerEnter:\r\n    \r\n        PUSH, onTriggerEnterOther\r\n
-    \       PUSH, Object_0\r\n        COPY\r\n        PUSH, key\r\n        PUSH, Object_1\r\n
-    \       COPY\r\n        PUSH, Object_0\r\n        PUSH, Object_1\r\n        PUSH,
-    Boolean_0\r\n        EXTERN, \"SystemObject.__op_Equality__SystemObject_SystemObject__SystemBoolean\"\r\n
-    \       PUSH, Boolean_0\r\n        JUMP_IF_FALSE, 0x000000A0\r\n        PUSH,
-    udonbehaviour\r\n        PUSH, instance_0\r\n        COPY\r\n        PUSH, eventname\r\n
-    \       PUSH, eventName_0\r\n        COPY\r\n        PUSH, instance_0\r\n        PUSH,
-    eventName_0\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n
-    \       JUMP, 0x000000A0\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
+  udonAssembly: ".data_start\r\n\r\n    .export key\r\n    .export udonbehaviour\r\n   
+    .export eventname\r\n    \r\n    __Boolean_0: %SystemBoolean, null\r\n    __Object_0:
+    %SystemObject, null\r\n    __Object_1: %SystemObject, null\r\n    onTriggerEnterOther:
+    %UnityEngineCollider, null\r\n    __instance_0: %VRCUdonUdonBehaviour, this\r\n   
+    __eventName_0: %SystemString, null\r\n    key: %UnityEngineCollider, null\r\n   
+    udonbehaviour: %VRCUdonUdonBehaviour, this\r\n    eventname: %SystemString, null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n   
+    .export _onTriggerEnter\r\n    \r\n    _onTriggerEnter:\r\n    \r\n        PUSH,
+    onTriggerEnterOther\r\n        PUSH, __Object_0\r\n        COPY\r\n        PUSH,
+    key\r\n        PUSH, __Object_1\r\n        COPY\r\n        PUSH, __Object_0\r\n       
+    PUSH, __Object_1\r\n        PUSH, __Boolean_0\r\n        EXTERN, \"SystemObject.__op_Equality__SystemObject_SystemObject__SystemBoolean\"\r\n       
+    PUSH, __Boolean_0\r\n        JUMP_IF_FALSE, 0x000000A0\r\n        PUSH, udonbehaviour\r\n       
+    PUSH, __instance_0\r\n        COPY\r\n        PUSH, eventname\r\n        PUSH,
+    __eventName_0\r\n        COPY\r\n        PUSH, __instance_0\r\n        PUSH,
+    __eventName_0\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n       
+    JUMP, 0x000000A0\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
   assemblyError: 
   graphData:
     name: 
@@ -51,9 +50,11 @@ MonoBehaviour:
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|key
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|True
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|True
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Event_OnTriggerEnter
@@ -93,7 +94,8 @@ MonoBehaviour:
       - 5d40b4ec-faf8-4e1e-8a9a-ac74e6b0fa4c
       nodeValues:
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
     - fullName: Variable_VRCUdonCommonInterfacesIUdonEventReceiver
       uid: e4f6c1d7-c163-4320-a03d-a07913291880
       position: {x: -1722.0007, y: -651.4188}
@@ -110,9 +112,11 @@ MonoBehaviour:
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|udonbehaviour
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|True
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|True
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Variable_SystemString
@@ -131,9 +135,11 @@ MonoBehaviour:
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|eventname
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|True
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|True
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Get_Variable

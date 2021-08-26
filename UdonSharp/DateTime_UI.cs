@@ -21,15 +21,17 @@ using TMPro;
 using VRC.SDKBase;
 using VRC.Udon;
 
+
+namespace JetDog.Prefabs
+{
 public class DateTime_UI : UdonSharpBehaviour
 {
-    public string timeZoneID = string.Empty;
+    //https://docs.microsoft.com/en-us/dotnet/api/system.globalization.datetimeformatinfo?view=net-5.0#remarks
+    [Tooltip("Formatting info in code comments.")]
     public string format = "hh:mm:ss tt";
-    public Text uiDisplay;
-    public TextMeshPro textMeshDisplay;
-    public bool autoupdate = true;
-    private TimeZoneInfo timezone;
 
+    [Tooltip("Some ID's in code comments.")]
+    public string timeZoneID = string.Empty;
     /*some common timezone ids you can use. 
      * 
      * Pacific Standard Time
@@ -38,8 +40,20 @@ public class DateTime_UI : UdonSharpBehaviour
      * Eastern Standard Time
      * GMT Standard Time
      * Central Europe Standard Time
+     * Tokyo Standard Time
      * 
      */
+
+    [Space(5)]
+    public bool autoupdate = true;
+
+    [Space(5)]
+    [Tooltip("Unity UI or TMPro")]
+    public MaskableGraphic display;
+
+    private TimeZoneInfo timezone;
+
+    
     void Start()
     {
         if(timeZoneID == string.Empty)
@@ -54,36 +68,47 @@ public class DateTime_UI : UdonSharpBehaviour
 
     private void Update()
     {
-        if (autoupdate)
-        {
-            if (uiDisplay)
-            {
-                UIDisplayTime();
-            }
-            if (textMeshDisplay)
-            {
-                TextmeshProDisplayTime();
-            }
-        }
-        
+        //checks time each from if autoupdate is true;
+        if (!autoupdate) return;
+
+        UpdateDisplay();
     }
 
-    public void UIDisplayTime()
+    private void UpdateDisplay()
     {
-        string tempstring = TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, timezone).ToString(format);
-        if(uiDisplay.text != tempstring)
+
+        if (!display)
         {
-            uiDisplay.text = tempstring;
+            return;
         }
-        
+
+        Type type = display.GetType();
+        string tempstring = TimeZoneInfo.ConvertTime(DateTime.Now, timezone).ToString(format);
+
+        if (type == typeof(Text))
+        {
+            if (((Text)display).text != tempstring)
+            {
+                ((Text)display).text = tempstring;
+            }
+        }
+        else if (type == typeof(TextMeshPro))
+        {
+            if (((TextMeshPro)display).text != tempstring)
+            {
+                ((TextMeshPro)display).text = tempstring;
+            }
+        }
+        else if (type == typeof(TextMeshProUGUI))
+        {
+            if (((TextMeshProUGUI)display).text != tempstring)
+            {
+                ((TextMeshProUGUI)display).text = tempstring;
+            }
+        }
+
     }
 
-    public void TextmeshProDisplayTime()
-    {
-        string tempstring = TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, timezone).ToString(format);
-        if (textMeshDisplay.text != tempstring)
-        {
-            textMeshDisplay.text = tempstring;
-        }
-    }
 }
+}
+

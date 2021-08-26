@@ -1,3 +1,14 @@
+V2.0.0
+*unity 2019 update
+*almost all u# scripts have been reworked. there are too many small changes to go over so here are some highlights.
+*all U# are in a namespace now.
+*added editor scripts to scipts setting variables and sending events, automatically getting everything available on targeted script.
+*some ui variables have been set to generic maskable graphic to allow players to put in unity ui or tmpro without having to specify.
+*incorporated more on variable change events/c# properties.
+*switching from using strings for names to nameof() for names.
+*added avatar pedestal and portal id string syncing.
+*added set object prefab to make changing object variables easier in game.(includes editor script to make it easier.)
+
 V1.4.0
 *changed some box colliders to triggers.
 *added set avatar pedestal id prefab.

@@ -18,6 +18,8 @@ using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
 
+namespace JetDog.Prefabs
+{
 public class Set_State : UdonSharpBehaviour
 {
     public GameObject[] setTrue;
@@ -50,3 +52,5 @@ public class Set_State : UdonSharpBehaviour
         }
     }
 }
+}
+

@@ -18,62 +18,66 @@ using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
 
-public class CarStation : UdonSharpBehaviour
+namespace JetDog.Prefabs
 {
-    public CarControls car;
-    public GameObject exitbutton;
-    private VRCStation station;
-    [HideInInspector]
-    public VRCPlayerApi seated;
-
-    void Start()
+    public class CarStation : UdonSharpBehaviour
     {
-        station = (VRCStation)GetComponent(typeof(VRCStation));
-        exitbutton.SetActive(false);
-    }
-    public virtual void Interact()
-    {
+        public CarControls car;
+        public GameObject exitbutton;
+        private VRCStation station;
+        [HideInInspector]
+        public VRCPlayerApi seated;
 
-        if (!Utilities.IsValid(seated))
+        void Start()
         {
-            station.UseStation(Networking.LocalPlayer);
+            station = (VRCStation)GetComponent(typeof(VRCStation));
+            exitbutton.SetActive(false);
         }
-        else if (seated == Networking.LocalPlayer)
+        public virtual void Interact()
+        {
+
+            if (!Utilities.IsValid(seated))
+            {
+                station.UseStation(Networking.LocalPlayer);
+            }
+            else if (seated == Networking.LocalPlayer)
+            {
+                station.ExitStation(Networking.LocalPlayer);
+            }
+        }
+
+        public virtual void OnStationEntered(VRCPlayerApi player)
+        {
+            seated = player;
+
+            if (player.isLocal)
+            {
+                car.EnteredCar();
+                exitbutton.SetActive(true);
+            }
+            else
+            {
+                car.RemoteEnteredCar();
+            }
+        }
+        public virtual void OnStationExited(VRCPlayerApi player)
+        {
+            if (seated == player)
+            {
+                seated = null;
+            }
+
+            if (player.isLocal)
+            {
+                car.ExitedCar();
+                exitbutton.SetActive(false);
+            }
+        }
+
+        public void ExitStation()
         {
             station.ExitStation(Networking.LocalPlayer);
         }
     }
-
-    public virtual void OnStationEntered(VRC.SDKBase.VRCPlayerApi player)
-    {
-        seated = player;
-
-        if (player.isLocal)
-        {
-            car.EnteredCar();
-            exitbutton.SetActive(true);
-        }
-        else
-        {
-            car.RemoteEnteredCar();
-        }
-    }
-    public virtual void OnStationExited(VRC.SDKBase.VRCPlayerApi player)
-    {
-        if (seated == player)
-        {
-            seated = null;
-        }
-
-        if (player.isLocal)
-        {
-            car.ExitedCar();
-            exitbutton.SetActive(false);
-        }
-    }
-
-    public void ExitStation()
-    {
-        station.ExitStation(Networking.LocalPlayer);
-    }
 }
+

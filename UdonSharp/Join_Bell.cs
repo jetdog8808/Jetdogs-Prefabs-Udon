@@ -18,24 +18,27 @@ using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
 
-
+namespace JetDog.Prefabs
+{
 public class Join_Bell : UdonSharpBehaviour
 {
     public AudioSource bell;
     public bool oneshot = false;
-    public bool networked = false;
+    public bool networkEvent = false;
 
     void Start()
     {
-        if (networked)
+        if (networkEvent)
         {
+            //you can choose to sound the bell by sending a network event to everyone.
             SendCustomNetworkEvent(VRC.Udon.Common.Interfaces.NetworkEventTarget.All, "Joined");
         }
     }
 
-    public virtual void OnPlayerJoined(VRC.SDKBase.VRCPlayerApi player) 
+    //you can choose if to sound the bell on the player join event.
+    public override void OnPlayerJoined(VRC.SDKBase.VRCPlayerApi player) 
     {
-        if (!networked)
+        if (!networkEvent)
         {
             Joined();
         }
@@ -53,3 +56,5 @@ public class Join_Bell : UdonSharpBehaviour
         }
     }
 }
+}
+

@@ -14,49 +14,40 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   serializedUdonProgramAsset: {fileID: 11400000, guid: 2e540abdabb523c4a9668eb531e8f630,
     type: 2}
-  udonAssembly: ".data_start\r\n\r\n    .export material\r\n    .export renderers\r\n
-    \   .export sharedMaterial\r\n    \r\n    instance_0: %VRCUdonUdonBehaviour, this\r\n
-    \   eventName_0: %SystemString, null\r\n    index_0: %SystemInt32, null\r\n    condition_0:
-    %SystemBoolean, null\r\n    message_0: %SystemObject, null\r\n    message_1: %SystemObject,
-    null\r\n    Boolean_0: %SystemBoolean, null\r\n    instance_3: %UnityEngineRenderer,
-    null\r\n    value_0: %UnityEngineMaterial, null\r\n    instance_4: %UnityEngineRenderer,
-    null\r\n    value_1: %UnityEngineMaterial, null\r\n    instance_2: %UnityEngineRendererArray,
-    null\r\n    Int32_0: %SystemInt32, null\r\n    start_0: %SystemInt32, null\r\n
-    \   end_0: %SystemInt32, null\r\n    step_0: %SystemInt32, null\r\n    instance_1:
-    %UnityEngineRendererArray, null\r\n    material: %UnityEngineMaterial, null\r\n
-    \   renderers: %UnityEngineRendererArray, null\r\n    sharedMaterial: %SystemBoolean,
-    null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n    .export _interact\r\n    \r\n
-    \   _interact:\r\n    \r\n        PUSH, instance_0\r\n        PUSH, eventName_0\r\n
-    \       EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n
-    \       JUMP, 0xFFFFFFFC\r\n    \r\n    .export setmat\r\n    \r\n    setmat:\r\n
-    \   \r\n        PUSH, renderers\r\n        PUSH, instance_1\r\n        COPY\r\n
-    \       PUSH, instance_1\r\n        PUSH, end_0\r\n        EXTERN, \"UnityEngineRendererArray.__get_Length__SystemInt32\"\r\n
-    \       PUSH, start_0\r\n        PUSH, index_0\r\n        COPY\r\n        PUSH,
-    index_0\r\n        PUSH, end_0\r\n        PUSH, condition_0\r\n        EXTERN,
-    \"SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n        PUSH,
-    condition_0\r\n        JUMP_IF_FALSE, 0x00000258\r\n        PUSH, renderers\r\n
-    \       PUSH, instance_2\r\n        COPY\r\n        PUSH, renderers\r\n        PUSH,
-    instance_1\r\n        COPY\r\n        PUSH, index_0\r\n        PUSH, Int32_0\r\n
-    \       COPY\r\n        PUSH, instance_2\r\n        PUSH, Int32_0\r\n        PUSH,
-    message_0\r\n        EXTERN, \"UnityEngineRendererArray.__Get__SystemInt32__UnityEngineRenderer\"\r\n
-    \       PUSH, message_0\r\n        EXTERN, \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n
-    \       PUSH, material\r\n        PUSH, message_1\r\n        COPY\r\n        PUSH,
-    message_1\r\n        EXTERN, \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n
-    \       PUSH, sharedMaterial\r\n        JUMP_IF_FALSE, 0x000001B4\r\n        PUSH,
-    renderers\r\n        PUSH, instance_2\r\n        COPY\r\n        PUSH, renderers\r\n
-    \       PUSH, instance_1\r\n        COPY\r\n        PUSH, index_0\r\n        PUSH,
-    Int32_0\r\n        COPY\r\n        PUSH, message_0\r\n        PUSH, instance_3\r\n
-    \       COPY\r\n        PUSH, material\r\n        PUSH, value_0\r\n        COPY\r\n
-    \       PUSH, message_0\r\n        PUSH, value_0\r\n        EXTERN, \"UnityEngineRenderer.__set_sharedMaterial__UnityEngineMaterial__SystemVoid\"\r\n
-    \       JUMP, 0x00000230\r\n        PUSH, renderers\r\n        PUSH, instance_2\r\n
-    \       COPY\r\n        PUSH, renderers\r\n        PUSH, instance_1\r\n        COPY\r\n
-    \       PUSH, index_0\r\n        PUSH, Int32_0\r\n        COPY\r\n        PUSH,
-    message_0\r\n        PUSH, instance_4\r\n        COPY\r\n        PUSH, material\r\n
-    \       PUSH, value_1\r\n        COPY\r\n        PUSH, message_0\r\n        PUSH,
-    value_1\r\n        EXTERN, \"UnityEngineRenderer.__set_material__UnityEngineMaterial__SystemVoid\"\r\n
-    \       PUSH, index_0\r\n        PUSH, step_0\r\n        PUSH, index_0\r\n        EXTERN,
-    \"SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32\"\r\n        JUMP,
-    0x00000060\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
+  udonAssembly: ".data_start\r\n\r\n    .export material\r\n    .export renderers\r\n   
+    .export sharedMaterial\r\n    \r\n    __instance_0: %VRCUdonUdonBehaviour, this\r\n   
+    __eventName_0: %SystemString, null\r\n    __index_0: %SystemInt32, null\r\n   
+    __condition_0: %SystemBoolean, null\r\n    __Boolean_0: %SystemBoolean, null\r\n   
+    __instance_2: %UnityEngineRenderer, null\r\n    __value_0: %UnityEngineMaterial,
+    null\r\n    __instance_4: %UnityEngineRenderer, null\r\n    __value_1: %UnityEngineMaterial,
+    null\r\n    __instance_3: %UnityEngineRendererArray, null\r\n    __Int32_0: %SystemInt32,
+    null\r\n    __start_0: %SystemInt32, null\r\n    __end_0: %SystemInt32, null\r\n   
+    __step_0: %SystemInt32, null\r\n    __instance_1: %UnityEngineRendererArray,
+    null\r\n    material: %UnityEngineMaterial, null\r\n    renderers: %UnityEngineRendererArray,
+    null\r\n    sharedMaterial: %SystemBoolean, null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n   
+    .export _interact\r\n    \r\n    _interact:\r\n    \r\n        PUSH, __instance_0\r\n       
+    PUSH, __eventName_0\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n       
+    JUMP, 0xFFFFFFFC\r\n    \r\n    .export setmat\r\n    \r\n    setmat:\r\n   
+    \r\n        PUSH, renderers\r\n        PUSH, __instance_1\r\n        COPY\r\n       
+    PUSH, __instance_1\r\n        PUSH, __end_0\r\n        EXTERN, \"UnityEngineRendererArray.__get_Length__SystemInt32\"\r\n       
+    PUSH, __start_0\r\n        PUSH, __index_0\r\n        COPY\r\n        PUSH, __index_0\r\n       
+    PUSH, __end_0\r\n        PUSH, __condition_0\r\n        EXTERN, \"SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n       
+    PUSH, __condition_0\r\n        JUMP_IF_FALSE, 0x000001D4\r\n        PUSH, sharedMaterial\r\n       
+    JUMP_IF_FALSE, 0x00000130\r\n        PUSH, renderers\r\n        PUSH, __instance_3\r\n       
+    COPY\r\n        PUSH, renderers\r\n        PUSH, __instance_1\r\n        COPY\r\n       
+    PUSH, __index_0\r\n        PUSH, __Int32_0\r\n        COPY\r\n        PUSH, __instance_3\r\n       
+    PUSH, __Int32_0\r\n        PUSH, __instance_2\r\n        EXTERN, \"UnityEngineRendererArray.__Get__SystemInt32__UnityEngineRenderer\"\r\n       
+    PUSH, material\r\n        PUSH, __value_0\r\n        COPY\r\n        PUSH, __instance_2\r\n       
+    PUSH, __value_0\r\n        EXTERN, \"UnityEngineRenderer.__set_sharedMaterial__UnityEngineMaterial__SystemVoid\"\r\n       
+    JUMP, 0x000001AC\r\n        PUSH, renderers\r\n        PUSH, __instance_3\r\n       
+    COPY\r\n        PUSH, renderers\r\n        PUSH, __instance_1\r\n        COPY\r\n       
+    PUSH, __index_0\r\n        PUSH, __Int32_0\r\n        COPY\r\n        PUSH, __instance_2\r\n       
+    PUSH, __instance_4\r\n        COPY\r\n        PUSH, material\r\n        PUSH,
+    __value_1\r\n        COPY\r\n        PUSH, __instance_2\r\n        PUSH, __value_1\r\n       
+    EXTERN, \"UnityEngineRenderer.__set_material__UnityEngineMaterial__SystemVoid\"\r\n       
+    PUSH, __index_0\r\n        PUSH, __step_0\r\n        PUSH, __index_0\r\n       
+    EXTERN, \"SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32\"\r\n       
+    JUMP, 0x00000060\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
   assemblyError: 
   graphData:
     name: 
@@ -78,9 +69,11 @@ MonoBehaviour:
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|material
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|True
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|True
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Variable_UnityEngineRendererArray
@@ -99,9 +92,11 @@ MonoBehaviour:
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|renderers
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|True
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|True
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Variable_SystemBoolean
@@ -120,14 +115,16 @@ MonoBehaviour:
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|sharedMaterial
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|True
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|True
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Event_Interact
       uid: 7cd842d7-d95e-43e4-9b28-e99330e75e95
-      position: {x: 100.15636, y: -202.28157}
+      position: {x: 93.72767, y: -293.60638}
       nodeUIDs: []
       flowUIDs:
       - 546e7a20-79e9-4023-965c-319fac7baae2
@@ -150,7 +147,7 @@ MonoBehaviour:
       - c03cccaa-05ee-4c76-b2c5-dea7ecb03563|0
       - 
       flowUIDs:
-      - 398ddc8b-7aa9-4f19-af0d-8f1ee12c4c46
+      - 82ba4270-7f06-45ab-9af5-b827fe2b9a2f
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0
@@ -160,7 +157,7 @@ MonoBehaviour:
         stringValue: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|1
     - fullName: Get_Variable
       uid: 579c096e-31c6-4542-a317-73105684e6fb
-      position: {x: -35.606506, y: 123.74592}
+      position: {x: 60.599987, y: 142.40005}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -169,7 +166,7 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|9413b490-ab6a-462a-a477-292e058666eb
     - fullName: UnityEngineRendererArray.__get_Length__SystemInt32
       uid: c03cccaa-05ee-4c76-b2c5-dea7ecb03563
-      position: {x: 164.01169, y: 126.537506}
+      position: {x: 260.59998, y: 145.4}
       nodeUIDs:
       - 579c096e-31c6-4542-a317-73105684e6fb|0
       flowUIDs: []
@@ -199,7 +196,7 @@ MonoBehaviour:
         stringValue: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0
     - fullName: UnityEngineRenderer.__set_material__UnityEngineMaterial__SystemVoid
       uid: 6f227c37-4683-43e0-b54a-c09a58cf7f64
-      position: {x: 1808.9819, y: 255.64273}
+      position: {x: 1360.5463, y: 315.80005}
       nodeUIDs:
       - ae7aea8c-6dbb-4a05-abc7-0ce55b130720|0
       - b61fdf1b-59cd-4bee-baa3-c482836258b4|0
@@ -211,7 +208,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: UnityEngineRenderer.__set_sharedMaterial__UnityEngineMaterial__SystemVoid
       uid: 94992886-492b-4855-8c45-d5ad8af7dd7a
-      position: {x: 1811.6268, y: 104.87778}
+      position: {x: 1363.5463, y: 164.8}
       nodeUIDs:
       - ae7aea8c-6dbb-4a05-abc7-0ce55b130720|0
       - b61fdf1b-59cd-4bee-baa3-c482836258b4|0
@@ -223,7 +220,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Branch
       uid: 82ba4270-7f06-45ab-9af5-b827fe2b9a2f
-      position: {x: 1538.5969, y: 115.9272}
+      position: {x: 1112.35, y: 99.90003}
       nodeUIDs:
       - 6b4ff3a3-4a55-4c48-9f91-ff8d7f9b06aa|0
       flowUIDs:
@@ -231,10 +228,11 @@ MonoBehaviour:
       - 6f227c37-4683-43e0-b54a-c09a58cf7f64
       nodeValues:
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
     - fullName: Get_Variable
       uid: 6b4ff3a3-4a55-4c48-9f91-ff8d7f9b06aa
-      position: {x: 785.80536, y: 179.1864}
+      position: {x: 804.35004, y: 178.50006}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -243,7 +241,7 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|7cebb76b-e1f3-461d-ae9d-c05fcf6f0672
     - fullName: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
       uid: 546e7a20-79e9-4023-965c-319fac7baae2
-      position: {x: 324.49094, y: -208.99393}
+      position: {x: 267.72766, y: -289.60638}
       nodeUIDs:
       - 
       - 
@@ -262,26 +260,6 @@ MonoBehaviour:
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|7ad0187f-06ea-4693-9ec0-fe64e050ba11
-    - fullName: UnityEngineDebug.__Log__SystemObject__SystemVoid
-      uid: 398ddc8b-7aa9-4f19-af0d-8f1ee12c4c46
-      position: {x: 1018.6829, y: -50.485085}
-      nodeUIDs:
-      - ae7aea8c-6dbb-4a05-abc7-0ce55b130720|0
-      flowUIDs:
-      - a21f8395-9720-406a-a5b5-ae01b6164684
-      nodeValues:
-      - unityObjectValue: {fileID: 0}
-        stringValue: 
-    - fullName: UnityEngineDebug.__Log__SystemObject__SystemVoid
-      uid: a21f8395-9720-406a-a5b5-ae01b6164684
-      position: {x: 1288.2048, y: -6.2351227}
-      nodeUIDs:
-      - b61fdf1b-59cd-4bee-baa3-c482836258b4|0
-      flowUIDs:
-      - 82ba4270-7f06-45ab-9af5-b827fe2b9a2f
-      nodeValues:
-      - unityObjectValue: {fileID: 0}
-        stringValue: 
     updateOrder: 0
   graphElementData:
   - type: 5
@@ -290,8 +268,15 @@ MonoBehaviour:
   - type: 4
     uid: 16da8081-c237-4d6e-8901-ac8460736774
     jsonData: '{"visible":true,"layout":{"serializedVersion":"2","x":10.0,"y":20.0,"width":0.0,"height":0.0}}'
+  - type: 2
+    uid: 254f42b5-b3c0-4f07-86af-3faeabc41e31
+    jsonData: '{"uid":"254f42b5-b3c0-4f07-86af-3faeabc41e31","layout":{"serializedVersion":"2","x":69.00003051757813,"y":-351.0,"width":438.0,"height":217.0},"containedElements":["546e7a20-79e9-4023-965c-319fac7baae2","7cd842d7-d95e-43e4-9b28-e99330e75e95"],"title":"interact","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
+  - type: 2
+    uid: 3cc428c2-e966-49d6-8a12-dd3bfa8a32a1
+    jsonData: '{"uid":"3cc428c2-e966-49d6-8a12-dd3bfa8a32a1","layout":{"serializedVersion":"2","x":36.00000762939453,"y":-13.99997329711914,"width":1566.0,"height":525.0},"containedElements":["4084c708-0011-45ed-998f-fb7196886028","15556d64-bb0b-4f42-9edf-7eaac60b220c","aeedee55-5195-42d1-977e-2cabd1959dda","ae7aea8c-6dbb-4a05-abc7-0ce55b130720","b61fdf1b-59cd-4bee-baa3-c482836258b4","6b4ff3a3-4a55-4c48-9f91-ff8d7f9b06aa","82ba4270-7f06-45ab-9af5-b827fe2b9a2f","6f227c37-4683-43e0-b54a-c09a58cf7f64","94992886-492b-4855-8c45-d5ad8af7dd7a","579c096e-31c6-4542-a317-73105684e6fb","c03cccaa-05ee-4c76-b2c5-dea7ecb03563"],"title":"set
+      material","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
   viewTransform:
-    position: {x: 133.81984, y: 357.14563}
-    scale: 0.65751624
+    position: {x: 430.4, y: 460.8}
+    scale: 0.8695652
   version: 1.0.0
   showAssembly: 0

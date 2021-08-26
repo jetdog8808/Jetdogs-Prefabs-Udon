@@ -19,12 +19,16 @@ If you want to help support what I do: [![patreon](https://c5.patreon.com/extern
 ----------
 ## Requirements
 
-Built in Unity 2018.4.20f1
+Built in Unity 2019.4.29f1
 
 Some prefabs includes elements from other sources.
 * [Vrchat SDK3](https://vrchat.com/download/sdk)
 * [UdonSharp](https://github.com/Merlin-san/UdonSharp)
-* Post-processing Stack v2 (can be gotten from package manager)
 * [Amplify Shader Editor](https://assetstore.unity.com/packages/tools/visual-scripting/amplify-shader-editor-68570)
+
+Vrchat sdk will automatically import the below.
+*Post-processing Stack v3
+*CineMachine
+*TextMeshPro
 -----------------------------------------------------
 

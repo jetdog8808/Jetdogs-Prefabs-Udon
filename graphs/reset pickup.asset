@@ -14,259 +14,243 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   serializedUdonProgramAsset: {fileID: 11400000, guid: 0d8a1dc611ee0e54a91c5a98577a2d45,
     type: 2}
-  udonAssembly: ".data_start\r\n\r\n    .export pickups\r\n    .export forceDrop\r\n
-    \   \r\n    Int32_0: %SystemInt32, null\r\n    Int32_1: %SystemInt32, null\r\n
-    \   Int32_2: %SystemInt32, null\r\n    Int32_3: %SystemInt32, null\r\n    instance_0:
-    %VRCSDK3ComponentsVRCPickupArray, null\r\n    index_0: %SystemInt32, null\r\n
-    \   condition_0: %SystemBoolean, null\r\n    instance_2: %VRCSDK3ComponentsVRCObjectSyncArray,
-    null\r\n    Int32_4: %SystemInt32, null\r\n    VRCObjectSync_0: %VRCSDK3ComponentsVRCObjectSync,
-    null\r\n    instance_3: %VRCSDK3ComponentsVRCPickup, null\r\n    type_0: %SystemType,
-    null\r\n    instance_4: %VRCSDK3ComponentsVRCPickupArray, null\r\n    Int32_5:
-    %SystemInt32, null\r\n    Type_0: %SystemType, null\r\n    Boolean_0: %SystemBoolean,
-    null\r\n    Object_0: %SystemObject, null\r\n    Object_1: %SystemObject, null\r\n
-    \   instance_5: %VRCSDK3ComponentsVRCObjectSyncArray, null\r\n    Int32_6: %SystemInt32,
-    null\r\n    var_0: %SystemObject, null\r\n    instance_6: %UnityEngineRigidbodyArray,
-    null\r\n    Int32_7: %SystemInt32, null\r\n    Rigidbody_0: %UnityEngineRigidbody,
-    null\r\n    instance_7: %VRCSDK3ComponentsVRCPickup, null\r\n    type_1: %SystemType,
-    null\r\n    Type_1: %SystemType, null\r\n    instance_9: %UnityEngineVector3Array,
-    null\r\n    Int32_9: %SystemInt32, null\r\n    Vector3_0: %UnityEngineVector3,
-    null\r\n    instance_A: %UnityEngineTransform, this\r\n    instance_C: %UnityEngineQuaternionArray,
-    null\r\n    Int32_A: %SystemInt32, null\r\n    Quaternion_0: %UnityEngineQuaternion,
-    null\r\n    instance_D: %UnityEngineTransform, this\r\n    instance_B: %VRCSDK3ComponentsVRCPickup,
-    null\r\n    instance_8: %VRCSDK3ComponentsVRCPickupArray, null\r\n    Int32_8:
-    %SystemInt32, null\r\n    start_0: %SystemInt32, null\r\n    end_0: %SystemInt32,
-    null\r\n    step_0: %SystemInt32, null\r\n    instance_1: %VRCSDK3ComponentsVRCPickupArray,
-    null\r\n    instance_E: %VRCUdonUdonBehaviour, this\r\n    eventName_0: %SystemString,
-    null\r\n    index_1: %SystemInt32, null\r\n    condition_1: %SystemBoolean, null\r\n
-    \   Boolean_1: %SystemBoolean, null\r\n    Object_2: %SystemObject, null\r\n    Object_3:
-    %SystemObject, null\r\n    var_1: %SystemObject, null\r\n    Boolean_2: %SystemBoolean,
-    null\r\n    Object_4: %SystemObject, null\r\n    Object_5: %SystemObject, null\r\n
-    \   instance_11: %VRCSDK3ComponentsVRCPickup, null\r\n    var_2: %SystemObject,
-    null\r\n    instance_13: %UnityEngineRigidbody, null\r\n    value_0: %UnityEngineVector3,
-    null\r\n    instance_15: %UnityEngineVector3Array, null\r\n    Int32_E: %SystemInt32,
-    null\r\n    instance_16: %UnityEngineRigidbody, null\r\n    value_1: %UnityEngineQuaternion,
-    null\r\n    instance_14: %UnityEngineRigidbodyArray, null\r\n    Int32_D: %SystemInt32,
-    null\r\n    instance_17: %UnityEngineQuaternionArray, null\r\n    Int32_F: %SystemInt32,
-    null\r\n    message_0: %SystemObject, null\r\n    String_0: %SystemString, null\r\n
-    \   Boolean_3: %SystemBoolean, null\r\n    instance_18: %VRCSDK3ComponentsVRCPickup,
-    null\r\n    instance_12: %VRCSDK3ComponentsVRCPickupArray, null\r\n    Int32_C:
-    %SystemInt32, null\r\n    instance_19: %UnityEngineRigidbody, null\r\n    value_2:
-    %UnityEngineVector3, null\r\n    instance_1B: %UnityEngineVector3Array, null\r\n
-    \   Int32_11: %SystemInt32, null\r\n    instance_1C: %UnityEngineRigidbody, null\r\n
-    \   value_3: %UnityEngineQuaternion, null\r\n    instance_1A: %UnityEngineRigidbodyArray,
-    null\r\n    Int32_10: %SystemInt32, null\r\n    instance_1D: %UnityEngineQuaternionArray,
-    null\r\n    Int32_12: %SystemInt32, null\r\n    message_1: %SystemObject, null\r\n
-    \   String_1: %SystemString, null\r\n    Boolean_4: %SystemBoolean, null\r\n    Object_6:
-    %SystemObject, null\r\n    Object_7: %SystemObject, null\r\n    var_3: %SystemObject,
-    null\r\n    player_0: %VRCSDKBaseVRCPlayerApi, null\r\n    obj_0: %UnityEngineGameObject,
-    this\r\n    instance_21: %VRCSDK3ComponentsVRCObjectSync, null\r\n    message_2:
-    %SystemObject, null\r\n    String_2: %SystemString, null\r\n    Boolean_5: %SystemBoolean,
-    null\r\n    instance_22: %VRCSDK3ComponentsVRCPickup, null\r\n    instigator_0:
-    %VRCSDKBaseVRCPlayerApi, null\r\n    instance_1E: %VRCSDK3ComponentsVRCPickup,
-    null\r\n    instance_1F: %VRCSDK3ComponentsVRCPickupArray, null\r\n    Int32_13:
-    %SystemInt32, null\r\n    player_1: %VRCSDKBaseVRCPlayerApi, null\r\n    obj_1:
-    %UnityEngineGameObject, this\r\n    instance_20: %VRCSDK3ComponentsVRCObjectSync,
-    null\r\n    instance_23: %VRCSDK3ComponentsVRCObjectSync, null\r\n    instance_10:
-    %VRCSDK3ComponentsVRCObjectSyncArray, null\r\n    Int32_B: %SystemInt32, null\r\n
-    \   start_1: %SystemInt32, null\r\n    end_1: %SystemInt32, null\r\n    step_1:
-    %SystemInt32, null\r\n    instance_F: %VRCSDK3ComponentsVRCPickupArray, null\r\n
-    \   message_3: %SystemObject, null\r\n    String_3: %SystemString, null\r\n    pickups:
-    %VRCSDK3ComponentsVRCPickupArray, null\r\n    syncCom: %VRCSDK3ComponentsVRCObjectSyncArray,
+  udonAssembly: ".data_start\r\n\r\n    .export pickups\r\n    .export forceDrop\r\n   
+    \r\n    __Int32_0: %SystemInt32, null\r\n    __Int32_1: %SystemInt32, null\r\n   
+    __Int32_2: %SystemInt32, null\r\n    __Int32_3: %SystemInt32, null\r\n    __instance_0:
+    %VRCSDK3ComponentsVRCPickupArray, null\r\n    __index_0: %SystemInt32, null\r\n   
+    __condition_0: %SystemBoolean, null\r\n    __instance_2: %VRCSDK3ComponentsVRCObjectSyncArray,
+    null\r\n    __Int32_4: %SystemInt32, null\r\n    __VRCObjectSync_0: %VRCSDK3ComponentsVRCObjectSync,
+    null\r\n    __instance_3: %VRCSDK3ComponentsVRCPickup, null\r\n    __type_0:
+    %SystemType, null\r\n    __instance_4: %VRCSDK3ComponentsVRCPickupArray, null\r\n   
+    __Int32_5: %SystemInt32, null\r\n    __Type_0: %SystemType, null\r\n    __Boolean_0:
+    %SystemBoolean, null\r\n    __Object_0: %SystemObject, null\r\n    __Object_1:
+    %SystemObject, null\r\n    __instance_5: %VRCSDK3ComponentsVRCObjectSyncArray,
+    null\r\n    __Int32_6: %SystemInt32, null\r\n    __var_0: %SystemObject, null\r\n   
+    __instance_6: %UnityEngineRigidbodyArray, null\r\n    __Int32_7: %SystemInt32,
+    null\r\n    __Rigidbody_0: %UnityEngineRigidbody, null\r\n    __instance_7: %VRCSDK3ComponentsVRCPickup,
+    null\r\n    __type_1: %SystemType, null\r\n    __Type_1: %SystemType, null\r\n   
+    __instance_9: %UnityEngineVector3Array, null\r\n    __Int32_9: %SystemInt32,
+    null\r\n    __Vector3_0: %UnityEngineVector3, null\r\n    __instance_A: %UnityEngineTransform,
+    this\r\n    __instance_C: %UnityEngineQuaternionArray, null\r\n    __Int32_A:
+    %SystemInt32, null\r\n    __Quaternion_0: %UnityEngineQuaternion, null\r\n   
+    __instance_D: %UnityEngineTransform, this\r\n    __instance_B: %VRCSDK3ComponentsVRCPickup,
+    null\r\n    __instance_8: %VRCSDK3ComponentsVRCPickupArray, null\r\n    __Int32_8:
+    %SystemInt32, null\r\n    __start_0: %SystemInt32, null\r\n    __end_0: %SystemInt32,
+    null\r\n    __step_0: %SystemInt32, null\r\n    __instance_1: %VRCSDK3ComponentsVRCPickupArray,
+    null\r\n    __instance_E: %VRCUdonUdonBehaviour, this\r\n    __eventName_0: %SystemString,
+    null\r\n    __index_1: %SystemInt32, null\r\n    __condition_1: %SystemBoolean,
+    null\r\n    __Boolean_1: %SystemBoolean, null\r\n    __Object_2: %SystemObject,
+    null\r\n    __Object_3: %SystemObject, null\r\n    __var_1: %SystemObject, null\r\n   
+    __Boolean_2: %SystemBoolean, null\r\n    __Object_4: %SystemObject, null\r\n   
+    __Object_5: %SystemObject, null\r\n    __instance_11: %VRCSDK3ComponentsVRCPickup,
+    null\r\n    __var_2: %SystemObject, null\r\n    __instance_13: %UnityEngineRigidbody,
+    null\r\n    __value_0: %UnityEngineVector3, null\r\n    __instance_15: %UnityEngineVector3Array,
+    null\r\n    __Int32_E: %SystemInt32, null\r\n    __instance_16: %UnityEngineRigidbody,
+    null\r\n    __value_1: %UnityEngineQuaternion, null\r\n    __instance_14: %UnityEngineRigidbodyArray,
+    null\r\n    __Int32_D: %SystemInt32, null\r\n    __instance_17: %UnityEngineQuaternionArray,
+    null\r\n    __Int32_F: %SystemInt32, null\r\n    __Boolean_3: %SystemBoolean,
+    null\r\n    __instance_18: %VRCSDK3ComponentsVRCPickup, null\r\n    __instance_12:
+    %VRCSDK3ComponentsVRCPickupArray, null\r\n    __Int32_C: %SystemInt32, null\r\n   
+    __instance_19: %UnityEngineRigidbody, null\r\n    __value_2: %UnityEngineVector3,
+    null\r\n    __instance_1B: %UnityEngineVector3Array, null\r\n    __Int32_11:
+    %SystemInt32, null\r\n    __instance_1C: %UnityEngineRigidbody, null\r\n    __value_3:
+    %UnityEngineQuaternion, null\r\n    __instance_1A: %UnityEngineRigidbodyArray,
+    null\r\n    __Int32_10: %SystemInt32, null\r\n    __instance_1D: %UnityEngineQuaternionArray,
+    null\r\n    __Int32_12: %SystemInt32, null\r\n    __Boolean_4: %SystemBoolean,
+    null\r\n    __Object_6: %SystemObject, null\r\n    __Object_7: %SystemObject,
+    null\r\n    __var_3: %SystemObject, null\r\n    __player_0: %VRCSDKBaseVRCPlayerApi,
+    null\r\n    __obj_0: %UnityEngineGameObject, this\r\n    __instance_21: %VRCSDK3ComponentsVRCObjectSync,
+    null\r\n    __Boolean_5: %SystemBoolean, null\r\n    __instance_22: %VRCSDK3ComponentsVRCPickup,
+    null\r\n    __instigator_0: %VRCSDKBaseVRCPlayerApi, null\r\n    __instance_1E:
+    %VRCSDK3ComponentsVRCPickup, null\r\n    __instance_1F: %VRCSDK3ComponentsVRCPickupArray,
+    null\r\n    __Int32_13: %SystemInt32, null\r\n    __player_1: %VRCSDKBaseVRCPlayerApi,
+    null\r\n    __obj_1: %UnityEngineGameObject, this\r\n    __instance_20: %VRCSDK3ComponentsVRCObjectSync,
+    null\r\n    __instance_23: %VRCSDK3ComponentsVRCObjectSync, null\r\n    __instance_10:
+    %VRCSDK3ComponentsVRCObjectSyncArray, null\r\n    __Int32_B: %SystemInt32, null\r\n   
+    __start_1: %SystemInt32, null\r\n    __end_1: %SystemInt32, null\r\n    __step_1:
+    %SystemInt32, null\r\n    __instance_F: %VRCSDK3ComponentsVRCPickupArray, null\r\n   
+    pickups: %VRCSDK3ComponentsVRCPickupArray, null\r\n    syncCom: %VRCSDK3ComponentsVRCObjectSyncArray,
     null\r\n    pickupRigidbody: %UnityEngineRigidbodyArray, null\r\n    originpoint:
     %UnityEngineVector3Array, null\r\n    originrotation: %UnityEngineQuaternionArray,
-    null\r\n    forceDrop: %SystemBoolean, null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n
-    \   .export _start\r\n    \r\n    _start:\r\n    \r\n        PUSH, pickups\r\n
-    \       PUSH, instance_0\r\n        COPY\r\n        PUSH, instance_0\r\n        PUSH,
-    Int32_0\r\n        EXTERN, \"VRCSDK3ComponentsVRCPickupArray.__get_Length__SystemInt32\"\r\n
-    \       PUSH, Int32_0\r\n        PUSH, syncCom\r\n        EXTERN, \"VRCSDK3ComponentsVRCObjectSyncArray.__ctor__SystemInt32__VRCSDK3ComponentsVRCObjectSyncArray\"\r\n
-    \       PUSH, pickups\r\n        PUSH, instance_0\r\n        COPY\r\n        PUSH,
-    Int32_0\r\n        PUSH, Int32_1\r\n        COPY\r\n        PUSH, Int32_0\r\n
-    \       PUSH, pickupRigidbody\r\n        EXTERN, \"UnityEngineRigidbodyArray.__ctor__SystemInt32__UnityEngineRigidbodyArray\"\r\n
-    \       PUSH, pickups\r\n        PUSH, instance_0\r\n        COPY\r\n        PUSH,
-    Int32_0\r\n        PUSH, Int32_2\r\n        COPY\r\n        PUSH, Int32_0\r\n
-    \       PUSH, originpoint\r\n        EXTERN, \"UnityEngineVector3Array.__ctor__SystemInt32__UnityEngineVector3Array\"\r\n
-    \       PUSH, pickups\r\n        PUSH, instance_0\r\n        COPY\r\n        PUSH,
-    Int32_0\r\n        PUSH, Int32_3\r\n        COPY\r\n        PUSH, Int32_0\r\n
-    \       PUSH, originrotation\r\n        EXTERN, \"UnityEngineQuaternionArray.__ctor__SystemInt32__UnityEngineQuaternionArray\"\r\n
-    \       PUSH, pickups\r\n        PUSH, instance_1\r\n        COPY\r\n        PUSH,
-    instance_1\r\n        PUSH, end_0\r\n        EXTERN, \"VRCSDK3ComponentsVRCPickupArray.__get_Length__SystemInt32\"\r\n
-    \       PUSH, start_0\r\n        PUSH, index_0\r\n        COPY\r\n        PUSH,
-    index_0\r\n        PUSH, end_0\r\n        PUSH, condition_0\r\n        EXTERN,
-    \"SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n        PUSH,
-    condition_0\r\n        JUMP_IF_FALSE, 0x000005D0\r\n        PUSH, syncCom\r\n
-    \       PUSH, instance_2\r\n        COPY\r\n        PUSH, pickups\r\n        PUSH,
-    instance_1\r\n        COPY\r\n        PUSH, index_0\r\n        PUSH, Int32_4\r\n
-    \       COPY\r\n        PUSH, pickups\r\n        PUSH, instance_4\r\n        COPY\r\n
-    \       PUSH, pickups\r\n        PUSH, instance_1\r\n        COPY\r\n        PUSH,
-    index_0\r\n        PUSH, Int32_5\r\n        COPY\r\n        PUSH, instance_4\r\n
-    \       PUSH, Int32_5\r\n        PUSH, instance_3\r\n        EXTERN, \"VRCSDK3ComponentsVRCPickupArray.__Get__SystemInt32__VRCSDK3ComponentsVRCPickup\"\r\n
-    \       PUSH, Type_0\r\n        PUSH, type_0\r\n        COPY\r\n        PUSH,
-    instance_3\r\n        PUSH, type_0\r\n        PUSH, VRCObjectSync_0\r\n        EXTERN,
-    \"VRCSDK3ComponentsVRCPickup.__GetComponent__SystemType__UnityEngineComponent\"\r\n
-    \       PUSH, instance_2\r\n        PUSH, Int32_4\r\n        PUSH, VRCObjectSync_0\r\n
-    \       EXTERN, \"VRCSDK3ComponentsVRCObjectSyncArray.__Set__SystemInt32_VRCSDK3ComponentsVRCObjectSync__SystemVoid\"\r\n
-    \       PUSH, syncCom\r\n        PUSH, instance_5\r\n        COPY\r\n        PUSH,
-    pickups\r\n        PUSH, instance_1\r\n        COPY\r\n        PUSH, index_0\r\n
-    \       PUSH, Int32_6\r\n        COPY\r\n        PUSH, instance_5\r\n        PUSH,
-    Int32_6\r\n        PUSH, Object_0\r\n        EXTERN, \"VRCSDK3ComponentsVRCObjectSyncArray.__Get__SystemInt32__VRCSDK3ComponentsVRCObjectSync\"\r\n
-    \       PUSH, var_0\r\n        PUSH, Object_1\r\n        COPY\r\n        PUSH,
-    Object_0\r\n        PUSH, Object_1\r\n        PUSH, Boolean_0\r\n        EXTERN,
-    \"SystemObject.__op_Equality__SystemObject_SystemObject__SystemBoolean\"\r\n        PUSH,
-    Boolean_0\r\n        JUMP_IF_FALSE, 0x000005A8\r\n        PUSH, pickupRigidbody\r\n
-    \       PUSH, instance_6\r\n        COPY\r\n        PUSH, pickups\r\n        PUSH,
-    instance_1\r\n        COPY\r\n        PUSH, index_0\r\n        PUSH, Int32_7\r\n
-    \       COPY\r\n        PUSH, pickups\r\n        PUSH, instance_8\r\n        COPY\r\n
-    \       PUSH, pickups\r\n        PUSH, instance_1\r\n        COPY\r\n        PUSH,
-    index_0\r\n        PUSH, Int32_8\r\n        COPY\r\n        PUSH, instance_8\r\n
-    \       PUSH, Int32_8\r\n        PUSH, instance_7\r\n        EXTERN, \"VRCSDK3ComponentsVRCPickupArray.__Get__SystemInt32__VRCSDK3ComponentsVRCPickup\"\r\n
-    \       PUSH, Type_1\r\n        PUSH, type_1\r\n        COPY\r\n        PUSH,
-    instance_7\r\n        PUSH, type_1\r\n        PUSH, Rigidbody_0\r\n        EXTERN,
-    \"VRCSDK3ComponentsVRCPickup.__GetComponent__SystemType__UnityEngineComponent\"\r\n
-    \       PUSH, instance_6\r\n        PUSH, Int32_7\r\n        PUSH, Rigidbody_0\r\n
-    \       EXTERN, \"UnityEngineRigidbodyArray.__Set__SystemInt32_UnityEngineRigidbody__SystemVoid\"\r\n
-    \       PUSH, originpoint\r\n        PUSH, instance_9\r\n        COPY\r\n        PUSH,
-    pickups\r\n        PUSH, instance_1\r\n        COPY\r\n        PUSH, index_0\r\n
-    \       PUSH, Int32_9\r\n        COPY\r\n        PUSH, pickups\r\n        PUSH,
-    instance_8\r\n        COPY\r\n        PUSH, pickups\r\n        PUSH, instance_1\r\n
-    \       COPY\r\n        PUSH, index_0\r\n        PUSH, Int32_8\r\n        COPY\r\n
-    \       PUSH, instance_7\r\n        PUSH, instance_B\r\n        COPY\r\n        PUSH,
-    instance_7\r\n        PUSH, instance_A\r\n        EXTERN, \"VRCSDK3ComponentsVRCPickup.__get_transform__UnityEngineTransform\"\r\n
-    \       PUSH, instance_A\r\n        PUSH, Vector3_0\r\n        EXTERN, \"UnityEngineTransform.__get_position__UnityEngineVector3\"\r\n
-    \       PUSH, instance_9\r\n        PUSH, Int32_9\r\n        PUSH, Vector3_0\r\n
-    \       EXTERN, \"UnityEngineVector3Array.__Set__SystemInt32_UnityEngineVector3__SystemVoid\"\r\n
-    \       PUSH, originrotation\r\n        PUSH, instance_C\r\n        COPY\r\n        PUSH,
-    pickups\r\n        PUSH, instance_1\r\n        COPY\r\n        PUSH, index_0\r\n
-    \       PUSH, Int32_A\r\n        COPY\r\n        PUSH, pickups\r\n        PUSH,
-    instance_8\r\n        COPY\r\n        PUSH, pickups\r\n        PUSH, instance_1\r\n
-    \       COPY\r\n        PUSH, index_0\r\n        PUSH, Int32_8\r\n        COPY\r\n
-    \       PUSH, instance_7\r\n        PUSH, instance_B\r\n        COPY\r\n        PUSH,
-    instance_A\r\n        PUSH, instance_D\r\n        COPY\r\n        PUSH, instance_A\r\n
-    \       PUSH, Quaternion_0\r\n        EXTERN, \"UnityEngineTransform.__get_rotation__UnityEngineQuaternion\"\r\n
-    \       PUSH, instance_C\r\n        PUSH, Int32_A\r\n        PUSH, Quaternion_0\r\n
-    \       EXTERN, \"UnityEngineQuaternionArray.__Set__SystemInt32_UnityEngineQuaternion__SystemVoid\"\r\n
-    \       JUMP, 0x000005A8\r\n        PUSH, index_0\r\n        PUSH, step_0\r\n
-    \       PUSH, index_0\r\n        EXTERN, \"SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32\"\r\n
-    \       JUMP, 0x00000144\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n    .export _interact\r\n
-    \   \r\n    _interact:\r\n    \r\n        PUSH, instance_E\r\n        PUSH, eventName_0\r\n
-    \       EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n
-    \       JUMP, 0xFFFFFFFC\r\n    \r\n    .export ResetPickup\r\n    \r\n    ResetPickup:\r\n
-    \   \r\n        PUSH, pickups\r\n        PUSH, instance_F\r\n        COPY\r\n
-    \       PUSH, instance_F\r\n        PUSH, end_1\r\n        EXTERN, \"VRCSDK3ComponentsVRCPickupArray.__get_Length__SystemInt32\"\r\n
-    \       PUSH, start_1\r\n        PUSH, index_1\r\n        COPY\r\n        PUSH,
-    index_1\r\n        PUSH, end_1\r\n        PUSH, condition_1\r\n        EXTERN,
-    \"SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n        PUSH,
-    condition_1\r\n        JUMP_IF_FALSE, 0x00000F94\r\n        PUSH, syncCom\r\n
-    \       PUSH, instance_10\r\n        COPY\r\n        PUSH, pickups\r\n        PUSH,
-    instance_F\r\n        COPY\r\n        PUSH, index_1\r\n        PUSH, Int32_B\r\n
-    \       COPY\r\n        PUSH, instance_10\r\n        PUSH, Int32_B\r\n        PUSH,
-    Object_2\r\n        EXTERN, \"VRCSDK3ComponentsVRCObjectSyncArray.__Get__SystemInt32__VRCSDK3ComponentsVRCObjectSync\"\r\n
-    \       PUSH, var_1\r\n        PUSH, Object_3\r\n        COPY\r\n        PUSH,
-    Object_2\r\n        PUSH, Object_3\r\n        PUSH, Boolean_1\r\n        EXTERN,
-    \"SystemObject.__op_Equality__SystemObject_SystemObject__SystemBoolean\"\r\n        PUSH,
-    Boolean_1\r\n        JUMP_IF_FALSE, 0x00000BB8\r\n        PUSH, pickups\r\n        PUSH,
-    instance_12\r\n        COPY\r\n        PUSH, pickups\r\n        PUSH, instance_F\r\n
-    \       COPY\r\n        PUSH, index_1\r\n        PUSH, Int32_C\r\n        COPY\r\n
-    \       PUSH, instance_12\r\n        PUSH, Int32_C\r\n        PUSH, instance_11\r\n
-    \       EXTERN, \"VRCSDK3ComponentsVRCPickupArray.__Get__SystemInt32__VRCSDK3ComponentsVRCPickup\"\r\n
-    \       PUSH, instance_11\r\n        PUSH, Object_4\r\n        EXTERN, \"VRCSDK3ComponentsVRCPickup.__get_currentPlayer__VRCSDKBaseVRCPlayerApi\"\r\n
-    \       PUSH, var_2\r\n        PUSH, Object_5\r\n        COPY\r\n        PUSH,
-    Object_4\r\n        PUSH, Object_5\r\n        PUSH, Boolean_2\r\n        EXTERN,
-    \"SystemObject.__op_Equality__SystemObject_SystemObject__SystemBoolean\"\r\n        PUSH,
-    Boolean_2\r\n        JUMP_IF_FALSE, 0x00000980\r\n        PUSH, pickupRigidbody\r\n
-    \       PUSH, instance_14\r\n        COPY\r\n        PUSH, pickups\r\n        PUSH,
-    instance_F\r\n        COPY\r\n        PUSH, index_1\r\n        PUSH, Int32_D\r\n
-    \       COPY\r\n        PUSH, instance_14\r\n        PUSH, Int32_D\r\n        PUSH,
-    instance_13\r\n        EXTERN, \"UnityEngineRigidbodyArray.__Get__SystemInt32__UnityEngineRigidbody\"\r\n
-    \       PUSH, originpoint\r\n        PUSH, instance_15\r\n        COPY\r\n        PUSH,
-    pickups\r\n        PUSH, instance_F\r\n        COPY\r\n        PUSH, index_1\r\n
-    \       PUSH, Int32_E\r\n        COPY\r\n        PUSH, instance_15\r\n        PUSH,
-    Int32_E\r\n        PUSH, value_0\r\n        EXTERN, \"UnityEngineVector3Array.__Get__SystemInt32__UnityEngineVector3\"\r\n
-    \       PUSH, instance_13\r\n        PUSH, value_0\r\n        EXTERN, \"UnityEngineRigidbody.__set_position__UnityEngineVector3__SystemVoid\"\r\n
-    \       PUSH, pickupRigidbody\r\n        PUSH, instance_14\r\n        COPY\r\n
-    \       PUSH, pickups\r\n        PUSH, instance_F\r\n        COPY\r\n        PUSH,
-    index_1\r\n        PUSH, Int32_D\r\n        COPY\r\n        PUSH, instance_13\r\n
-    \       PUSH, instance_16\r\n        COPY\r\n        PUSH, originrotation\r\n
-    \       PUSH, instance_17\r\n        COPY\r\n        PUSH, pickups\r\n        PUSH,
-    instance_F\r\n        COPY\r\n        PUSH, index_1\r\n        PUSH, Int32_F\r\n
-    \       COPY\r\n        PUSH, instance_17\r\n        PUSH, Int32_F\r\n        PUSH,
-    value_1\r\n        EXTERN, \"UnityEngineQuaternionArray.__Get__SystemInt32__UnityEngineQuaternion\"\r\n
-    \       PUSH, instance_13\r\n        PUSH, value_1\r\n        EXTERN, \"UnityEngineRigidbody.__set_rotation__UnityEngineQuaternion__SystemVoid\"\r\n
-    \       PUSH, String_0\r\n        PUSH, message_0\r\n        COPY\r\n        PUSH,
-    message_0\r\n        EXTERN, \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n
-    \       JUMP, 0x00000BB0\r\n        PUSH, forceDrop\r\n        JUMP_IF_FALSE,
-    0x00000BB0\r\n        PUSH, pickups\r\n        PUSH, instance_12\r\n        COPY\r\n
-    \       PUSH, pickups\r\n        PUSH, instance_F\r\n        COPY\r\n        PUSH,
-    index_1\r\n        PUSH, Int32_C\r\n        COPY\r\n        PUSH, instance_11\r\n
-    \       PUSH, instance_18\r\n        COPY\r\n        PUSH, instance_11\r\n        EXTERN,
-    \"VRCSDK3ComponentsVRCPickup.__Drop__SystemVoid\"\r\n        PUSH, pickupRigidbody\r\n
-    \       PUSH, instance_1A\r\n        COPY\r\n        PUSH, pickups\r\n        PUSH,
-    instance_F\r\n        COPY\r\n        PUSH, index_1\r\n        PUSH, Int32_10\r\n
-    \       COPY\r\n        PUSH, instance_1A\r\n        PUSH, Int32_10\r\n        PUSH,
-    instance_19\r\n        EXTERN, \"UnityEngineRigidbodyArray.__Get__SystemInt32__UnityEngineRigidbody\"\r\n
-    \       PUSH, originpoint\r\n        PUSH, instance_1B\r\n        COPY\r\n        PUSH,
-    pickups\r\n        PUSH, instance_F\r\n        COPY\r\n        PUSH, index_1\r\n
-    \       PUSH, Int32_11\r\n        COPY\r\n        PUSH, instance_1B\r\n        PUSH,
-    Int32_11\r\n        PUSH, value_2\r\n        EXTERN, \"UnityEngineVector3Array.__Get__SystemInt32__UnityEngineVector3\"\r\n
-    \       PUSH, instance_19\r\n        PUSH, value_2\r\n        EXTERN, \"UnityEngineRigidbody.__set_position__UnityEngineVector3__SystemVoid\"\r\n
-    \       PUSH, pickupRigidbody\r\n        PUSH, instance_1A\r\n        COPY\r\n
-    \       PUSH, pickups\r\n        PUSH, instance_F\r\n        COPY\r\n        PUSH,
-    index_1\r\n        PUSH, Int32_10\r\n        COPY\r\n        PUSH, instance_19\r\n
-    \       PUSH, instance_1C\r\n        COPY\r\n        PUSH, originrotation\r\n
-    \       PUSH, instance_1D\r\n        COPY\r\n        PUSH, pickups\r\n        PUSH,
-    instance_F\r\n        COPY\r\n        PUSH, index_1\r\n        PUSH, Int32_12\r\n
-    \       COPY\r\n        PUSH, instance_1D\r\n        PUSH, Int32_12\r\n        PUSH,
-    value_3\r\n        EXTERN, \"UnityEngineQuaternionArray.__Get__SystemInt32__UnityEngineQuaternion\"\r\n
-    \       PUSH, instance_19\r\n        PUSH, value_3\r\n        EXTERN, \"UnityEngineRigidbody.__set_rotation__UnityEngineQuaternion__SystemVoid\"\r\n
-    \       PUSH, String_1\r\n        PUSH, message_1\r\n        COPY\r\n        PUSH,
-    message_1\r\n        EXTERN, \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n
-    \       JUMP, 0x00000BB0\r\n        JUMP, 0x00000F6C\r\n        PUSH, pickups\r\n
-    \       PUSH, instance_1F\r\n        COPY\r\n        PUSH, pickups\r\n        PUSH,
-    instance_F\r\n        COPY\r\n        PUSH, index_1\r\n        PUSH, Int32_13\r\n
-    \       COPY\r\n        PUSH, instance_1F\r\n        PUSH, Int32_13\r\n        PUSH,
-    instance_1E\r\n        EXTERN, \"VRCSDK3ComponentsVRCPickupArray.__Get__SystemInt32__VRCSDK3ComponentsVRCPickup\"\r\n
-    \       PUSH, instance_1E\r\n        PUSH, Object_6\r\n        EXTERN, \"VRCSDK3ComponentsVRCPickup.__get_currentPlayer__VRCSDKBaseVRCPlayerApi\"\r\n
-    \       PUSH, var_3\r\n        PUSH, Object_7\r\n        COPY\r\n        PUSH,
-    Object_6\r\n        PUSH, Object_7\r\n        PUSH, Boolean_4\r\n        EXTERN,
-    \"SystemObject.__op_Equality__SystemObject_SystemObject__SystemBoolean\"\r\n        PUSH,
-    Boolean_4\r\n        JUMP_IF_FALSE, 0x00000D8C\r\n        PUSH, player_0\r\n        EXTERN,
-    \"VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi\"\r\n        PUSH,
-    syncCom\r\n        PUSH, instance_10\r\n        COPY\r\n        PUSH, pickups\r\n
-    \       PUSH, instance_F\r\n        COPY\r\n        PUSH, index_1\r\n        PUSH,
-    Int32_B\r\n        COPY\r\n        PUSH, Object_2\r\n        PUSH, instance_20\r\n
-    \       COPY\r\n        PUSH, Object_2\r\n        PUSH, obj_0\r\n        EXTERN,
-    \"VRCSDK3ComponentsVRCObjectSync.__get_gameObject__UnityEngineGameObject\"\r\n
-    \       PUSH, player_0\r\n        PUSH, obj_0\r\n        EXTERN, \"VRCSDKBaseNetworking.__SetOwner__VRCSDKBaseVRCPlayerApi_UnityEngineGameObject__SystemVoid\"\r\n
-    \       PUSH, syncCom\r\n        PUSH, instance_10\r\n        COPY\r\n        PUSH,
-    pickups\r\n        PUSH, instance_F\r\n        COPY\r\n        PUSH, index_1\r\n
-    \       PUSH, Int32_B\r\n        COPY\r\n        PUSH, Object_2\r\n        PUSH,
-    instance_21\r\n        COPY\r\n        PUSH, Object_2\r\n        EXTERN, \"VRCSDK3ComponentsVRCObjectSync.__Respawn__SystemVoid\"\r\n
-    \       PUSH, String_2\r\n        PUSH, message_2\r\n        COPY\r\n        PUSH,
-    message_2\r\n        EXTERN, \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n
-    \       JUMP, 0x00000F6C\r\n        PUSH, forceDrop\r\n        JUMP_IF_FALSE,
-    0x00000F6C\r\n        PUSH, pickups\r\n        PUSH, instance_1F\r\n        COPY\r\n
-    \       PUSH, pickups\r\n        PUSH, instance_F\r\n        COPY\r\n        PUSH,
-    index_1\r\n        PUSH, Int32_13\r\n        COPY\r\n        PUSH, instance_1E\r\n
-    \       PUSH, instance_22\r\n        COPY\r\n        PUSH, pickups\r\n        PUSH,
-    instance_1F\r\n        COPY\r\n        PUSH, pickups\r\n        PUSH, instance_F\r\n
-    \       COPY\r\n        PUSH, index_1\r\n        PUSH, Int32_13\r\n        COPY\r\n
-    \       PUSH, Object_6\r\n        PUSH, instigator_0\r\n        COPY\r\n        PUSH,
-    instance_1E\r\n        PUSH, Object_6\r\n        EXTERN, \"VRCSDK3ComponentsVRCPickup.__Drop__VRCSDKBaseVRCPlayerApi__SystemVoid\"\r\n
-    \       PUSH, player_1\r\n        EXTERN, \"VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi\"\r\n
-    \       PUSH, syncCom\r\n        PUSH, instance_10\r\n        COPY\r\n        PUSH,
-    pickups\r\n        PUSH, instance_F\r\n        COPY\r\n        PUSH, index_1\r\n
-    \       PUSH, Int32_B\r\n        COPY\r\n        PUSH, Object_2\r\n        PUSH,
-    instance_20\r\n        COPY\r\n        PUSH, obj_0\r\n        PUSH, obj_1\r\n
-    \       COPY\r\n        PUSH, player_1\r\n        PUSH, obj_0\r\n        EXTERN,
-    \"VRCSDKBaseNetworking.__SetOwner__VRCSDKBaseVRCPlayerApi_UnityEngineGameObject__SystemVoid\"\r\n
-    \       PUSH, syncCom\r\n        PUSH, instance_10\r\n        COPY\r\n        PUSH,
-    pickups\r\n        PUSH, instance_F\r\n        COPY\r\n        PUSH, index_1\r\n
-    \       PUSH, Int32_B\r\n        COPY\r\n        PUSH, Object_2\r\n        PUSH,
-    instance_23\r\n        COPY\r\n        PUSH, Object_2\r\n        EXTERN, \"VRCSDK3ComponentsVRCObjectSync.__Respawn__SystemVoid\"\r\n
-    \       PUSH, String_3\r\n        PUSH, message_3\r\n        COPY\r\n        PUSH,
-    message_3\r\n        EXTERN, \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n
-    \       JUMP, 0x00000F6C\r\n        PUSH, index_1\r\n        PUSH, step_1\r\n
-    \       PUSH, index_1\r\n        EXTERN, \"SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32\"\r\n
-    \       JUMP, 0x00000638\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
+    null\r\n    forceDrop: %SystemBoolean, null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n   
+    .export _start\r\n    \r\n    _start:\r\n    \r\n        PUSH, pickups\r\n       
+    PUSH, __instance_0\r\n        COPY\r\n        PUSH, __instance_0\r\n        PUSH,
+    __Int32_0\r\n        EXTERN, \"VRCSDK3ComponentsVRCPickupArray.__get_Length__SystemInt32\"\r\n       
+    PUSH, __Int32_0\r\n        PUSH, syncCom\r\n        EXTERN, \"VRCSDK3ComponentsVRCObjectSyncArray.__ctor__SystemInt32__VRCSDK3ComponentsVRCObjectSyncArray\"\r\n       
+    PUSH, pickups\r\n        PUSH, __instance_0\r\n        COPY\r\n        PUSH,
+    __Int32_0\r\n        PUSH, __Int32_1\r\n        COPY\r\n        PUSH, __Int32_0\r\n       
+    PUSH, pickupRigidbody\r\n        EXTERN, \"UnityEngineRigidbodyArray.__ctor__SystemInt32__UnityEngineRigidbodyArray\"\r\n       
+    PUSH, pickups\r\n        PUSH, __instance_0\r\n        COPY\r\n        PUSH,
+    __Int32_0\r\n        PUSH, __Int32_2\r\n        COPY\r\n        PUSH, __Int32_0\r\n       
+    PUSH, originpoint\r\n        EXTERN, \"UnityEngineVector3Array.__ctor__SystemInt32__UnityEngineVector3Array\"\r\n       
+    PUSH, pickups\r\n        PUSH, __instance_0\r\n        COPY\r\n        PUSH,
+    __Int32_0\r\n        PUSH, __Int32_3\r\n        COPY\r\n        PUSH, __Int32_0\r\n       
+    PUSH, originrotation\r\n        EXTERN, \"UnityEngineQuaternionArray.__ctor__SystemInt32__UnityEngineQuaternionArray\"\r\n       
+    PUSH, pickups\r\n        PUSH, __instance_1\r\n        COPY\r\n        PUSH,
+    __instance_1\r\n        PUSH, __end_0\r\n        EXTERN, \"VRCSDK3ComponentsVRCPickupArray.__get_Length__SystemInt32\"\r\n       
+    PUSH, __start_0\r\n        PUSH, __index_0\r\n        COPY\r\n        PUSH, __index_0\r\n       
+    PUSH, __end_0\r\n        PUSH, __condition_0\r\n        EXTERN, \"SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n       
+    PUSH, __condition_0\r\n        JUMP_IF_FALSE, 0x000005D0\r\n        PUSH, syncCom\r\n       
+    PUSH, __instance_2\r\n        COPY\r\n        PUSH, pickups\r\n        PUSH,
+    __instance_1\r\n        COPY\r\n        PUSH, __index_0\r\n        PUSH, __Int32_4\r\n       
+    COPY\r\n        PUSH, pickups\r\n        PUSH, __instance_4\r\n        COPY\r\n       
+    PUSH, pickups\r\n        PUSH, __instance_1\r\n        COPY\r\n        PUSH,
+    __index_0\r\n        PUSH, __Int32_5\r\n        COPY\r\n        PUSH, __instance_4\r\n       
+    PUSH, __Int32_5\r\n        PUSH, __instance_3\r\n        EXTERN, \"VRCSDK3ComponentsVRCPickupArray.__Get__SystemInt32__VRCSDK3ComponentsVRCPickup\"\r\n       
+    PUSH, __Type_0\r\n        PUSH, __type_0\r\n        COPY\r\n        PUSH, __instance_3\r\n       
+    PUSH, __type_0\r\n        PUSH, __VRCObjectSync_0\r\n        EXTERN, \"VRCSDK3ComponentsVRCPickup.__GetComponent__SystemType__UnityEngineComponent\"\r\n       
+    PUSH, __instance_2\r\n        PUSH, __Int32_4\r\n        PUSH, __VRCObjectSync_0\r\n       
+    EXTERN, \"VRCSDK3ComponentsVRCObjectSyncArray.__Set__SystemInt32_VRCSDK3ComponentsVRCObjectSync__SystemVoid\"\r\n       
+    PUSH, syncCom\r\n        PUSH, __instance_5\r\n        COPY\r\n        PUSH,
+    pickups\r\n        PUSH, __instance_1\r\n        COPY\r\n        PUSH, __index_0\r\n       
+    PUSH, __Int32_6\r\n        COPY\r\n        PUSH, __instance_5\r\n        PUSH,
+    __Int32_6\r\n        PUSH, __Object_0\r\n        EXTERN, \"VRCSDK3ComponentsVRCObjectSyncArray.__Get__SystemInt32__VRCSDK3ComponentsVRCObjectSync\"\r\n       
+    PUSH, __var_0\r\n        PUSH, __Object_1\r\n        COPY\r\n        PUSH, __Object_0\r\n       
+    PUSH, __Object_1\r\n        PUSH, __Boolean_0\r\n        EXTERN, \"SystemObject.__op_Equality__SystemObject_SystemObject__SystemBoolean\"\r\n       
+    PUSH, __Boolean_0\r\n        JUMP_IF_FALSE, 0x000005A8\r\n        PUSH, pickupRigidbody\r\n       
+    PUSH, __instance_6\r\n        COPY\r\n        PUSH, pickups\r\n        PUSH,
+    __instance_1\r\n        COPY\r\n        PUSH, __index_0\r\n        PUSH, __Int32_7\r\n       
+    COPY\r\n        PUSH, pickups\r\n        PUSH, __instance_8\r\n        COPY\r\n       
+    PUSH, pickups\r\n        PUSH, __instance_1\r\n        COPY\r\n        PUSH,
+    __index_0\r\n        PUSH, __Int32_8\r\n        COPY\r\n        PUSH, __instance_8\r\n       
+    PUSH, __Int32_8\r\n        PUSH, __instance_7\r\n        EXTERN, \"VRCSDK3ComponentsVRCPickupArray.__Get__SystemInt32__VRCSDK3ComponentsVRCPickup\"\r\n       
+    PUSH, __Type_1\r\n        PUSH, __type_1\r\n        COPY\r\n        PUSH, __instance_7\r\n       
+    PUSH, __type_1\r\n        PUSH, __Rigidbody_0\r\n        EXTERN, \"VRCSDK3ComponentsVRCPickup.__GetComponent__SystemType__UnityEngineComponent\"\r\n       
+    PUSH, __instance_6\r\n        PUSH, __Int32_7\r\n        PUSH, __Rigidbody_0\r\n       
+    EXTERN, \"UnityEngineRigidbodyArray.__Set__SystemInt32_UnityEngineRigidbody__SystemVoid\"\r\n       
+    PUSH, originpoint\r\n        PUSH, __instance_9\r\n        COPY\r\n        PUSH,
+    pickups\r\n        PUSH, __instance_1\r\n        COPY\r\n        PUSH, __index_0\r\n       
+    PUSH, __Int32_9\r\n        COPY\r\n        PUSH, pickups\r\n        PUSH, __instance_8\r\n       
+    COPY\r\n        PUSH, pickups\r\n        PUSH, __instance_1\r\n        COPY\r\n       
+    PUSH, __index_0\r\n        PUSH, __Int32_8\r\n        COPY\r\n        PUSH, __instance_7\r\n       
+    PUSH, __instance_B\r\n        COPY\r\n        PUSH, __instance_7\r\n        PUSH,
+    __instance_A\r\n        EXTERN, \"VRCSDK3ComponentsVRCPickup.__get_transform__UnityEngineTransform\"\r\n       
+    PUSH, __instance_A\r\n        PUSH, __Vector3_0\r\n        EXTERN, \"UnityEngineTransform.__get_position__UnityEngineVector3\"\r\n       
+    PUSH, __instance_9\r\n        PUSH, __Int32_9\r\n        PUSH, __Vector3_0\r\n       
+    EXTERN, \"UnityEngineVector3Array.__Set__SystemInt32_UnityEngineVector3__SystemVoid\"\r\n       
+    PUSH, originrotation\r\n        PUSH, __instance_C\r\n        COPY\r\n       
+    PUSH, pickups\r\n        PUSH, __instance_1\r\n        COPY\r\n        PUSH,
+    __index_0\r\n        PUSH, __Int32_A\r\n        COPY\r\n        PUSH, pickups\r\n       
+    PUSH, __instance_8\r\n        COPY\r\n        PUSH, pickups\r\n        PUSH,
+    __instance_1\r\n        COPY\r\n        PUSH, __index_0\r\n        PUSH, __Int32_8\r\n       
+    COPY\r\n        PUSH, __instance_7\r\n        PUSH, __instance_B\r\n        COPY\r\n       
+    PUSH, __instance_A\r\n        PUSH, __instance_D\r\n        COPY\r\n        PUSH,
+    __instance_A\r\n        PUSH, __Quaternion_0\r\n        EXTERN, \"UnityEngineTransform.__get_rotation__UnityEngineQuaternion\"\r\n       
+    PUSH, __instance_C\r\n        PUSH, __Int32_A\r\n        PUSH, __Quaternion_0\r\n       
+    EXTERN, \"UnityEngineQuaternionArray.__Set__SystemInt32_UnityEngineQuaternion__SystemVoid\"\r\n       
+    JUMP, 0x000005A8\r\n        PUSH, __index_0\r\n        PUSH, __step_0\r\n       
+    PUSH, __index_0\r\n        EXTERN, \"SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32\"\r\n       
+    JUMP, 0x00000144\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n    .export _interact\r\n   
+    \r\n    _interact:\r\n    \r\n        PUSH, __instance_E\r\n        PUSH, __eventName_0\r\n       
+    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n       
+    JUMP, 0xFFFFFFFC\r\n    \r\n    .export ResetPickup\r\n    \r\n    ResetPickup:\r\n   
+    \r\n        PUSH, pickups\r\n        PUSH, __instance_F\r\n        COPY\r\n       
+    PUSH, __instance_F\r\n        PUSH, __end_1\r\n        EXTERN, \"VRCSDK3ComponentsVRCPickupArray.__get_Length__SystemInt32\"\r\n       
+    PUSH, __start_1\r\n        PUSH, __index_1\r\n        COPY\r\n        PUSH, __index_1\r\n       
+    PUSH, __end_1\r\n        PUSH, __condition_1\r\n        EXTERN, \"SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n       
+    PUSH, __condition_1\r\n        JUMP_IF_FALSE, 0x00000F04\r\n        PUSH, syncCom\r\n       
+    PUSH, __instance_10\r\n        COPY\r\n        PUSH, pickups\r\n        PUSH,
+    __instance_F\r\n        COPY\r\n        PUSH, __index_1\r\n        PUSH, __Int32_B\r\n       
+    COPY\r\n        PUSH, __instance_10\r\n        PUSH, __Int32_B\r\n        PUSH,
+    __Object_2\r\n        EXTERN, \"VRCSDK3ComponentsVRCObjectSyncArray.__Get__SystemInt32__VRCSDK3ComponentsVRCObjectSync\"\r\n       
+    PUSH, __var_1\r\n        PUSH, __Object_3\r\n        COPY\r\n        PUSH, __Object_2\r\n       
+    PUSH, __Object_3\r\n        PUSH, __Boolean_1\r\n        EXTERN, \"SystemObject.__op_Equality__SystemObject_SystemObject__SystemBoolean\"\r\n       
+    PUSH, __Boolean_1\r\n        JUMP_IF_FALSE, 0x00000B70\r\n        PUSH, pickups\r\n       
+    PUSH, __instance_12\r\n        COPY\r\n        PUSH, pickups\r\n        PUSH,
+    __instance_F\r\n        COPY\r\n        PUSH, __index_1\r\n        PUSH, __Int32_C\r\n       
+    COPY\r\n        PUSH, __instance_12\r\n        PUSH, __Int32_C\r\n        PUSH,
+    __instance_11\r\n        EXTERN, \"VRCSDK3ComponentsVRCPickupArray.__Get__SystemInt32__VRCSDK3ComponentsVRCPickup\"\r\n       
+    PUSH, __instance_11\r\n        PUSH, __Object_4\r\n        EXTERN, \"VRCSDK3ComponentsVRCPickup.__get_currentPlayer__VRCSDKBaseVRCPlayerApi\"\r\n       
+    PUSH, __var_2\r\n        PUSH, __Object_5\r\n        COPY\r\n        PUSH, __Object_4\r\n       
+    PUSH, __Object_5\r\n        PUSH, __Boolean_2\r\n        EXTERN, \"SystemObject.__op_Equality__SystemObject_SystemObject__SystemBoolean\"\r\n       
+    PUSH, __Boolean_2\r\n        JUMP_IF_FALSE, 0x0000095C\r\n        PUSH, pickupRigidbody\r\n       
+    PUSH, __instance_14\r\n        COPY\r\n        PUSH, pickups\r\n        PUSH,
+    __instance_F\r\n        COPY\r\n        PUSH, __index_1\r\n        PUSH, __Int32_D\r\n       
+    COPY\r\n        PUSH, __instance_14\r\n        PUSH, __Int32_D\r\n        PUSH,
+    __instance_13\r\n        EXTERN, \"UnityEngineRigidbodyArray.__Get__SystemInt32__UnityEngineRigidbody\"\r\n       
+    PUSH, originpoint\r\n        PUSH, __instance_15\r\n        COPY\r\n        PUSH,
+    pickups\r\n        PUSH, __instance_F\r\n        COPY\r\n        PUSH, __index_1\r\n       
+    PUSH, __Int32_E\r\n        COPY\r\n        PUSH, __instance_15\r\n        PUSH,
+    __Int32_E\r\n        PUSH, __value_0\r\n        EXTERN, \"UnityEngineVector3Array.__Get__SystemInt32__UnityEngineVector3\"\r\n       
+    PUSH, __instance_13\r\n        PUSH, __value_0\r\n        EXTERN, \"UnityEngineRigidbody.__set_position__UnityEngineVector3__SystemVoid\"\r\n       
+    PUSH, pickupRigidbody\r\n        PUSH, __instance_14\r\n        COPY\r\n       
+    PUSH, pickups\r\n        PUSH, __instance_F\r\n        COPY\r\n        PUSH,
+    __index_1\r\n        PUSH, __Int32_D\r\n        COPY\r\n        PUSH, __instance_13\r\n       
+    PUSH, __instance_16\r\n        COPY\r\n        PUSH, originrotation\r\n       
+    PUSH, __instance_17\r\n        COPY\r\n        PUSH, pickups\r\n        PUSH,
+    __instance_F\r\n        COPY\r\n        PUSH, __index_1\r\n        PUSH, __Int32_F\r\n       
+    COPY\r\n        PUSH, __instance_17\r\n        PUSH, __Int32_F\r\n        PUSH,
+    __value_1\r\n        EXTERN, \"UnityEngineQuaternionArray.__Get__SystemInt32__UnityEngineQuaternion\"\r\n       
+    PUSH, __instance_13\r\n        PUSH, __value_1\r\n        EXTERN, \"UnityEngineRigidbody.__set_rotation__UnityEngineQuaternion__SystemVoid\"\r\n       
+    JUMP, 0x00000B68\r\n        PUSH, forceDrop\r\n        JUMP_IF_FALSE, 0x00000B68\r\n       
+    PUSH, pickups\r\n        PUSH, __instance_12\r\n        COPY\r\n        PUSH,
+    pickups\r\n        PUSH, __instance_F\r\n        COPY\r\n        PUSH, __index_1\r\n       
+    PUSH, __Int32_C\r\n        COPY\r\n        PUSH, __instance_11\r\n        PUSH,
+    __instance_18\r\n        COPY\r\n        PUSH, __instance_11\r\n        EXTERN,
+    \"VRCSDK3ComponentsVRCPickup.__Drop__SystemVoid\"\r\n        PUSH, pickupRigidbody\r\n       
+    PUSH, __instance_1A\r\n        COPY\r\n        PUSH, pickups\r\n        PUSH,
+    __instance_F\r\n        COPY\r\n        PUSH, __index_1\r\n        PUSH, __Int32_10\r\n       
+    COPY\r\n        PUSH, __instance_1A\r\n        PUSH, __Int32_10\r\n        PUSH,
+    __instance_19\r\n        EXTERN, \"UnityEngineRigidbodyArray.__Get__SystemInt32__UnityEngineRigidbody\"\r\n       
+    PUSH, originpoint\r\n        PUSH, __instance_1B\r\n        COPY\r\n        PUSH,
+    pickups\r\n        PUSH, __instance_F\r\n        COPY\r\n        PUSH, __index_1\r\n       
+    PUSH, __Int32_11\r\n        COPY\r\n        PUSH, __instance_1B\r\n        PUSH,
+    __Int32_11\r\n        PUSH, __value_2\r\n        EXTERN, \"UnityEngineVector3Array.__Get__SystemInt32__UnityEngineVector3\"\r\n       
+    PUSH, __instance_19\r\n        PUSH, __value_2\r\n        EXTERN, \"UnityEngineRigidbody.__set_position__UnityEngineVector3__SystemVoid\"\r\n       
+    PUSH, pickupRigidbody\r\n        PUSH, __instance_1A\r\n        COPY\r\n       
+    PUSH, pickups\r\n        PUSH, __instance_F\r\n        COPY\r\n        PUSH,
+    __index_1\r\n        PUSH, __Int32_10\r\n        COPY\r\n        PUSH, __instance_19\r\n       
+    PUSH, __instance_1C\r\n        COPY\r\n        PUSH, originrotation\r\n       
+    PUSH, __instance_1D\r\n        COPY\r\n        PUSH, pickups\r\n        PUSH,
+    __instance_F\r\n        COPY\r\n        PUSH, __index_1\r\n        PUSH, __Int32_12\r\n       
+    COPY\r\n        PUSH, __instance_1D\r\n        PUSH, __Int32_12\r\n        PUSH,
+    __value_3\r\n        EXTERN, \"UnityEngineQuaternionArray.__Get__SystemInt32__UnityEngineQuaternion\"\r\n       
+    PUSH, __instance_19\r\n        PUSH, __value_3\r\n        EXTERN, \"UnityEngineRigidbody.__set_rotation__UnityEngineQuaternion__SystemVoid\"\r\n       
+    JUMP, 0x00000B68\r\n        JUMP, 0x00000EDC\r\n        PUSH, pickups\r\n       
+    PUSH, __instance_1F\r\n        COPY\r\n        PUSH, pickups\r\n        PUSH,
+    __instance_F\r\n        COPY\r\n        PUSH, __index_1\r\n        PUSH, __Int32_13\r\n       
+    COPY\r\n        PUSH, __instance_1F\r\n        PUSH, __Int32_13\r\n        PUSH,
+    __instance_1E\r\n        EXTERN, \"VRCSDK3ComponentsVRCPickupArray.__Get__SystemInt32__VRCSDK3ComponentsVRCPickup\"\r\n       
+    PUSH, __instance_1E\r\n        PUSH, __Object_6\r\n        EXTERN, \"VRCSDK3ComponentsVRCPickup.__get_currentPlayer__VRCSDKBaseVRCPlayerApi\"\r\n       
+    PUSH, __var_3\r\n        PUSH, __Object_7\r\n        COPY\r\n        PUSH, __Object_6\r\n       
+    PUSH, __Object_7\r\n        PUSH, __Boolean_4\r\n        EXTERN, \"SystemObject.__op_Equality__SystemObject_SystemObject__SystemBoolean\"\r\n       
+    PUSH, __Boolean_4\r\n        JUMP_IF_FALSE, 0x00000D20\r\n        PUSH, __player_0\r\n       
+    EXTERN, \"VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi\"\r\n       
+    PUSH, syncCom\r\n        PUSH, __instance_10\r\n        COPY\r\n        PUSH,
+    pickups\r\n        PUSH, __instance_F\r\n        COPY\r\n        PUSH, __index_1\r\n       
+    PUSH, __Int32_B\r\n        COPY\r\n        PUSH, __Object_2\r\n        PUSH,
+    __instance_20\r\n        COPY\r\n        PUSH, __Object_2\r\n        PUSH, __obj_0\r\n       
+    EXTERN, \"VRCSDK3ComponentsVRCObjectSync.__get_gameObject__UnityEngineGameObject\"\r\n       
+    PUSH, __player_0\r\n        PUSH, __obj_0\r\n        EXTERN, \"VRCSDKBaseNetworking.__SetOwner__VRCSDKBaseVRCPlayerApi_UnityEngineGameObject__SystemVoid\"\r\n       
+    PUSH, syncCom\r\n        PUSH, __instance_10\r\n        COPY\r\n        PUSH,
+    pickups\r\n        PUSH, __instance_F\r\n        COPY\r\n        PUSH, __index_1\r\n       
+    PUSH, __Int32_B\r\n        COPY\r\n        PUSH, __Object_2\r\n        PUSH,
+    __instance_21\r\n        COPY\r\n        PUSH, __Object_2\r\n        EXTERN,
+    \"VRCSDK3ComponentsVRCObjectSync.__Respawn__SystemVoid\"\r\n        JUMP, 0x00000EDC\r\n       
+    PUSH, forceDrop\r\n        JUMP_IF_FALSE, 0x00000EDC\r\n        PUSH, pickups\r\n       
+    PUSH, __instance_1F\r\n        COPY\r\n        PUSH, pickups\r\n        PUSH,
+    __instance_F\r\n        COPY\r\n        PUSH, __index_1\r\n        PUSH, __Int32_13\r\n       
+    COPY\r\n        PUSH, __instance_1E\r\n        PUSH, __instance_22\r\n       
+    COPY\r\n        PUSH, pickups\r\n        PUSH, __instance_1F\r\n        COPY\r\n       
+    PUSH, pickups\r\n        PUSH, __instance_F\r\n        COPY\r\n        PUSH,
+    __index_1\r\n        PUSH, __Int32_13\r\n        COPY\r\n        PUSH, __Object_6\r\n       
+    PUSH, __instigator_0\r\n        COPY\r\n        PUSH, __instance_1E\r\n       
+    PUSH, __Object_6\r\n        EXTERN, \"VRCSDK3ComponentsVRCPickup.__Drop__VRCSDKBaseVRCPlayerApi__SystemVoid\"\r\n       
+    PUSH, __player_1\r\n        EXTERN, \"VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi\"\r\n       
+    PUSH, syncCom\r\n        PUSH, __instance_10\r\n        COPY\r\n        PUSH,
+    pickups\r\n        PUSH, __instance_F\r\n        COPY\r\n        PUSH, __index_1\r\n       
+    PUSH, __Int32_B\r\n        COPY\r\n        PUSH, __Object_2\r\n        PUSH,
+    __instance_20\r\n        COPY\r\n        PUSH, __obj_0\r\n        PUSH, __obj_1\r\n       
+    COPY\r\n        PUSH, __player_1\r\n        PUSH, __obj_0\r\n        EXTERN,
+    \"VRCSDKBaseNetworking.__SetOwner__VRCSDKBaseVRCPlayerApi_UnityEngineGameObject__SystemVoid\"\r\n       
+    PUSH, syncCom\r\n        PUSH, __instance_10\r\n        COPY\r\n        PUSH,
+    pickups\r\n        PUSH, __instance_F\r\n        COPY\r\n        PUSH, __index_1\r\n       
+    PUSH, __Int32_B\r\n        COPY\r\n        PUSH, __Object_2\r\n        PUSH,
+    __instance_23\r\n        COPY\r\n        PUSH, __Object_2\r\n        EXTERN,
+    \"VRCSDK3ComponentsVRCObjectSync.__Respawn__SystemVoid\"\r\n        JUMP, 0x00000EDC\r\n       
+    PUSH, __index_1\r\n        PUSH, __step_1\r\n        PUSH, __index_1\r\n       
+    EXTERN, \"SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32\"\r\n       
+    JUMP, 0x00000638\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
   assemblyError: 
   graphData:
     name: 
@@ -342,9 +326,11 @@ MonoBehaviour:
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|pickups
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|True
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|True
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Variable_VRCSDK3ComponentsVRCObjectSyncArray
@@ -363,9 +349,11 @@ MonoBehaviour:
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|syncCom
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Variable_UnityEngineRigidbodyArray
@@ -384,9 +372,11 @@ MonoBehaviour:
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|pickupRigidbody
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Variable_UnityEngineVector3Array
@@ -405,9 +395,11 @@ MonoBehaviour:
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|originpoint
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Variable_UnityEngineQuaternionArray
@@ -426,9 +418,11 @@ MonoBehaviour:
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|originrotation
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Variable_SystemBoolean
@@ -443,13 +437,16 @@ MonoBehaviour:
       flowUIDs: []
       nodeValues:
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|True
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|True
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|forceDrop
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|True
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|True
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Block
@@ -466,6 +463,7 @@ MonoBehaviour:
       nodeUIDs:
       - 
       - 4974836b-c615-4680-9461-73ee5320284c|0
+      - 
       flowUIDs:
       - 9983a893-e2ca-404a-832d-6892e5d23b94
       nodeValues:
@@ -473,6 +471,9 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0f788558-d146-4e61-9af9-ad280a911f9f
       - unityObjectValue: {fileID: 0}
         stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
     - fullName: VRCSDK3ComponentsVRCObjectSyncArray.__ctor__SystemInt32__VRCSDK3ComponentsVRCObjectSyncArray
       uid: 4974836b-c615-4680-9461-73ee5320284c
       position: {x: -1068.0173, y: -1293.6293}
@@ -508,6 +509,7 @@ MonoBehaviour:
       nodeUIDs:
       - 
       - 117dd50c-abb7-4b05-afcf-e7570bcefa34|0
+      - 
       flowUIDs:
       - 43da942b-0943-4bdf-9362-f8d623588987
       nodeValues:
@@ -515,12 +517,16 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|95447b73-31b9-402e-986c-3382c4c1e308
       - unityObjectValue: {fileID: 0}
         stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
     - fullName: Set_Variable
       uid: 43da942b-0943-4bdf-9362-f8d623588987
       position: {x: -858.11725, y: -1090.529}
       nodeUIDs:
       - 
       - 4442390f-b943-40fc-bb45-b77d71a7f6fc|0
+      - 
       flowUIDs:
       - 1ec7aa2e-a022-4ed1-bf22-0ba2604ca4cd
       nodeValues:
@@ -528,18 +534,25 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|87027418-ecf2-400a-be30-1edf6a12fb7d
       - unityObjectValue: {fileID: 0}
         stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
     - fullName: Set_Variable
       uid: 1ec7aa2e-a022-4ed1-bf22-0ba2604ca4cd
       position: {x: -854.6674, y: -946.4789}
       nodeUIDs:
       - 
       - 42612408-57e1-4142-a0bb-ac6c4db1fc25|0
+      - 
       flowUIDs: []
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|138043da-92ed-4158-9cb8-640bbac614df
       - unityObjectValue: {fileID: 0}
         stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
     - fullName: UnityEngineRigidbodyArray.__ctor__SystemInt32__UnityEngineRigidbodyArray
       uid: 117dd50c-abb7-4b05-afcf-e7570bcefa34
       position: {x: -1042.0671, y: -1182.8754}
@@ -687,7 +700,8 @@ MonoBehaviour:
       - 3a6bcd36-b18d-4571-9d45-9c9499e79772
       nodeValues:
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
     - fullName: Get_Variable
       uid: 0482f681-8d38-41ca-8bd3-572002d70450
       position: {x: -1711.1936, y: -263.84506}
@@ -937,7 +951,8 @@ MonoBehaviour:
       - 08d745a7-4712-4493-b4c8-87f861107175
       nodeValues:
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
     - fullName: VRCSDK3ComponentsVRCPickupArray.__Get__SystemInt32__VRCSDK3ComponentsVRCPickup
       uid: 42ed0e3e-6997-4efb-8a62-627566f63a3c
       position: {x: 1426.5566, y: -423.35883}
@@ -989,7 +1004,8 @@ MonoBehaviour:
       - e3cb6ad0-2076-4c5e-ac61-184325ec62c0
       nodeValues:
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
     - fullName: Branch
       uid: e3cb6ad0-2076-4c5e-ac61-184325ec62c0
       position: {x: 2289.7734, y: -425.0263}
@@ -999,7 +1015,8 @@ MonoBehaviour:
       - 8030f6d3-fb32-430c-be22-c09b24ac145e
       nodeValues:
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
     - fullName: Get_Variable
       uid: d1b53f50-19c7-4842-a580-df6060cb85a1
       position: {x: 2046.0367, y: -350.23923}
@@ -1088,7 +1105,7 @@ MonoBehaviour:
       - fb489efd-f7e4-447a-9b44-63d77d153bf7|0
       - 16b08ab5-1006-4eb6-a0c0-d61283e49434|0
       flowUIDs:
-      - 4f1286ed-89c8-43c8-8b8d-e9510beb2737
+      - 
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: 
@@ -1185,7 +1202,7 @@ MonoBehaviour:
       - b5bc181d-8470-49ab-a963-3941b3800a86
       - 6d39e47e-19a7-45f3-b7d6-29187f8a4391
       flowUIDs:
-      - c4c32173-7d99-4dfd-ad40-dd2f167fce01
+      - 
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: 
@@ -1266,7 +1283,8 @@ MonoBehaviour:
       - d2ef90da-d6a0-4dbf-a3f2-307400b9ce41
       nodeValues:
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
     - fullName: Branch
       uid: d2ef90da-d6a0-4dbf-a3f2-307400b9ce41
       position: {x: 2481.025, y: 970.1361}
@@ -1276,7 +1294,8 @@ MonoBehaviour:
       - 4701965a-8be2-4cd2-94d4-ff169ad2b014
       nodeValues:
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
     - fullName: Get_Variable
       uid: f78043ac-3224-4ac2-95f8-6fe2d2a16ac1
       position: {x: 2237.2876, y: 1044.9229}
@@ -1335,7 +1354,7 @@ MonoBehaviour:
       nodeUIDs:
       - 8318d804-7fa6-4413-809f-d4f2d59a3b68|0
       flowUIDs:
-      - 56a6b41e-911b-4abc-8005-705937ec1861
+      - 
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: 
@@ -1364,105 +1383,10 @@ MonoBehaviour:
       nodeUIDs:
       - 8318d804-7fa6-4413-809f-d4f2d59a3b68|0
       flowUIDs:
-      - 8c4542ea-f04c-48d0-9489-31c9121dde3e
-      nodeValues:
-      - unityObjectValue: {fileID: 0}
-        stringValue: 
-    - fullName: UnityEngineDebug.__Log__SystemObject__SystemVoid
-      uid: 3749b376-14bb-4795-b0ad-80dd3fa149d8
-      position: {x: 3025.242, y: 117.73126}
-      nodeUIDs:
-      - b3916a5c-8e0b-457a-a9ee-dd28bd40f5db|0
-      flowUIDs: []
-      nodeValues:
-      - unityObjectValue: {fileID: 0}
-        stringValue: 
-    - fullName: Const_SystemString
-      uid: b3916a5c-8e0b-457a-a9ee-dd28bd40f5db
-      position: {x: 2766.5874, y: 208.83823}
-      nodeUIDs:
       - 
-      flowUIDs: []
-      nodeValues:
-      - unityObjectValue: {fileID: 0}
-        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|local
-          nondrop
-    - fullName: UnityEngineDebug.__Log__SystemObject__SystemVoid
-      uid: 4f1286ed-89c8-43c8-8b8d-e9510beb2737
-      position: {x: 3321.7952, y: -783.69257}
-      nodeUIDs:
-      - 2250be0e-43de-4567-82da-108c545cf42c
-      flowUIDs: []
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: 
-    - fullName: Const_SystemString
-      uid: 2250be0e-43de-4567-82da-108c545cf42c
-      position: {x: 3063.1406, y: -692.58563}
-      nodeUIDs:
-      - 
-      flowUIDs: []
-      nodeValues:
-      - unityObjectValue: {fileID: 0}
-        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|local
-          nondrop
-    - fullName: UnityEngineDebug.__Log__SystemObject__SystemVoid
-      uid: c4c32173-7d99-4dfd-ad40-dd2f167fce01
-      position: {x: 3666.9678, y: -221.63004}
-      nodeUIDs:
-      - 9c458d34-531d-472e-9917-3dbf4670d5e0
-      flowUIDs: []
-      nodeValues:
-      - unityObjectValue: {fileID: 0}
-        stringValue: 
-    - fullName: Const_SystemString
-      uid: 9c458d34-531d-472e-9917-3dbf4670d5e0
-      position: {x: 3408.3132, y: -130.52307}
-      nodeUIDs:
-      - 
-      flowUIDs: []
-      nodeValues:
-      - unityObjectValue: {fileID: 0}
-        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|local
-          drop
-    - fullName: UnityEngineDebug.__Log__SystemObject__SystemVoid
-      uid: 56a6b41e-911b-4abc-8005-705937ec1861
-      position: {x: 3352.5002, y: 463.2859}
-      nodeUIDs:
-      - 59766b9c-05ea-45fc-8246-47704752fd0f
-      flowUIDs: []
-      nodeValues:
-      - unityObjectValue: {fileID: 0}
-        stringValue: 
-    - fullName: Const_SystemString
-      uid: 59766b9c-05ea-45fc-8246-47704752fd0f
-      position: {x: 3093.8457, y: 554.3929}
-      nodeUIDs:
-      - 
-      flowUIDs: []
-      nodeValues:
-      - unityObjectValue: {fileID: 0}
-        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|network  owner
-          respawn
-    - fullName: UnityEngineDebug.__Log__SystemObject__SystemVoid
-      uid: 8c4542ea-f04c-48d0-9489-31c9121dde3e
-      position: {x: 3541.0889, y: 1395.5823}
-      nodeUIDs:
-      - ae31d6f8-ea35-464b-acf3-b4b2828a21ba
-      flowUIDs: []
-      nodeValues:
-      - unityObjectValue: {fileID: 0}
-        stringValue: 
-    - fullName: Const_SystemString
-      uid: ae31d6f8-ea35-464b-acf3-b4b2828a21ba
-      position: {x: 3282.4343, y: 1486.6892}
-      nodeUIDs:
-      - 
-      flowUIDs: []
-      nodeValues:
-      - unityObjectValue: {fileID: 0}
-        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|network
-          drop respawn
     - fullName: SystemObject.__op_Equality__SystemObject_SystemObject__SystemBoolean
       uid: 75ae7003-d11e-4799-96a1-fcc7efcc179b
       position: {x: -1247.2059, y: -239.82603}
@@ -1549,7 +1473,7 @@ MonoBehaviour:
     uid: b80176d2-906b-49dd-afe9-ccfb6cba159a
     jsonData: '{"visible":true,"layout":{"serializedVersion":"2","x":10.0,"y":130.0,"width":273.0,"height":308.0}}'
   viewTransform:
-    position: {x: 1482.9176, y: 575.3386}
-    scale: 0.49717674
+    position: {x: 1337.6, y: 511.2}
+    scale: 0.21494322
   version: 1.0.0
   showAssembly: 0

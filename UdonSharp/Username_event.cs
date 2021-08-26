@@ -18,6 +18,8 @@ using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
 
+namespace JetDog.Prefabs
+{
 public class Username_event : UdonSharpBehaviour
 {
     public string userName;
@@ -50,3 +52,5 @@ public class Username_event : UdonSharpBehaviour
         }
     }
 }
+}
+

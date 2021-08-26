@@ -18,7 +18,7 @@ using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
 
-namespace JetDog
+namespace JetDog.Prefabs
 {
     [UdonBehaviourSyncMode( BehaviourSyncMode.Manual)]
     public class Variable_Synce_Toggle : UdonSharpBehaviour
@@ -39,7 +39,7 @@ namespace JetDog
             Toggle();
         }
 
-        public void Toggle()
+        private void Toggle()
         {
             state = !state;
             

@@ -18,7 +18,7 @@ using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
 
-namespace JetDog
+namespace JetDog.Prefabs
 {
     public class camera_FPS_limiter : UdonSharpBehaviour
     {
@@ -34,7 +34,18 @@ namespace JetDog
         public void RenderWait()
         {
             cam.enabled = false;
-            SendCustomEventDelayedFrames("RenderSetup", (int)Mathf.Ceil(((1.0f / fps) / Time.deltaTime)), VRC.Udon.Common.Enums.EventTiming.Update);
+            /* calculate how many frames to wait to meet camera fps requirements.
+             * 
+             * target time => (1.0f / fps)
+             * how many seconds between target frames.
+             * 
+             * delay frames => target time / Time.deltaTime
+             * divide target time by how fast came is currently rendering frames.
+             * giving back how many frames to wait. 
+             * 
+             * will enable camera after frame delays.
+             */
+            SendCustomEventDelayedFrames(nameof(RenderSetup), (int)Mathf.Ceil((1.0f / fps) / Time.deltaTime), VRC.Udon.Common.Enums.EventTiming.Update);
         }
 
         public void RenderSetup()
@@ -44,7 +55,8 @@ namespace JetDog
         
         public void OnPostRender()
         {
-            SendCustomEventDelayedFrames("RenderWait", 0, VRC.Udon.Common.Enums.EventTiming.Update);            
+            //cant dissable camera on same frame being rendered will render nothing. so delays till next frame to dissable. 
+            SendCustomEventDelayedFrames(nameof(RenderWait), 0, VRC.Udon.Common.Enums.EventTiming.Update);
         }
     }
 }

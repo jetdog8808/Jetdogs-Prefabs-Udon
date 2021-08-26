@@ -19,6 +19,8 @@ using UnityEngine.UI;
 using VRC.SDKBase;
 using VRC.Udon;
 
+namespace JetDog.Prefabs
+{
 public class String_password : UdonSharpBehaviour
 {
     public string password = "0123";
@@ -61,3 +63,5 @@ public class String_password : UdonSharpBehaviour
         }
     }
 }
+}
+

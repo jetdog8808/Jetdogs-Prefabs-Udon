@@ -122,7 +122,7 @@ Shader "fake skybox"
 }
 /*ASEBEGIN
 Version=16400
--1440;576;1440;838;2517.826;893.7393;2.30694;True;False
+0;0;3072;1666;2220.927;734.1474;1;True;False
 Node;AmplifyShaderEditor.RangedFloatNode;11;-1692.895,255.6315;Float;False;Property;_Float0;Float 0;2;0;Create;True;0;0;False;0;0;0;0;2;0;1;FLOAT;0
 Node;AmplifyShaderEditor.ViewDirInputsCoordNode;8;-1457.231,121.2508;Float;False;World;False;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3
 Node;AmplifyShaderEditor.PiNode;17;-1293.57,267.9717;Float;False;1;0;FLOAT;1;False;1;FLOAT;0
@@ -141,4 +141,4 @@ WireConnection;16;3;20;0
 WireConnection;2;1;16;0
 WireConnection;0;0;2;0
 ASEEND*/
-//CHKSM=4620355B804700979109F89F798BBCC3155AEAF7
+//CHKSM=D6889FCE4F6C8B20DDAB3B82CB05059834CE93EB

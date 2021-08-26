@@ -18,34 +18,48 @@ using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
 
-public class Collider_Key : UdonSharpBehaviour
+namespace JetDog.Prefabs
 {
-    public Collider[] keys;
-
-    public UdonBehaviour udonBehaviour; 
-    public string eventName;
-
-    private void OnTriggerEnter(Collider other)
+    public class Collider_Key : UdonSharpBehaviour
     {
-        for (int i = 0; i < keys.Length; i++)
+        public Collider[] keys;
+
+        public UdonBehaviour udonBehaviour;
+        public string eventName;
+
+        //will use this event if the collider is a trigger.
+        private void OnTriggerEnter(Collider other)
         {
-            if(other == keys[i])
+            //checks if object is not blacklisted. can break if not filtured. 
+            if (!Utilities.IsValid(other) || other == null) return;
+
+            //checks key array if object is a key.
+            for (int i = 0; i < keys.Length; i++)
             {
-                udonBehaviour.SendCustomEvent(eventName);
-                break;
+                if (other == keys[i])
+                {
+                    udonBehaviour.SendCustomEvent(eventName);
+                    break;
+                }
             }
         }
-    }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        for (int i = 0; i < keys.Length; i++)
+        //will use this event if the collider is not a trigger.
+        private void OnCollisionEnter(Collision collision)
         {
-            if (collision.collider == keys[i])
+            //checks if object is not blacklisted. can break if not filtured. 
+            if (!Utilities.IsValid(collision) || collision == null) return;
+
+            //checks key array if object is a key.
+            for (int i = 0; i < keys.Length; i++)
             {
-                udonBehaviour.SendCustomEvent(eventName);
-                break;
+                if (collision.collider == keys[i])
+                {
+                    udonBehaviour.SendCustomEvent(eventName);
+                    break;
+                }
             }
         }
     }
 }
+

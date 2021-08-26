@@ -238,7 +238,7 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 1
-      Data: target
+      Data: nTarget
     - Name: $v
       Entry: 7
       Data: 14|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
@@ -265,10 +265,10 @@ MonoBehaviour:
       Data: VRCUdonCommonInterfacesNetworkEventTarget
     - Name: symbolOriginalName
       Entry: 1
-      Data: target
+      Data: nTarget
     - Name: symbolUniqueName
       Entry: 1
-      Data: target
+      Data: nTarget
     - Name: symbolDefaultValue
       Entry: 6
       Data: 

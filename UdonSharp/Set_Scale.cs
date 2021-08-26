@@ -18,6 +18,8 @@ using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
 
+namespace JetDog.Prefabs
+{
 public class Set_Scale : UdonSharpBehaviour
 {
     public Vector3 scale = Vector3.one;
@@ -47,3 +49,5 @@ public class Set_Scale : UdonSharpBehaviour
         s_transform.localScale = scale;
     }
 }
+}
+

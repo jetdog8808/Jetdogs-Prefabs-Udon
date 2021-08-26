@@ -18,54 +18,200 @@ using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
 
+namespace JetDog.Prefabs
+{
 public class Player_Movement_settings : UdonSharpBehaviour
 {
-    public float jumpImpulse = 3;
-    public float walkSpeed = 2;
-    public float strafeSpeed = 2;
-    public float runSpeed = 4;
-    public float gravityStrength = 1;
-    public bool legacyLocomotion = false;
+    #region properties&variables
+
+    [SerializeField, FieldChangeCallback(nameof(JumpValue))]
+    private float _jumpImpulse = 3;
+    public float JumpValue
+    {
+        set
+        {
+            user.SetJumpImpulse(value);
+            _jumpImpulse = user.GetJumpImpulse();
+        }
+
+        get
+        {
+            if(_jumpImpulse != user.GetJumpImpulse())
+            {
+                _jumpImpulse = user.GetJumpImpulse();
+            }
+
+            return _jumpImpulse;
+        }
+    }
+
+    [SerializeField, FieldChangeCallback(nameof(WalkValue))]
+    private float _walkSpeed = 2;
+    public float WalkValue
+    {
+        set
+        {
+            user.SetWalkSpeed(value);
+            _walkSpeed = user.GetWalkSpeed();
+        }
+
+        get
+        {
+            if (_walkSpeed != user.GetWalkSpeed())
+            {
+                _walkSpeed = user.GetWalkSpeed();
+            }
+
+            return _walkSpeed;
+        }
+    }
+
+    [SerializeField, FieldChangeCallback(nameof(StrafeValue))]
+    private float _strafeSpeed = 2;
+    public float StrafeValue
+    {
+        set
+        {
+            user.SetStrafeSpeed(value);
+            _strafeSpeed = user.GetStrafeSpeed();
+        }
+
+        get
+        {
+            if (_strafeSpeed != user.GetStrafeSpeed())
+            {
+                _strafeSpeed = user.GetStrafeSpeed();
+            }
+
+            return _strafeSpeed;
+        }
+    }
+
+    [SerializeField, FieldChangeCallback(nameof(RunValue))]
+    private float _runSpeed = 4;
+    public float RunValue
+    {
+        set
+        {
+            user.SetRunSpeed(value);
+            _runSpeed = user.GetRunSpeed();
+        }
+
+        get
+        {
+            if (_runSpeed != user.GetRunSpeed())
+            {
+                _runSpeed = user.GetRunSpeed();
+            }
+
+            return _runSpeed;
+        }
+    }
+
+    [SerializeField, FieldChangeCallback(nameof(GravityValue))]
+    private float _gravityStrength = 1;
+    public float GravityValue
+    {
+        set
+        {
+            user.SetGravityStrength(value);
+            _gravityStrength = user.GetGravityStrength();
+        }
+
+        get
+        {
+            if (_gravityStrength != user.GetGravityStrength())
+            {
+                _gravityStrength = user.GetGravityStrength();
+            }
+
+            return _gravityStrength;
+        }
+    }
+
+    [SerializeField, FieldChangeCallback(nameof(LegacyLocomotion))]
+    private bool _legacyLocomotion = false;
+    public bool LegacyLocomotion
+    {
+        set
+        {
+            if (value || _legacyLocomotion)
+            {
+                user.UseLegacyLocomotion();
+                _legacyLocomotion = true;
+            }
+            else
+            {
+                _legacyLocomotion = false;
+            }
+
+        }
+
+        get => _legacyLocomotion;
+    }
+
+    #endregion
 
     public bool setOnStart = true;
 
-    public Player_Movement_settings zoneExitReset;
+    #region cache movement
+    private float jump_c;
+    private float walk_c;
+    private float strafe_c;
+    private float run_c;
+    private float gravity_c;
+    #endregion
+
+    private VRCPlayerApi user;
 
     void Start()
     {
+        user = Networking.LocalPlayer;
+
         if (setOnStart)
         {
             SetMovement();
-
-            if (legacyLocomotion)
-            {
-                Networking.LocalPlayer.UseLegacyLocomotion();
-            }
         }
     }
 
     public void SetMovement()
     {
-        VRCPlayerApi localuser = Networking.LocalPlayer;
-        localuser.SetJumpImpulse(jumpImpulse);
-        localuser.SetWalkSpeed(walkSpeed);
-        localuser.SetStrafeSpeed(strafeSpeed);
-        localuser.SetRunSpeed(runSpeed);
-        localuser.SetGravityStrength(gravityStrength);
+        JumpValue = _jumpImpulse;
+        WalkValue = _walkSpeed;
+        StrafeValue = _strafeSpeed;
+        RunValue = _runSpeed;
+        GravityValue = _gravityStrength;
+        LegacyLocomotion = _legacyLocomotion;
     }
 
-    public virtual void OnPlayerTriggerEnter(VRC.SDKBase.VRCPlayerApi player) 
+    public override void OnPlayerTriggerEnter(VRC.SDKBase.VRCPlayerApi player)
     {
-        if (player.isLocal)
+        if (!player.isLocal)
         {
-            SetMovement();
+            return;
         }
+
+        jump_c = user.GetJumpImpulse();
+        walk_c = user.GetWalkSpeed();
+        strafe_c = user.GetStrafeSpeed();
+        run_c = user.GetRunSpeed();
+        gravity_c = user.GetGravityStrength();
+
+        SetMovement();
     }
-    public virtual void OnPlayerTriggerExit(VRC.SDKBase.VRCPlayerApi player) 
-    { 
-        if(player.isLocal && zoneExitReset)
+    public override void OnPlayerTriggerExit(VRC.SDKBase.VRCPlayerApi player)
+    {
+        if (!player.isLocal)
         {
-            zoneExitReset.SetMovement();
+            return;
         }
+
+        user.SetJumpImpulse(jump_c);
+        user.SetWalkSpeed(walk_c);
+        user.SetStrafeSpeed(strafe_c);
+        user.SetRunSpeed(run_c);
+        user.SetGravityStrength(gravity_c);
     }
 }
+}
+

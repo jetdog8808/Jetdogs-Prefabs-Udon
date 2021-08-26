@@ -18,6 +18,8 @@ using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
 
+namespace JetDog.Prefabs
+{
 public class Set_Material : UdonSharpBehaviour
 {
     public Material material;
@@ -44,3 +46,5 @@ public class Set_Material : UdonSharpBehaviour
         }
     }
 }
+}
+

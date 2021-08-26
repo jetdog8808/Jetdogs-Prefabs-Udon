@@ -18,13 +18,18 @@ using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
 
+namespace JetDog.Prefabs
+{
+
 public class Owner_Tag : UdonSharpBehaviour
 {
     public GameObject ownerOf;
     public Transform sign;
     public float offset = 1;
     public bool follow = false;
-    public Transform resetpoint;
+
+    private Vector3 resetPos;
+    private Quaternion resetRot;
     private VRCPlayerApi owner;
 
     void Start()
@@ -37,19 +42,22 @@ public class Owner_Tag : UdonSharpBehaviour
         {
             sign = transform; 
         }
+
+        resetPos = sign.position;
+        resetRot = sign.rotation;
     }
 
-    private void Update()
+
+    public override void PostLateUpdate()
     {
         if (follow)
         {
             if(!Utilities.IsValid(owner) || !owner.IsOwner(gameObject))
             {
-                owner = Networking.GetOwner(gameObject);
+                   owner = Networking.GetOwner(gameObject);
             }
             
-            sign.SetPositionAndRotation(owner.GetTrackingData(VRCPlayerApi.TrackingDataType.Head).position + new Vector3(0, offset, 0), owner.GetRotation());
-
+         sign.SetPositionAndRotation(owner.GetTrackingData(VRCPlayerApi.TrackingDataType.Head).position + new Vector3(0, offset, 0), owner.GetRotation());
         }
     }
 
@@ -57,9 +65,11 @@ public class Owner_Tag : UdonSharpBehaviour
     {
         follow = !follow;
 
-        if (!follow && resetpoint)
+        if (!follow)
         {
-            sign.SetPositionAndRotation(resetpoint.position, resetpoint.rotation);
+            sign.SetPositionAndRotation(resetPos, resetRot);
         }
     }
 }
+}
+

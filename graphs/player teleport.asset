@@ -14,27 +14,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   serializedUdonProgramAsset: {fileID: 11400000, guid: 78942ecf0d4f30543b184301d3c50d4d,
     type: 2}
-  udonAssembly: ".data_start\r\n\r\n    .export teleportTo\r\n    \r\n    Boolean_0:
-    %SystemBoolean, null\r\n    VRCPlayerApi_0: %VRCSDKBaseVRCPlayerApi, null\r\n
-    \   onPlayerTriggerEnterPlayer: %VRCSDKBaseVRCPlayerApi, null\r\n    instance_0:
-    %VRCSDKBaseVRCPlayerApi, null\r\n    teleportPos_0: %UnityEngineVector3, null\r\n
-    \   teleportRot_0: %UnityEngineQuaternion, null\r\n    teleportOrientation_0:
-    %VRCSDKBaseVRC_SceneDescriptorSpawnOrientation, null\r\n    lerpOnRemote_0: %SystemBoolean,
-    null\r\n    instance_1: %UnityEngineTransform, this\r\n    instance_2: %UnityEngineTransform,
-    this\r\n    teleportTo: %UnityEngineTransform, this\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n
-    \   .export _onPlayerTriggerEnter\r\n    \r\n    _onPlayerTriggerEnter:\r\n    \r\n
-    \       PUSH, onPlayerTriggerEnterPlayer\r\n        PUSH, VRCPlayerApi_0\r\n        COPY\r\n
-    \       PUSH, VRCPlayerApi_0\r\n        PUSH, Boolean_0\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__get_isLocal__SystemBoolean\"\r\n
-    \       PUSH, Boolean_0\r\n        JUMP_IF_FALSE, 0x000000DC\r\n        PUSH,
-    instance_0\r\n        EXTERN, \"VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi\"\r\n
-    \       PUSH, teleportTo\r\n        PUSH, instance_1\r\n        COPY\r\n        PUSH,
-    instance_1\r\n        PUSH, teleportPos_0\r\n        EXTERN, \"UnityEngineTransform.__get_position__UnityEngineVector3\"\r\n
-    \       PUSH, teleportTo\r\n        PUSH, instance_2\r\n        COPY\r\n        PUSH,
-    instance_2\r\n        PUSH, teleportRot_0\r\n        EXTERN, \"UnityEngineTransform.__get_rotation__UnityEngineQuaternion\"\r\n
-    \       PUSH, instance_0\r\n        PUSH, teleportPos_0\r\n        PUSH, teleportRot_0\r\n
-    \       PUSH, teleportOrientation_0\r\n        PUSH, lerpOnRemote_0\r\n        EXTERN,
-    \"VRCSDKBaseVRCPlayerApi.__TeleportTo__UnityEngineVector3_UnityEngineQuaternion_VRCSDKBaseVRC_SceneDescriptorSpawnOrientation_SystemBoolean__SystemVoid\"\r\n
-    \       JUMP, 0x000000DC\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
+  udonAssembly: ".data_start\r\n\r\n    .export teleportTo\r\n    \r\n    __Boolean_0:
+    %SystemBoolean, null\r\n    __VRCPlayerApi_0: %VRCSDKBaseVRCPlayerApi, null\r\n   
+    onPlayerTriggerEnterPlayer: %VRCSDKBaseVRCPlayerApi, null\r\n    __instance_0:
+    %VRCSDKBaseVRCPlayerApi, null\r\n    __teleportPos_0: %UnityEngineVector3, null\r\n   
+    __teleportRot_0: %UnityEngineQuaternion, null\r\n    __teleportOrientation_0:
+    %VRCSDKBaseVRC_SceneDescriptorSpawnOrientation, null\r\n    __lerpOnRemote_0:
+    %SystemBoolean, null\r\n    __instance_1: %UnityEngineTransform, this\r\n   
+    __instance_2: %UnityEngineTransform, this\r\n    teleportTo: %UnityEngineTransform,
+    this\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n    .export _onPlayerTriggerEnter\r\n   
+    \r\n    _onPlayerTriggerEnter:\r\n    \r\n        PUSH, onPlayerTriggerEnterPlayer\r\n       
+    PUSH, __VRCPlayerApi_0\r\n        COPY\r\n        PUSH, __VRCPlayerApi_0\r\n       
+    PUSH, __Boolean_0\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__get_isLocal__SystemBoolean\"\r\n       
+    PUSH, __Boolean_0\r\n        JUMP_IF_FALSE, 0x000000DC\r\n        PUSH, __instance_0\r\n       
+    EXTERN, \"VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi\"\r\n       
+    PUSH, teleportTo\r\n        PUSH, __instance_1\r\n        COPY\r\n        PUSH,
+    __instance_1\r\n        PUSH, __teleportPos_0\r\n        EXTERN, \"UnityEngineTransform.__get_position__UnityEngineVector3\"\r\n       
+    PUSH, teleportTo\r\n        PUSH, __instance_2\r\n        COPY\r\n        PUSH,
+    __instance_2\r\n        PUSH, __teleportRot_0\r\n        EXTERN, \"UnityEngineTransform.__get_rotation__UnityEngineQuaternion\"\r\n       
+    PUSH, __instance_0\r\n        PUSH, __teleportPos_0\r\n        PUSH, __teleportRot_0\r\n       
+    PUSH, __teleportOrientation_0\r\n        PUSH, __lerpOnRemote_0\r\n        EXTERN,
+    \"VRCSDKBaseVRCPlayerApi.__TeleportTo__UnityEngineVector3_UnityEngineQuaternion_VRCSDKBaseVRC_SceneDescriptorSpawnOrientation_SystemBoolean__SystemVoid\"\r\n       
+    JUMP, 0x000000DC\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
   assemblyError: 
   graphData:
     name: 
@@ -56,9 +57,11 @@ MonoBehaviour:
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|teleportTo
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|True
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|True
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Branch
@@ -71,7 +74,8 @@ MonoBehaviour:
       - 
       nodeValues:
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
     - fullName: UnityEngineTransform.__get_rotation__UnityEngineQuaternion
       uid: 746b9497-2abc-4163-ad09-c4b56c1b10ef
       position: {x: 1843.1554, y: 474.60504}
@@ -129,7 +133,8 @@ MonoBehaviour:
         stringValue: VRC.SDKBase.VRC_SceneDescriptor+SpawnOrientation, VRCSDKBase,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|AlignPlayerWithSpawnPoint
       - unityObjectValue: {fileID: 0}
-        stringValue: 
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
     - fullName: Event_OnPlayerTriggerEnter
       uid: 793bcc2a-1621-4c85-8593-d5ee32afa340
       position: {x: 969.5943, y: 108.50822}
@@ -146,6 +151,7 @@ MonoBehaviour:
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: 
+    updateOrder: 0
   graphElementData:
   - type: 2
     uid: fa007908-4116-450a-832b-d30435be9863
@@ -158,7 +164,7 @@ MonoBehaviour:
     uid: fe9dead8-ca5a-4557-868d-8784319877f0
     jsonData: '{"visible":true,"layout":{"serializedVersion":"2","x":10.0,"y":20.0,"width":0.0,"height":0.0}}'
   viewTransform:
-    position: {x: -408.1588, y: 187.96204}
-    scale: 0.57175326
+    position: {x: -664, y: 219.2}
+    scale: 0.8695652
   version: 1.0.0
   showAssembly: 0

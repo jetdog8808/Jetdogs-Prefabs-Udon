@@ -18,34 +18,44 @@ using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
 
+
+namespace JetDog.Prefabs
+{
 public class DoubleJump : UdonSharpBehaviour
 {
     public bool enable = true;
     public float secondJumpMultiplier = 1f;
+
     private bool doublejump = true;
     private VRCPlayerApi user;
 
     void Start()
     {
+        //cache local user reference.
         user = Networking.LocalPlayer;
     }
 
-    public virtual void InputJump(bool value, VRC.Udon.Common.UdonInputEventArgs args)
+    //vrc event when player does the jump input.
+    public override void InputJump(bool value, VRC.Udon.Common.UdonInputEventArgs args)
     {
-
         if (enable && value)
         {
+            /* checks is jumping while on the ground.
+             * if true record it
+             * if you jumped and and not on the ground does double jump.
+             * 
+             * this does not account for coyote time wanted this to be simple.
+             */
             if (user.IsPlayerGrounded())
             {
                 doublejump = true;
             }
-            else
+            else if(doublejump)
             {
-                if (doublejump)
-                {
-                    doublejump = false;
-                    user.SetVelocity(Vector3.Scale(user.GetVelocity(), new Vector3(1f, 0f, 1f)) + ((user.GetJumpImpulse() * secondJumpMultiplier) * Vector3.up));
-                }
+                doublejump = false;
+                Vector3 dVelocity = user.GetVelocity();
+                dVelocity.y = user.GetJumpImpulse() * secondJumpMultiplier;
+                user.SetVelocity(dVelocity);
             }
 
         }
@@ -53,3 +63,5 @@ public class DoubleJump : UdonSharpBehaviour
 
     }
 }
+}
+

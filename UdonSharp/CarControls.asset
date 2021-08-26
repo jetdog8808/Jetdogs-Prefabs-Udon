@@ -731,7 +731,7 @@ MonoBehaviour:
       Data: 43|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: CarStation, Assembly-CSharp
+      Data: JetDog.Prefabs.CarStation, Assembly-CSharp
     - Name: 
       Entry: 8
       Data: 

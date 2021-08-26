@@ -18,6 +18,8 @@ using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
 
+namespace JetDog.Prefabs
+{
 public class Simple_Toggle : UdonSharpBehaviour
 {
     public GameObject[] gameobjectArray;
@@ -35,3 +37,5 @@ public class Simple_Toggle : UdonSharpBehaviour
         }
     }
 }
+}
+

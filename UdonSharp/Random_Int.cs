@@ -19,6 +19,8 @@ using UnityEngine.UI;
 using VRC.SDKBase;
 using VRC.Udon;
 
+namespace JetDog.Prefabs
+{
 [UdonBehaviourSyncMode(BehaviourSyncMode.Manual)]
 public class Random_Int : UdonSharpBehaviour
 {
@@ -49,3 +51,5 @@ public class Random_Int : UdonSharpBehaviour
         }
     }
 }
+}
+

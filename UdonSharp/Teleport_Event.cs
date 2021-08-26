@@ -18,6 +18,8 @@ using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
 
+namespace JetDog.Prefabs
+{
 public class Teleport_Event : UdonSharpBehaviour
 {
     public Transform teleportPoint;
@@ -34,3 +36,5 @@ public class Teleport_Event : UdonSharpBehaviour
         Networking.LocalPlayer.TeleportTo(teleportPoint.position, teleportPoint.rotation, teleportOrientation, lerpOnRemote);
     }
 }
+}
+

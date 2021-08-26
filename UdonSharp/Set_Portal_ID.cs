@@ -18,6 +18,8 @@ using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
 
+namespace JetDog.Prefabs
+{
 public class Set_Portal_ID : UdonSharpBehaviour
 {
     public VRC_PortalMarker portal;
@@ -28,7 +30,7 @@ public class Set_Portal_ID : UdonSharpBehaviour
     {
         if (networked && !Networking.IsMaster)
         {
-            SendCustomNetworkEvent(VRC.Udon.Common.Interfaces.NetworkEventTarget.Owner, "LateSync");
+            SendCustomNetworkEvent(VRC.Udon.Common.Interfaces.NetworkEventTarget.Owner, nameof(LateSync));
         }
     }
 
@@ -36,13 +38,13 @@ public class Set_Portal_ID : UdonSharpBehaviour
     {
         if (networked)
         {
-            SendCustomNetworkEvent(VRC.Udon.Common.Interfaces.NetworkEventTarget.All, "SetID");
+            SendCustomNetworkEvent(VRC.Udon.Common.Interfaces.NetworkEventTarget.All, nameof(SetID));
         }
         else
         {
             SetID();
         }
-        
+
     }
 
     public void SetID()
@@ -52,9 +54,11 @@ public class Set_Portal_ID : UdonSharpBehaviour
 
     public void LateSync()
     {
-        if(portal.roomId == id)
+        if (portal.roomId == id)
         {
-            SendCustomNetworkEvent(VRC.Udon.Common.Interfaces.NetworkEventTarget.All, "SetID");
+            SendCustomNetworkEvent(VRC.Udon.Common.Interfaces.NetworkEventTarget.All, nameof(SetID));
         }
     }
 }
+}
+

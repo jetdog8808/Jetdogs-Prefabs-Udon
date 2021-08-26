@@ -18,35 +18,35 @@ using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
 
+namespace JetDog.Prefabs
+{
 public class Jump_Pad : UdonSharpBehaviour
 {
-    public Vector3 direction = Vector3.up;
     public float strength = 10;
 
-
-    void Start()
-    {
-        direction = direction.normalized * strength;
-    }
-
-    public virtual void OnPlayerTriggerEnter(VRC.SDKBase.VRCPlayerApi player)
+    //used if the collider is a trigger.
+    public override void OnPlayerTriggerEnter(VRC.SDKBase.VRCPlayerApi player)
     {
         if (player.isLocal)
         {
-            playersetvelocity();
+            PlayerSetVelocity();
         }
     }
 
-    public virtual void OnPlayerTriggerStay(VRC.SDKBase.VRCPlayerApi player)
+    //used if the collider is not a trigger.
+    public override void OnPlayerCollisionEnter(VRC.SDKBase.VRCPlayerApi player)
     {
+
         if (player.isLocal)
         {
-            playersetvelocity();
+            PlayerSetVelocity();
         }
     }
 
-    public void playersetvelocity()
+    private void PlayerSetVelocity()
     {
-        Networking.LocalPlayer.SetVelocity(direction);
+        Networking.LocalPlayer.SetVelocity(transform.rotation * Vector3.up * strength);
     }
 }
+}
+

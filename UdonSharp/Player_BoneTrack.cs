@@ -18,11 +18,16 @@ using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
 
+namespace JetDog.Prefabs
+{
 public class Player_BoneTrack : UdonSharpBehaviour
 {
     public Transform transform;
     public bool track = true;
     public HumanBodyBones Bone;
+    private VRCPlayerApi user;
+
+
 
     void Start()
     {
@@ -30,11 +35,19 @@ public class Player_BoneTrack : UdonSharpBehaviour
         {
             transform = GetComponent<Transform>();
         }
+
+        user = Networking.LocalPlayer;
+
     }
 
     private void Update()
     {
-        VRCPlayerApi player = Networking.LocalPlayer;
-        transform.SetPositionAndRotation(player.GetBonePosition(Bone), player.GetBoneRotation(Bone));
+        if (track)
+        {
+            transform.SetPositionAndRotation(user.GetBonePosition(Bone), user.GetBoneRotation(Bone));
+        }
+        
     }
 }
+}
+

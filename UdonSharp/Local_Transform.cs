@@ -18,6 +18,8 @@ using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
 
+namespace JetDog.Prefabs
+{
 public class Local_Transform : UdonSharpBehaviour
 {
     public Transform transform;
@@ -37,3 +39,5 @@ public class Local_Transform : UdonSharpBehaviour
         transform.localRotation = referenceTransform.localRotation;
     }
 }
+}
+

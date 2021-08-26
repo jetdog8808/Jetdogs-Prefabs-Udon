@@ -18,6 +18,8 @@ using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
 
+namespace JetDog.Prefabs
+{
 public class Station_Button : UdonSharpBehaviour
 {
     public VRCStation station;
@@ -48,3 +50,5 @@ public class Station_Button : UdonSharpBehaviour
         }
     }
 }
+}
+

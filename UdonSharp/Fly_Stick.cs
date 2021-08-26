@@ -18,6 +18,8 @@ using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
 
+namespace JetDog.Prefabs
+{
 public class Fly_Stick : UdonSharpBehaviour
 {
     public float speed = 10;
@@ -42,61 +44,63 @@ public class Fly_Stick : UdonSharpBehaviour
 
     private void Update()
     {
-        if (pickup.IsHeld)
+        if (!pickup.IsHeld) return;
+
+        if (triggerdown)
         {
-            if (triggerdown)
+            localUser.SetVelocity(flydirection.rotation * Vector3.forward * speed);
+            if (floatInAir && localUser.GetGravityStrength() != 0.001f)
             {
-                localUser.SetVelocity(flydirection.rotation * Vector3.forward * speed);
-                if (floatInAir && localUser.GetGravityStrength() != 0.001f)
-                {
-                    localUser.SetGravityStrength(0.001f);
-                }
+                localUser.SetGravityStrength(0.001f);
             }
-            else
+        }
+        else
+        {
+            if (floatInAir)
             {
-                if (floatInAir)
-                {
-                    if (localUser.IsPlayerGrounded())
-                    {
-                        if (localUser.GetGravityStrength() != gravitysave)
-                        {
-                            localUser.SetGravityStrength(gravitysave);
-                        }
-                    }
-                    else
-                    {
-                        localUser.SetVelocity(Vector3.zero);
-                    }
-                }
-                else
+                if (localUser.IsPlayerGrounded())
                 {
                     if (localUser.GetGravityStrength() != gravitysave)
                     {
                         localUser.SetGravityStrength(gravitysave);
                     }
                 }
-
-                
+                else
+                {
+                    localUser.SetVelocity(Vector3.zero);
+                }
             }
-            
+            else
+            {
+                if (localUser.GetGravityStrength() != gravitysave)
+                {
+                    localUser.SetGravityStrength(gravitysave);
+                }
+            }
+
+
         }
     }
 
-    public virtual void OnPickupUseDown() 
+    public override void OnPickupUseDown() 
     {
         triggerdown = true;
     }
-    public virtual void OnPickupUseUp() 
+    public override void OnPickupUseUp() 
     {
         triggerdown = false;
     }
-    public virtual void OnDrop() 
+    public override void OnDrop() 
     {
         triggerdown = false;
         localUser.SetGravityStrength(gravitysave);
     }
-    public virtual void OnPickup() 
+    public override void OnPickup() 
     {
         gravitysave = localUser.GetGravityStrength();
+
+
     }
 }
+}
+

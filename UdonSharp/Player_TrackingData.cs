@@ -18,27 +18,34 @@ using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
 
+namespace JetDog.Prefabs
+{
 public class Player_TrackingData : UdonSharpBehaviour
 {
     public Transform transform;
     public bool track = true;
     public VRCPlayerApi.TrackingDataType trackingDataType;
+    private VRCPlayerApi user;
 
     void Start()
     {
         if(transform == null)
         {
             transform = GetComponent<Transform>();
-        }    
+        }
+
+        user = Networking.LocalPlayer;
     }
 
     private void Update()
     {
         if (track)
         {
-            VRCPlayerApi.TrackingData trackdata = Networking.LocalPlayer.GetTrackingData(trackingDataType);
+            VRCPlayerApi.TrackingData trackdata = user.GetTrackingData(trackingDataType);
             transform.SetPositionAndRotation(trackdata.position, trackdata.rotation);
         }
         
     }
 }
+}
+

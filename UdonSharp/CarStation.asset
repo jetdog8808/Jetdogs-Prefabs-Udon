@@ -62,7 +62,7 @@ MonoBehaviour:
       Data: 4|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: CarControls, Assembly-CSharp
+      Data: JetDog.Prefabs.CarControls, Assembly-CSharp
     - Name: 
       Entry: 8
       Data: 

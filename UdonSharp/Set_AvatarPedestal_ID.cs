@@ -18,6 +18,8 @@ using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
 
+namespace JetDog.Prefabs
+{
 public class Set_AvatarPedestal_ID : UdonSharpBehaviour
 {
     public VRC_AvatarPedestal pedestal;
@@ -28,7 +30,7 @@ public class Set_AvatarPedestal_ID : UdonSharpBehaviour
     {
         if (networked && !Networking.IsMaster)
         {
-            SendCustomNetworkEvent(VRC.Udon.Common.Interfaces.NetworkEventTarget.Owner, "LateSync");
+            SendCustomNetworkEvent(VRC.Udon.Common.Interfaces.NetworkEventTarget.Owner, nameof(LateSync));
         }
     }
 
@@ -36,7 +38,7 @@ public class Set_AvatarPedestal_ID : UdonSharpBehaviour
     {
         if (networked)
         {
-            SendCustomNetworkEvent(VRC.Udon.Common.Interfaces.NetworkEventTarget.All, "SetID");
+            SendCustomNetworkEvent(VRC.Udon.Common.Interfaces.NetworkEventTarget.All, nameof(SetID));
         }
         else
         {
@@ -54,8 +56,9 @@ public class Set_AvatarPedestal_ID : UdonSharpBehaviour
     {
         if (pedestal.blueprintId == id)
         {
-            SendCustomNetworkEvent(VRC.Udon.Common.Interfaces.NetworkEventTarget.All, "SetID");
+            SendCustomNetworkEvent(VRC.Udon.Common.Interfaces.NetworkEventTarget.All, nameof(SetID));
 
         }
     }
+}
 }

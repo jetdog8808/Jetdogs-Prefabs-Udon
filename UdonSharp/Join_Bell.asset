@@ -175,7 +175,7 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 1
-      Data: networked
+      Data: networkEvent
     - Name: $v
       Entry: 7
       Data: 10|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
@@ -196,10 +196,10 @@ MonoBehaviour:
       Data: SystemBoolean
     - Name: symbolOriginalName
       Entry: 1
-      Data: networked
+      Data: networkEvent
     - Name: symbolUniqueName
       Entry: 1
-      Data: networked
+      Data: networkEvent
     - Name: symbolDefaultValue
       Entry: 6
       Data: 

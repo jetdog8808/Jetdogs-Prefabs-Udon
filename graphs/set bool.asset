@@ -14,27 +14,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   serializedUdonProgramAsset: {fileID: 11400000, guid: 646b63d634bc9cd4181cd8716139d887,
     type: 2}
-  udonAssembly: ".data_start\r\n\r\n    .export udonbehaviour\r\n    .export variablename\r\n
-    \   .export toggle\r\n    \r\n    instance_0: %UnityEngineUIToggle, null\r\n    value_0:
-    %SystemBoolean, null\r\n    instance_1: %VRCUdonUdonBehaviour, this\r\n    symbolName_0:
-    %SystemString, null\r\n    instance_2: %VRCUdonUdonBehaviour, this\r\n    symbolName_1:
-    %SystemString, null\r\n    value_1: %SystemObject, null\r\n    instance_3: %UnityEngineUIToggle,
-    null\r\n    udonbehaviour: %VRCUdonUdonBehaviour, this\r\n    variablename: %SystemString,
-    null\r\n    toggle: %UnityEngineUIToggle, null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n
-    \   .export _start\r\n    \r\n    _start:\r\n    \r\n        PUSH, toggle\r\n
-    \       PUSH, instance_0\r\n        COPY\r\n        PUSH, udonbehaviour\r\n        PUSH,
-    instance_1\r\n        COPY\r\n        PUSH, variablename\r\n        PUSH, symbolName_0\r\n
-    \       COPY\r\n        PUSH, instance_1\r\n        PUSH, symbolName_0\r\n        PUSH,
-    value_0\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject\"\r\n
-    \       PUSH, instance_0\r\n        PUSH, value_0\r\n        EXTERN, \"UnityEngineUIToggle.__set_isOn__SystemBoolean__SystemVoid\"\r\n
-    \       JUMP, 0xFFFFFFFC\r\n    \r\n    .export change\r\n    \r\n    change:\r\n
-    \   \r\n        PUSH, udonbehaviour\r\n        PUSH, instance_2\r\n        COPY\r\n
-    \       PUSH, variablename\r\n        PUSH, symbolName_1\r\n        COPY\r\n        PUSH,
-    toggle\r\n        PUSH, instance_3\r\n        COPY\r\n        PUSH, instance_3\r\n
-    \       PUSH, value_1\r\n        EXTERN, \"UnityEngineUIToggle.__get_isOn__SystemBoolean\"\r\n
-    \       PUSH, instance_2\r\n        PUSH, symbolName_1\r\n        PUSH, value_1\r\n
-    \       EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n
-    \       JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
+  udonAssembly: ".data_start\r\n\r\n    .export udonbehaviour\r\n    .export variablename\r\n   
+    .export toggle\r\n    \r\n    __instance_0: %UnityEngineUIToggle, null\r\n   
+    __value_0: %SystemBoolean, null\r\n    __instance_1: %VRCUdonUdonBehaviour, this\r\n   
+    __symbolName_0: %SystemString, null\r\n    __instance_2: %VRCUdonUdonBehaviour,
+    this\r\n    __symbolName_1: %SystemString, null\r\n    __value_1: %SystemObject,
+    null\r\n    __instance_3: %UnityEngineUIToggle, null\r\n    udonbehaviour: %VRCUdonUdonBehaviour,
+    this\r\n    variablename: %SystemString, null\r\n    toggle: %UnityEngineUIToggle,
+    null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n    .export _start\r\n    \r\n   
+    _start:\r\n    \r\n        PUSH, toggle\r\n        PUSH, __instance_0\r\n       
+    COPY\r\n        PUSH, udonbehaviour\r\n        PUSH, __instance_1\r\n       
+    COPY\r\n        PUSH, variablename\r\n        PUSH, __symbolName_0\r\n       
+    COPY\r\n        PUSH, __instance_1\r\n        PUSH, __symbolName_0\r\n       
+    PUSH, __value_0\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject\"\r\n       
+    PUSH, __instance_0\r\n        PUSH, __value_0\r\n        EXTERN, \"UnityEngineUIToggle.__set_isOn__SystemBoolean__SystemVoid\"\r\n       
+    JUMP, 0xFFFFFFFC\r\n    \r\n    .export change\r\n    \r\n    change:\r\n   
+    \r\n        PUSH, udonbehaviour\r\n        PUSH, __instance_2\r\n        COPY\r\n       
+    PUSH, variablename\r\n        PUSH, __symbolName_1\r\n        COPY\r\n       
+    PUSH, toggle\r\n        PUSH, __instance_3\r\n        COPY\r\n        PUSH, __instance_3\r\n       
+    PUSH, __value_1\r\n        EXTERN, \"UnityEngineUIToggle.__get_isOn__SystemBoolean\"\r\n       
+    PUSH, __instance_2\r\n        PUSH, __symbolName_1\r\n        PUSH, __value_1\r\n       
+    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n       
+    JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
   assemblyError: 
   graphData:
     name: 
@@ -56,9 +57,11 @@ MonoBehaviour:
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|udonbehaviour
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|True
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|True
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Variable_SystemString
@@ -77,9 +80,11 @@ MonoBehaviour:
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|variablename
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|True
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|True
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid
@@ -179,9 +184,11 @@ MonoBehaviour:
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|toggle
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|True
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|True
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Get_Variable
@@ -204,7 +211,8 @@ MonoBehaviour:
       - unityObjectValue: {fileID: 0}
         stringValue: 
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|False
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
     - fullName: UnityEngineUIToggle.__get_isOn__SystemBoolean
       uid: f2677fa3-a7f8-4b32-b2ec-851fe697900f
       position: {x: -372.3881, y: -65.27031}
@@ -232,7 +240,7 @@ MonoBehaviour:
     uid: 5a953ce2-5ab5-4689-bdf7-575487123714
     jsonData: '{"visible":true,"layout":{"serializedVersion":"2","x":10.0,"y":20.0,"width":0.0,"height":0.0}}'
   viewTransform:
-    position: {x: 826.42035, y: 719.8716}
-    scale: 0.7561437
+    position: {x: 1483.2, y: 858.4}
+    scale: 1
   version: 1.0.0
   showAssembly: 0
