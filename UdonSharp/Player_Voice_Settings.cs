@@ -653,6 +653,8 @@ public class Player_Voice_Settings : UdonSharpBehaviour
         player.SetAvatarAudioVolumetricRadius(int.Parse(user.GetPlayerTag(avatarMaxVolumetricRadius_S)));
         player.SetAvatarAudioForceSpatial(bool.Parse(user.GetPlayerTag(avatarForceSpatial_S)));
         player.SetAvatarAudioCustomCurve(bool.Parse(user.GetPlayerTag(avatarAllowCustomCurve_S)));
+
+        player.SetPlayerTag(inRegion, null);
     }
 
 }

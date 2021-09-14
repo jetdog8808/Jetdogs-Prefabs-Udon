@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f11136daadff0b44ac2278a314682ab, type: 3}
   m_Name: VRCPlayer tracker
   m_EditorClassIdentifier: 
-  serializedUdonProgramAsset: {fileID: 11400000, guid: ee1905af02cc8e040b1586b885758b8a,
+  serializedUdonProgramAsset: {fileID: 11400000, guid: eb5558aa5c7630d4f947fc947865e5a1,
     type: 2}
   udonAssembly: ".data_start\r\n\r\n    .export track\r\n    \r\n    __Boolean_0:
     %SystemBoolean, null\r\n    __instance_0: %UnityEngineTransform, this\r\n   

@@ -1361,7 +1361,7 @@ MonoBehaviour:
     uid: 6b265298-bcee-478b-93f9-c79b85d2b65f
     jsonData: '{"visible":true,"layout":{"serializedVersion":"2","x":10.0,"y":20.0,"width":0.0,"height":0.0}}'
   viewTransform:
-    position: {x: 741.6, y: 152}
-    scale: 0.57175326
+    position: {x: 449.6, y: -399.2}
+    scale: 1
   version: 1.0.0
   showAssembly: 0
